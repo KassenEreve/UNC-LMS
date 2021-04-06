@@ -68,11 +68,13 @@
             // 
             // panel_main
             // 
+            this.panel_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_main.Location = new System.Drawing.Point(0, 99);
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(1328, 554);
             this.panel_main.TabIndex = 2;
+            this.panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_main_Paint);
             // 
             // Form1
             // 
@@ -85,6 +87,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
