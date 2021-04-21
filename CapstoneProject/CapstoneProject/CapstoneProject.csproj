@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,13 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\ComputeLog.cs" />
+    <Compile Include="Class\ComputerHelper.cs" />
+    <Compile Include="Class\ComputerLog.cs" />
     <Compile Include="Class\Computer.cs" />
+    <Compile Include="Class\DAL.cs" />
     <Compile Include="Class\Equipment.cs" />
     <Compile Include="Class\EquipmentStatusHistory.cs" />
     <Compile Include="Class\EquipmentType.cs" />
     <Compile Include="Class\Laboratory.cs" />
+    <Compile Include="Class\LaboratoryHelper.cs" />
     <Compile Include="Class\License.cs" />
+    <Compile Include="Class\Singleton.cs" />
     <Compile Include="Class\Software.cs" />
     <Compile Include="Class\SoftwareInventory.cs" />
     <Compile Include="Class\SoftwareStatusHistory.cs" />

@@ -26,6 +26,8 @@ namespace CapstoneProject
         private void Form1_Load(object sender, EventArgs e)
         {
             InitPanels();
+            var singleton = Singleton.GetInstance();
+            singleton.GetCachedAllLaboratory();
         }
 
         private void InitPanels()

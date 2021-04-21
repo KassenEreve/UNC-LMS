@@ -9,8 +9,11 @@ namespace CapstoneProject.Class
     public class Computer
     {
         public int id { get; set; }
+        public string pc_num { get; set; }
         public List<SoftwareInventory> softwareInventories { get; set; }
         public List<ComputerLog> computeLogs { get; set; }
         public List<Equipment> pcparts_equipment { get; set; }
+
+        public Laboratory laboratory { get; set; }
     }
 }
