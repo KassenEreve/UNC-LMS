@@ -50,6 +50,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\ComputeLog.cs" />
+    <Compile Include="Class\Computer.cs" />
+    <Compile Include="Class\Equipment.cs" />
+    <Compile Include="Class\EquipmentStatusHistory.cs" />
+    <Compile Include="Class\EquipmentType.cs" />
+    <Compile Include="Class\Laboratory.cs" />
+    <Compile Include="Class\License.cs" />
+    <Compile Include="Class\Software.cs" />
+    <Compile Include="Class\SoftwareInventory.cs" />
+    <Compile Include="Class\SoftwareStatusHistory.cs" />
+    <Compile Include="Class\Status.cs" />
+    <Compile Include="Class\Student.cs" />
     <Compile Include="Class\UserInterface.cs" />
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
