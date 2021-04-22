@@ -31,16 +31,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btn_Tools = new XanderUI.XUIButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btn_Report = new XanderUI.XUIButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_Sched = new XanderUI.XUIButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_Main = new XanderUI.XUIButton();
-            this.btn_Sched = new XanderUI.XUIButton();
-            this.btn_Report = new XanderUI.XUIButton();
-            this.btn_Tools = new XanderUI.XUIButton();
+            this.panel_main = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -85,6 +86,28 @@
             this.panel11.Size = new System.Drawing.Size(246, 94);
             this.panel11.TabIndex = 0;
             // 
+            // btn_Tools
+            // 
+            this.btn_Tools.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Tools.ButtonImage = null;
+            this.btn_Tools.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_Tools.ButtonText = "Tools";
+            this.btn_Tools.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_Tools.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Tools.CornerRadius = 5;
+            this.btn_Tools.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Tools.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Tools.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Tools.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Tools.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Tools.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_Tools.Location = new System.Drawing.Point(0, 0);
+            this.btn_Tools.Name = "btn_Tools";
+            this.btn_Tools.Size = new System.Drawing.Size(246, 94);
+            this.btn_Tools.TabIndex = 2;
+            this.btn_Tools.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Tools.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Gainsboro;
@@ -105,6 +128,28 @@
             this.panel9.Size = new System.Drawing.Size(246, 94);
             this.panel9.TabIndex = 0;
             // 
+            // btn_Report
+            // 
+            this.btn_Report.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Report.ButtonImage = null;
+            this.btn_Report.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_Report.ButtonText = "Report";
+            this.btn_Report.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_Report.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Report.CornerRadius = 5;
+            this.btn_Report.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Report.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Report.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Report.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Report.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Report.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_Report.Location = new System.Drawing.Point(0, 0);
+            this.btn_Report.Name = "btn_Report";
+            this.btn_Report.Size = new System.Drawing.Size(246, 94);
+            this.btn_Report.TabIndex = 2;
+            this.btn_Report.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Report.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
@@ -124,6 +169,28 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(246, 94);
             this.panel7.TabIndex = 0;
+            // 
+            // btn_Sched
+            // 
+            this.btn_Sched.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_Sched.ButtonImage = null;
+            this.btn_Sched.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_Sched.ButtonText = "Schedule";
+            this.btn_Sched.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_Sched.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Sched.CornerRadius = 5;
+            this.btn_Sched.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Sched.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sched.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Sched.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Sched.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Sched.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_Sched.Location = new System.Drawing.Point(0, 0);
+            this.btn_Sched.Name = "btn_Sched";
+            this.btn_Sched.Size = new System.Drawing.Size(246, 94);
+            this.btn_Sched.TabIndex = 1;
+            this.btn_Sched.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Sched.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // panel4
             // 
@@ -167,80 +234,25 @@
             this.btn_Main.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_Main.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // btn_Sched
+            // panel_main
             // 
-            this.btn_Sched.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Sched.ButtonImage = null;
-            this.btn_Sched.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_Sched.ButtonText = "Schedule";
-            this.btn_Sched.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_Sched.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Sched.CornerRadius = 5;
-            this.btn_Sched.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Sched.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sched.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_Sched.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_Sched.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Sched.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btn_Sched.Location = new System.Drawing.Point(0, 0);
-            this.btn_Sched.Name = "btn_Sched";
-            this.btn_Sched.Size = new System.Drawing.Size(246, 94);
-            this.btn_Sched.TabIndex = 1;
-            this.btn_Sched.TextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Sched.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // btn_Report
-            // 
-            this.btn_Report.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Report.ButtonImage = null;
-            this.btn_Report.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_Report.ButtonText = "Report";
-            this.btn_Report.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_Report.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.CornerRadius = 5;
-            this.btn_Report.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Report.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Report.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_Report.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_Report.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btn_Report.Location = new System.Drawing.Point(0, 0);
-            this.btn_Report.Name = "btn_Report";
-            this.btn_Report.Size = new System.Drawing.Size(246, 94);
-            this.btn_Report.TabIndex = 2;
-            this.btn_Report.TextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            // 
-            // btn_Tools
-            // 
-            this.btn_Tools.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Tools.ButtonImage = null;
-            this.btn_Tools.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_Tools.ButtonText = "Tools";
-            this.btn_Tools.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_Tools.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.CornerRadius = 5;
-            this.btn_Tools.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Tools.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Tools.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_Tools.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_Tools.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btn_Tools.Location = new System.Drawing.Point(0, 0);
-            this.btn_Tools.Name = "btn_Tools";
-            this.btn_Tools.Size = new System.Drawing.Size(246, 94);
-            this.btn_Tools.TabIndex = 2;
-            this.btn_Tools.TextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.panel_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_main.Location = new System.Drawing.Point(246, 0);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(1082, 554);
+            this.panel_main.TabIndex = 3;
             // 
             // UserControl_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel3);
             this.Name = "UserControl_mainWindow";
             this.Size = new System.Drawing.Size(1328, 554);
+            this.Load += new System.EventHandler(this.UserControl_mainWindow_Load);
             this.panel3.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
@@ -269,5 +281,6 @@
         private XanderUI.XUIButton btn_Tools;
         private XanderUI.XUIButton btn_Report;
         private XanderUI.XUIButton btn_Sched;
+        private System.Windows.Forms.Panel panel_main;
     }
 }

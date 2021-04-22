@@ -68,6 +68,12 @@
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\UserControl_LabList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl_LabList.Designer.cs">
+      <DependentUpon>UserControl_LabList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\UserControl_LabList.resx">
+      <DependentUpon>UserControl_LabList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">
       <DependentUpon>UserControl_LoginPage.cs</DependentUpon>
     </EmbeddedResource>

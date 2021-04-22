@@ -11,8 +11,9 @@ namespace CapstoneProject.Class
     {
         public  UserControl_LoginPage userControl_LoginPage;
         public  UserControl_mainWindow userControl_MainWindow;
+        public UserControl_LabList userControl_LabList;
 
-        private static UserInterface instance;
+        public static UserInterface instance;
      
         private UserInterface()
         {
@@ -36,6 +37,9 @@ namespace CapstoneProject.Class
 
             userControl_MainWindow = new UserControl_mainWindow();
             userControl_MainWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+
+            userControl_LabList = new UserControl_LabList();
+            userControl_LabList.Dock = System.Windows.Forms.DockStyle.Fill;
         }
     }
 }
