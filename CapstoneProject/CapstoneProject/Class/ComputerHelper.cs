@@ -42,5 +42,33 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
 
         }
+
+        public static Computer getComputer(int comp_id)
+        {
+           Computer comp = null;
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+
+                SqlParameter[] param = { new SqlParameter("@comp_id", comp_id) };
+                var table = dal.ExecuteQuery("GetComputer", param).Tables[0];
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    comp = new Computer()
+                    {
+                        id = dr.Field<int>("id"),
+                        pc_num = dr.Field<string>("pc_num"),
+                        
+                    };
+
+
+                }
+
+                return comp;
+            }
+        }
     }
 }

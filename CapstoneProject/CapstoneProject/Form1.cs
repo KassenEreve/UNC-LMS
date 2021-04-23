@@ -27,7 +27,7 @@ namespace CapstoneProject
         {
             InitPanels();
             var singleton = Singleton.GetInstance();
-            singleton.GetCachedAllLaboratory();
+           // singleton.GetCachedAllLaboratory();
         }
 
         private void InitPanels()
