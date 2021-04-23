@@ -70,16 +70,16 @@
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
     <Compile Include="Class\UserInterface.cs" />
-    <Compile Include="Controls\Laboratory\UserControl_LabItem.cs">
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\Laboratory\UserControl_LabItem.Designer.cs">
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabItem.Designer.cs">
       <DependentUpon>UserControl_LabItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Laboratory\UserControl_LabList.cs">
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\Laboratory\UserControl_LabList.Designer.cs">
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabList.Designer.cs">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
@@ -102,10 +102,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\Laboratory\UserControl_LabItem.resx">
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabItem.resx">
       <DependentUpon>UserControl_LabItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\Laboratory\UserControl_LabList.resx">
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabList.resx">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">

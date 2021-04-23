@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapstoneProject.Controls.Laboratory;
+using CapstoneProject.Controls.Laboratory_ctrls;
+using CapstoneProject.Class;
 
 namespace CapstoneProject.Controls
 {
@@ -25,9 +26,11 @@ namespace CapstoneProject.Controls
 
         private void LoadList()
         {
-           for(int i=0;i<5;i++)
+            var labs = Singleton.GetInstance().GetCachedAllLaboratory();
+            labs.Reverse();
+           foreach(Laboratory lab in labs)
             {
-                var ctrl = new UserControl_LabItem();
+                var ctrl = new UserControl_LabItem(lab);
                 ctrl.Dock = DockStyle.Top;
                 panel_roomList.Controls.Add(ctrl);
             }

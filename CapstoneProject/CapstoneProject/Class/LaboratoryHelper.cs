@@ -16,7 +16,7 @@ namespace CapstoneProject.Class
             using (DAL dal = new DAL())
             {
                 if (!dal.IsConnected) return null;
-                var table = dal.ExecuteQuery("GetAllEmployee").Tables[0];
+                var table = dal.ExecuteQuery("GetAllLaboratory").Tables[0];
 
                 list = new List<Laboratory>();
 
@@ -28,7 +28,7 @@ namespace CapstoneProject.Class
                     {
                         id = dr.Field<int>("id"),
                         roomNum = dr.Field<string>("room_num"),
-                        equipments = EquipmentHelper.Equipments(dr.Field<int>("id"))
+                       // equipments = EquipmentHelper.Equipments(dr.Field<int>("id"))
                         
 
                     };

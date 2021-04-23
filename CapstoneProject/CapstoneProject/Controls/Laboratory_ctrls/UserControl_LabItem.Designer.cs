@@ -1,4 +1,4 @@
-﻿namespace CapstoneProject.Controls.Laboratory
+﻿namespace CapstoneProject.Controls.Laboratory_ctrls
 {
     partial class UserControl_LabItem
     {
@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl_LabItem));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_roomID = new System.Windows.Forms.Label();
-            this.lbl_roomNum = new System.Windows.Forms.Label();
-            this.lbl_reported = new System.Windows.Forms.Label();
-            this.lbl_total = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_reported = new System.Windows.Forms.Label();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.lbl_roomNum = new System.Windows.Forms.Label();
+            this.lbl_roomID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,50 +57,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 66);
             this.panel1.TabIndex = 0;
-            // 
-            // lbl_roomID
-            // 
-            this.lbl_roomID.AutoSize = true;
-            this.lbl_roomID.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_roomID.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_roomID.Location = new System.Drawing.Point(23, 26);
-            this.lbl_roomID.Name = "lbl_roomID";
-            this.lbl_roomID.Size = new System.Drawing.Size(48, 20);
-            this.lbl_roomID.TabIndex = 0;
-            this.lbl_roomID.Text = "label1";
-            // 
-            // lbl_roomNum
-            // 
-            this.lbl_roomNum.AutoSize = true;
-            this.lbl_roomNum.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_roomNum.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_roomNum.Location = new System.Drawing.Point(131, 26);
-            this.lbl_roomNum.Name = "lbl_roomNum";
-            this.lbl_roomNum.Size = new System.Drawing.Size(50, 20);
-            this.lbl_roomNum.TabIndex = 1;
-            this.lbl_roomNum.Text = "label2";
-            // 
-            // lbl_reported
-            // 
-            this.lbl_reported.AutoSize = true;
-            this.lbl_reported.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_reported.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_reported.Location = new System.Drawing.Point(424, 26);
-            this.lbl_reported.Name = "lbl_reported";
-            this.lbl_reported.Size = new System.Drawing.Size(50, 20);
-            this.lbl_reported.TabIndex = 3;
-            this.lbl_reported.Text = "label3";
-            // 
-            // lbl_total
-            // 
-            this.lbl_total.AutoSize = true;
-            this.lbl_total.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_total.Location = new System.Drawing.Point(267, 26);
-            this.lbl_total.Name = "lbl_total";
-            this.lbl_total.Size = new System.Drawing.Size(51, 20);
-            this.lbl_total.TabIndex = 2;
-            this.lbl_total.Text = "label4";
             // 
             // xuiButton1
             // 
@@ -152,6 +108,50 @@
             this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.dELETEToolStripMenuItem.Text = "DELETE";
             // 
+            // lbl_reported
+            // 
+            this.lbl_reported.AutoSize = true;
+            this.lbl_reported.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_reported.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_reported.Location = new System.Drawing.Point(424, 26);
+            this.lbl_reported.Name = "lbl_reported";
+            this.lbl_reported.Size = new System.Drawing.Size(50, 20);
+            this.lbl_reported.TabIndex = 3;
+            this.lbl_reported.Text = "label3";
+            // 
+            // lbl_total
+            // 
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_total.Location = new System.Drawing.Point(267, 26);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(51, 20);
+            this.lbl_total.TabIndex = 2;
+            this.lbl_total.Text = "label4";
+            // 
+            // lbl_roomNum
+            // 
+            this.lbl_roomNum.AutoSize = true;
+            this.lbl_roomNum.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_roomNum.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_roomNum.Location = new System.Drawing.Point(131, 26);
+            this.lbl_roomNum.Name = "lbl_roomNum";
+            this.lbl_roomNum.Size = new System.Drawing.Size(50, 20);
+            this.lbl_roomNum.TabIndex = 1;
+            this.lbl_roomNum.Text = "label2";
+            // 
+            // lbl_roomID
+            // 
+            this.lbl_roomID.AutoSize = true;
+            this.lbl_roomID.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_roomID.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_roomID.Location = new System.Drawing.Point(23, 26);
+            this.lbl_roomID.Name = "lbl_roomID";
+            this.lbl_roomID.Size = new System.Drawing.Size(48, 20);
+            this.lbl_roomID.TabIndex = 0;
+            this.lbl_roomID.Text = "label1";
+            // 
             // UserControl_LabItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,6 +161,7 @@
             this.Name = "UserControl_LabItem";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.Size = new System.Drawing.Size(656, 69);
+            this.Load += new System.EventHandler(this.UserControl_LabItem_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
