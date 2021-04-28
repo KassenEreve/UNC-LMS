@@ -70,6 +70,12 @@
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLab.Designer.cs">
+      <DependentUpon>UserControl_AddLab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_LabItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddLab.resx">
+      <DependentUpon>UserControl_AddLab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabItem.resx">
       <DependentUpon>UserControl_LabItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -139,6 +149,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse Arrow_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_20px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

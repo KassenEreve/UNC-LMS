@@ -24,9 +24,11 @@ namespace CapstoneProject.Controls
             LoadList();
         }
 
-        private void LoadList()
+        public void LoadList()
         {
-            var labs = Singleton.GetInstance().GetCachedAllLaboratory();
+            panel_roomList.Controls.Clear();
+            //var labs = Singleton.GetInstance().GetCachedAllLaboratory();
+            var labs = LaboratoryHelper.GetAllLaboratories();
             labs.Reverse();
            foreach(Laboratory lab in labs)
             {
@@ -34,6 +36,12 @@ namespace CapstoneProject.Controls
                 ctrl.Dock = DockStyle.Top;
                 panel_roomList.Controls.Add(ctrl);
             }
+        }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.UserControl_AddLab.BringToFront();
         }
     }
 }

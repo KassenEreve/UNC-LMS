@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_roomList = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -36,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_roomList = new System.Windows.Forms.Panel();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -52,6 +53,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(738, 367);
             this.panel1.TabIndex = 3;
+            // 
+            // panel_roomList
+            // 
+            this.panel_roomList.AutoScroll = true;
+            this.panel_roomList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_roomList.Location = new System.Drawing.Point(0, 83);
+            this.panel_roomList.Name = "panel_roomList";
+            this.panel_roomList.Size = new System.Drawing.Size(738, 284);
+            this.panel_roomList.TabIndex = 1;
             // 
             // panel2
             // 
@@ -106,7 +116,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(142, 30);
+            this.label3.Location = new System.Drawing.Point(140, 30);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
@@ -132,24 +142,37 @@
             this.label1.Location = new System.Drawing.Point(52, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 28);
+            this.label1.Size = new System.Drawing.Size(147, 28);
             this.label1.TabIndex = 4;
-            this.label1.Text = "ROOMS";
+            this.label1.Text = "LABORATORIES";
             // 
-            // panel_roomList
+            // xuiButton1
             // 
-            this.panel_roomList.AutoScroll = true;
-            this.panel_roomList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_roomList.Location = new System.Drawing.Point(0, 83);
-            this.panel_roomList.Name = "panel_roomList";
-            this.panel_roomList.Size = new System.Drawing.Size(738, 284);
-            this.panel_roomList.TabIndex = 1;
+            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton1.ButtonImage = global::CapstoneProject.Properties.Resources.plus;
+            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton1.ButtonText = "ADD LAB";
+            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton1.Location = new System.Drawing.Point(620, 3);
+            this.xuiButton1.Name = "xuiButton1";
+            this.xuiButton1.Size = new System.Drawing.Size(151, 52);
+            this.xuiButton1.TabIndex = 5;
+            this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
             // UserControl_LabList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,5 +200,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel_roomList;
+        private XanderUI.XUIButton xuiButton1;
     }
 }

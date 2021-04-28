@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,50 @@ namespace CapstoneProject.Class
             }
 
             return (list.Count() > 0) ? list : null;
+        }
+
+        internal static bool SaveLab(Laboratory saveLab)
+        {
+            if (saveLab == null)
+                return false;
+
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return false;
+
+
+                SqlParameter[] param = { new  SqlParameter("@id",saveLab.id),
+                                       new  SqlParameter("@name",  saveLab.roomNum)
+                                        
+
+
+
+                                       };
+
+                try
+                {
+
+                    dal.ExecuteNonQuery("SaveLaboratory", param);
+
+
+
+
+                    return true;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return false;
+                }
+
+
+
+
+            }
         }
     }
 }
