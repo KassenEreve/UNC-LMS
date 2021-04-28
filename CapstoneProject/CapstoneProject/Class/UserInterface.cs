@@ -14,7 +14,9 @@ namespace CapstoneProject.Class
         public  UserControl_LoginPage userControl_LoginPage;
         public  UserControl_mainWindow userControl_MainWindow;
         public UserControl_LabList userControl_LabList;
-        public UserControl_AddLab UserControl_AddLab;
+        public UserControl_AddLab userControl_AddLab;
+        public UserControl_EquipmentType userControl_EquipmentType;
+        public UserControl_AddEquipmentType userControl_AddEquipmentType;
 
         private static UserInterface instance;
 
@@ -38,17 +40,23 @@ namespace CapstoneProject.Class
         public  void initialize()
         {
             userControl_LoginPage = new UserControl_LoginPage();
-            userControl_LoginPage.Dock = System.Windows.Forms.DockStyle.Fill;
+            userControl_LoginPage.Dock = DockStyle.Fill;
 
 
             userControl_MainWindow = new UserControl_mainWindow();
-            userControl_MainWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            userControl_MainWindow.Dock = DockStyle.Fill;
 
             userControl_LabList = new UserControl_LabList();
-            userControl_LabList.Dock = System.Windows.Forms.DockStyle.Fill;
+            userControl_LabList.Dock = DockStyle.Fill;
 
-            UserControl_AddLab = new UserControl_AddLab();
-            UserControl_AddLab.Dock = System.Windows.Forms.DockStyle.Fill;
+            userControl_AddLab = new UserControl_AddLab();
+            userControl_AddLab.Dock = DockStyle.Fill;
+
+            userControl_EquipmentType = new UserControl_EquipmentType();
+            userControl_EquipmentType.Dock = DockStyle.Fill;
+
+            userControl_AddEquipmentType = new UserControl_AddEquipmentType();
+            userControl_AddEquipmentType.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

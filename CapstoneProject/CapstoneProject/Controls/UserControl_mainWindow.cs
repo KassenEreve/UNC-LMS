@@ -24,7 +24,9 @@ namespace CapstoneProject.Controls
         {
             var instance = UserInterface.GetInstance();
             panel_main.Controls.Add(instance.userControl_LabList);
-            panel_main.Controls.Add(instance.UserControl_AddLab);
+            panel_main.Controls.Add(instance.userControl_AddLab);
+            panel_main.Controls.Add(instance.userControl_EquipmentType);
+            panel_main.Controls.Add(instance.userControl_AddEquipmentType);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -33,11 +35,13 @@ namespace CapstoneProject.Controls
 
             btn_lab.Tag = 1;
             btn_labList.Tag = 2;
+            btn_equipmentType.Tag =3;
 
 
             //click event handler
             btn_lab.Click += Button_Click;
             btn_labList.Click += Button_Click;
+            btn_equipmentType.Click += Button_Click;
 
         }
 
@@ -64,6 +68,9 @@ namespace CapstoneProject.Controls
                     break;
                 case 2: ui.userControl_LabList.BringToFront();
                     ui.userControl_LabList.LoadList();
+                    break;
+                case 3:ui.userControl_EquipmentType.BringToFront();
+                    ui.userControl_EquipmentType.LoadList();
                     break;
 
               

@@ -70,11 +70,29 @@
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.Designer.cs">
+      <DependentUpon>UserControl_AddEquipmentType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLab.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLab.Designer.cs">
       <DependentUpon>UserControl_AddLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_EquipmentType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_EquipmentType.Designer.cs">
+      <DependentUpon>UserControl_EquipmentType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_EquipmentTypeItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_EquipmentTypeItem.Designer.cs">
+      <DependentUpon>UserControl_EquipmentTypeItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_LabItem.cs">
       <SubType>UserControl</SubType>
@@ -108,8 +126,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.resx">
+      <DependentUpon>UserControl_AddEquipmentType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddLab.resx">
       <DependentUpon>UserControl_AddLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_EquipmentType.resx">
+      <DependentUpon>UserControl_EquipmentType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_EquipmentTypeItem.resx">
+      <DependentUpon>UserControl_EquipmentTypeItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabItem.resx">
       <DependentUpon>UserControl_LabItem.cs</DependentUpon>

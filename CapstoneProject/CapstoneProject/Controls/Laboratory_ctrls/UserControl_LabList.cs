@@ -41,7 +41,7 @@ namespace CapstoneProject.Controls
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             var ui = UserInterface.GetInstance();
-            ui.UserControl_AddLab.BringToFront();
+            ui.userControl_AddLab.BringToFront();
         }
     }
 }

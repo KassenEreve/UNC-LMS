@@ -11,9 +11,9 @@ using CapstoneProject.Class;
 
 namespace CapstoneProject.Controls.Laboratory_ctrls
 {
-    public partial class UserControl_AddLab : UserControl
+    public partial class UserControl_AddEquipmentType : UserControl
     {
-        public UserControl_AddLab()
+        public UserControl_AddEquipmentType()
         {
             InitializeComponent();
         }
@@ -21,17 +21,17 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         private void xuiButton2_Click(object sender, EventArgs e)
         {
             var ui = UserInterface.GetInstance();
-            ui.userControl_LabList.BringToFront();
+            ui.userControl_EquipmentType.BringToFront();
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            var saveLab = new Laboratory() { roomNum = textBox_room.Text };
-            if(LaboratoryHelper.SaveLab(saveLab))
+            var saveType = new EquipmentType() { name = textBox_name.Text,description = textBox_desc.Text };
+            if (EquipmentTypeHelper.SaveType(saveType))
             {
                 var ui = UserInterface.GetInstance();
-                ui.userControl_LabList.BringToFront();
-                ui.userControl_LabList.LoadList();
+                ui.userControl_EquipmentType.BringToFront();
+                ui.userControl_EquipmentType.LoadList();
             }
             else
             {
