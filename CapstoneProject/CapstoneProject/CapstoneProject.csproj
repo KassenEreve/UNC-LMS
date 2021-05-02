@@ -63,6 +63,8 @@
     <Compile Include="Class\Laboratory.cs" />
     <Compile Include="Class\LaboratoryHelper.cs" />
     <Compile Include="Class\License.cs" />
+    <Compile Include="Class\PCSpecs.cs" />
+    <Compile Include="Class\PCSpecsHelper.cs" />
     <Compile Include="Class\Singleton.cs" />
     <Compile Include="Class\Software.cs" />
     <Compile Include="Class\SoftwareInventory.cs" />
@@ -106,6 +108,18 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_LabList.Designer.cs">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.Designer.cs">
+      <DependentUpon>UserControl_PcSpecsItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.Designer.cs">
+      <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabList.resx">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.resx">
+      <DependentUpon>UserControl_PcSpecsItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.resx">
+      <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">
       <DependentUpon>UserControl_LoginPage.cs</DependentUpon>
