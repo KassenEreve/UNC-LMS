@@ -28,6 +28,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_EquipmentType);
             panel_main.Controls.Add(instance.userControl_AddEquipmentType);
             panel_main.Controls.Add(instance.userControl_PcSpecsList);
+            panel_main.Controls.Add(instance.userControl_AddPCSpecs);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)

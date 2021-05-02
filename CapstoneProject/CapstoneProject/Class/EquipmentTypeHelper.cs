@@ -100,6 +100,28 @@ namespace CapstoneProject.Class
             }
         }
 
+        internal static bool DeleteType(EquipmentType type)
+        {
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return false;
+
+                SqlParameter[] param = { new SqlParameter("@id", type.id) };
+
+                try
+                {
+                    dal.ExecuteNonQuery("DeleteEquipmentType", param);
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    string dsd = ex.ToString();
+                    return false;
+                }
+
+            }
+        }
+
         internal static List<EquipmentType> GetAllEquipmentTypes()
         {
             List<EquipmentType> list;

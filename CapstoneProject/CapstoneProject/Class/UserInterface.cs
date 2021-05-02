@@ -18,6 +18,7 @@ namespace CapstoneProject.Class
         public UserControl_EquipmentType userControl_EquipmentType;
         public UserControl_AddEquipmentType userControl_AddEquipmentType;
         public UserControl_PcSpecsList userControl_PcSpecsList;
+        public UserControl_AddPCSpecs userControl_AddPCSpecs;
 
         private static UserInterface instance;
 
@@ -61,6 +62,9 @@ namespace CapstoneProject.Class
 
             userControl_PcSpecsList = new UserControl_PcSpecsList();
             userControl_PcSpecsList.Dock = DockStyle.Fill;
+
+            userControl_AddPCSpecs = new UserControl_AddPCSpecs();
+            userControl_AddPCSpecs.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

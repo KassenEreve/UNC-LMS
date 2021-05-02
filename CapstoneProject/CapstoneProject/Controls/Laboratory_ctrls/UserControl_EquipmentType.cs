@@ -24,9 +24,10 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             //var labs = Singleton.GetInstance().GetCachedAllLaboratory();
             var types = EquipmentTypeHelper.GetAllEquipmentTypes();
             types.Reverse();
+            int ctr = types.Count;
             foreach (EquipmentType type in types)
             {
-                var ctrl = new UserControl_EquipmentTypeItem(type);
+                var ctrl = new UserControl_EquipmentTypeItem(type,ctr--);
                 ctrl.Dock = DockStyle.Top;
                 panel_typeList.Controls.Add(ctrl);
             }
@@ -35,7 +36,10 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             var ui = UserInterface.GetInstance();
+            ui.userControl_AddEquipmentType.ClearItem();
             ui.userControl_AddEquipmentType.BringToFront();
         }
+
+        
     }
 }

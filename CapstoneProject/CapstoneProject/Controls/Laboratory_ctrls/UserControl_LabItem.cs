@@ -14,10 +14,12 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
     public partial class UserControl_LabItem : UserControl
     {
         private Laboratory lab;
-        public UserControl_LabItem(Laboratory lab)
+        private int ctr;
+        public UserControl_LabItem(Laboratory lab,int count)
         {
             InitializeComponent();
             this.lab = lab;
+            ctr = count;
         }
 
         private void xuiButton1_MouseClick(object sender, MouseEventArgs e)
@@ -34,9 +36,35 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
            if(lab!=null)
             {
-                lbl_roomID.Text = lab.id.ToString() ;
+                lbl_roomID.Text = ctr.ToString() ;
                 lbl_roomNum.Text = lab.roomNum;
             }
+        }
+
+        private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eDITToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_AddLab.UpdateItem(lab);
+            ui.userControl_AddLab.BringToFront();
+        }
+
+        private void dELETEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            if (LaboratoryHelper.DeleteLab(lab))
+            {
+                ui.userControl_LabList.LoadList();
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete item!");
+            }
+           
         }
     }
 }

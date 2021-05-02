@@ -30,16 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.lbl_video = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_memory = new System.Windows.Forms.Label();
             this.lbl_motherboard = new System.Windows.Forms.Label();
             this.lbl_processor = new System.Windows.Forms.Label();
             this.lbl_ctr = new System.Windows.Forms.Label();
-            this.lbl_video = new System.Windows.Forms.Label();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +48,6 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.lbl_video);
             this.panel1.Controls.Add(this.xuiButton1);
-            this.panel1.Controls.Add(this.lbl_memory);
             this.panel1.Controls.Add(this.lbl_motherboard);
             this.panel1.Controls.Add(this.lbl_processor);
             this.panel1.Controls.Add(this.lbl_ctr);
@@ -58,6 +56,84 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 66);
             this.panel1.TabIndex = 1;
+            // 
+            // lbl_video
+            // 
+            this.lbl_video.AutoEllipsis = true;
+            this.lbl_video.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_video.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_video.Location = new System.Drawing.Point(346, 12);
+            this.lbl_video.Name = "lbl_video";
+            this.lbl_video.Size = new System.Drawing.Size(140, 46);
+            this.lbl_video.TabIndex = 5;
+            this.lbl_video.Text = "label3";
+            this.lbl_video.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vIEWToolStripMenuItem,
+            this.eDITToolStripMenuItem,
+            this.dELETEToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
+            // 
+            // vIEWToolStripMenuItem
+            // 
+            this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
+            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.vIEWToolStripMenuItem.Text = "VIEW";
+            // 
+            // eDITToolStripMenuItem
+            // 
+            this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.eDITToolStripMenuItem.Text = "EDIT";
+            this.eDITToolStripMenuItem.Click += new System.EventHandler(this.eDITToolStripMenuItem_Click);
+            // 
+            // dELETEToolStripMenuItem
+            // 
+            this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
+            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.dELETEToolStripMenuItem.Text = "DELETE";
+            this.dELETEToolStripMenuItem.Click += new System.EventHandler(this.dELETEToolStripMenuItem_Click);
+            // 
+            // lbl_motherboard
+            // 
+            this.lbl_motherboard.AutoEllipsis = true;
+            this.lbl_motherboard.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_motherboard.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_motherboard.Location = new System.Drawing.Point(201, 12);
+            this.lbl_motherboard.Name = "lbl_motherboard";
+            this.lbl_motherboard.Size = new System.Drawing.Size(126, 46);
+            this.lbl_motherboard.TabIndex = 2;
+            this.lbl_motherboard.Text = "label4";
+            this.lbl_motherboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_processor
+            // 
+            this.lbl_processor.AutoEllipsis = true;
+            this.lbl_processor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_processor.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_processor.Location = new System.Drawing.Point(61, 12);
+            this.lbl_processor.Name = "lbl_processor";
+            this.lbl_processor.Size = new System.Drawing.Size(123, 46);
+            this.lbl_processor.TabIndex = 1;
+            this.lbl_processor.Text = "label2";
+            this.lbl_processor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_ctr
+            // 
+            this.lbl_ctr.AutoSize = true;
+            this.lbl_ctr.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ctr.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_ctr.Location = new System.Drawing.Point(23, 26);
+            this.lbl_ctr.Name = "lbl_ctr";
+            this.lbl_ctr.Size = new System.Drawing.Size(48, 20);
+            this.lbl_ctr.TabIndex = 0;
+            this.lbl_ctr.Text = "label1";
+            this.lbl_ctr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // xuiButton1
             // 
@@ -80,89 +156,6 @@
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.xuiButton1_MouseClick);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vIEWToolStripMenuItem,
-            this.eDITToolStripMenuItem,
-            this.dELETEToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(129, 76);
-            // 
-            // vIEWToolStripMenuItem
-            // 
-            this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
-            this.vIEWToolStripMenuItem.Text = "VIEW";
-            // 
-            // eDITToolStripMenuItem
-            // 
-            this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
-            this.eDITToolStripMenuItem.Text = "EDIT";
-            // 
-            // dELETEToolStripMenuItem
-            // 
-            this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
-            this.dELETEToolStripMenuItem.Text = "DELETE";
-            // 
-            // lbl_memory
-            // 
-            this.lbl_memory.AutoSize = true;
-            this.lbl_memory.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_memory.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_memory.Location = new System.Drawing.Point(345, 26);
-            this.lbl_memory.Name = "lbl_memory";
-            this.lbl_memory.Size = new System.Drawing.Size(50, 20);
-            this.lbl_memory.TabIndex = 3;
-            this.lbl_memory.Text = "label3";
-            // 
-            // lbl_motherboard
-            // 
-            this.lbl_motherboard.AutoSize = true;
-            this.lbl_motherboard.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_motherboard.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_motherboard.Location = new System.Drawing.Point(195, 26);
-            this.lbl_motherboard.Name = "lbl_motherboard";
-            this.lbl_motherboard.Size = new System.Drawing.Size(51, 20);
-            this.lbl_motherboard.TabIndex = 2;
-            this.lbl_motherboard.Text = "label4";
-            // 
-            // lbl_processor
-            // 
-            this.lbl_processor.AutoSize = true;
-            this.lbl_processor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_processor.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_processor.Location = new System.Drawing.Point(96, 26);
-            this.lbl_processor.Name = "lbl_processor";
-            this.lbl_processor.Size = new System.Drawing.Size(50, 20);
-            this.lbl_processor.TabIndex = 1;
-            this.lbl_processor.Text = "label2";
-            // 
-            // lbl_ctr
-            // 
-            this.lbl_ctr.AutoSize = true;
-            this.lbl_ctr.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ctr.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_ctr.Location = new System.Drawing.Point(23, 26);
-            this.lbl_ctr.Name = "lbl_ctr";
-            this.lbl_ctr.Size = new System.Drawing.Size(48, 20);
-            this.lbl_ctr.TabIndex = 0;
-            this.lbl_ctr.Text = "label1";
-            // 
-            // lbl_video
-            // 
-            this.lbl_video.AutoSize = true;
-            this.lbl_video.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_video.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_video.Location = new System.Drawing.Point(471, 26);
-            this.lbl_video.Name = "lbl_video";
-            this.lbl_video.Size = new System.Drawing.Size(50, 20);
-            this.lbl_video.TabIndex = 5;
-            this.lbl_video.Text = "label3";
             // 
             // UserControl_PcSpecsItem
             // 
@@ -189,7 +182,6 @@
         private System.Windows.Forms.ToolStripMenuItem vIEWToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
-        private System.Windows.Forms.Label lbl_memory;
         private System.Windows.Forms.Label lbl_motherboard;
         private System.Windows.Forms.Label lbl_processor;
         private System.Windows.Forms.Label lbl_ctr;

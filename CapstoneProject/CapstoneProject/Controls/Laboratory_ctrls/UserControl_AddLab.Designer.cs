@@ -74,7 +74,7 @@
             this.xuiButton2.BackgroundColor = System.Drawing.Color.White;
             this.xuiButton2.ButtonImage = null;
             this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton2.ButtonText = "CANCEL";
+            this.xuiButton2.ButtonText = "BACK";
             this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.CornerRadius = 5;

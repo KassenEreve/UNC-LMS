@@ -30,9 +30,10 @@ namespace CapstoneProject.Controls
             //var labs = Singleton.GetInstance().GetCachedAllLaboratory();
             var labs = LaboratoryHelper.GetAllLaboratories();
             labs.Reverse();
+            int ctr = labs.Count;
            foreach(Laboratory lab in labs)
             {
-                var ctrl = new UserControl_LabItem(lab);
+                var ctrl = new UserControl_LabItem(lab,ctr--);
                 ctrl.Dock = DockStyle.Top;
                 panel_roomList.Controls.Add(ctrl);
             }
@@ -41,6 +42,7 @@ namespace CapstoneProject.Controls
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             var ui = UserInterface.GetInstance();
+            ui.userControl_AddLab.ClearItem();
             ui.userControl_AddLab.BringToFront();
         }
     }

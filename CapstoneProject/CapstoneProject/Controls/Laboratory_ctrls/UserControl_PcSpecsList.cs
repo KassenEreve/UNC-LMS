@@ -23,12 +23,20 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             panel_List.Controls.Clear();
             var list = PCSpecsHelper.GetAllPCSpecs();
             list.Reverse();
-            foreach(PCSpecs specs in list)
+            int ctr = list.Count;
+            foreach (PCSpecs specs in list)
             {
-                var ctrl = new UserControl_PcSpecsItem(specs);
+                var ctrl = new UserControl_PcSpecsItem(specs,ctr--);
                 ctrl.Dock = DockStyle.Top;
                 panel_List.Controls.Add(ctrl);
             }
+        }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_AddPCSpecs.ClearItem();
+            ui.userControl_AddPCSpecs.BringToFront();
         }
     }
 }

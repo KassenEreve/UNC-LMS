@@ -83,5 +83,27 @@ namespace CapstoneProject.Class
 
             }
         }
+
+        internal static bool DeleteLab(Laboratory lab)
+        {
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return false;
+
+                SqlParameter[] param = { new SqlParameter("@id", lab.id) };
+
+                try
+                {
+                    dal.ExecuteNonQuery("DeleteLaboratory", param);
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    string dsd = ex.ToString();
+                    return false;
+                }
+
+            }
+        }
     }
 }

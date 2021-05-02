@@ -87,25 +87,28 @@
             this.eDITToolStripMenuItem,
             this.dELETEToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(129, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
             // 
             // vIEWToolStripMenuItem
             // 
             this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.vIEWToolStripMenuItem.Text = "VIEW";
+            this.vIEWToolStripMenuItem.Click += new System.EventHandler(this.vIEWToolStripMenuItem_Click);
             // 
             // eDITToolStripMenuItem
             // 
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.eDITToolStripMenuItem.Text = "EDIT";
+            this.eDITToolStripMenuItem.Click += new System.EventHandler(this.eDITToolStripMenuItem_Click);
             // 
             // dELETEToolStripMenuItem
             // 
             this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.dELETEToolStripMenuItem.Text = "DELETE";
+            this.dELETEToolStripMenuItem.Click += new System.EventHandler(this.dELETEToolStripMenuItem_Click);
             // 
             // lbl_reported
             // 
@@ -117,6 +120,7 @@
             this.lbl_reported.Size = new System.Drawing.Size(50, 20);
             this.lbl_reported.TabIndex = 3;
             this.lbl_reported.Text = "label3";
+            this.lbl_reported.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_total
             // 
@@ -128,6 +132,7 @@
             this.lbl_total.Size = new System.Drawing.Size(51, 20);
             this.lbl_total.TabIndex = 2;
             this.lbl_total.Text = "label4";
+            this.lbl_total.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_roomNum
             // 
@@ -139,6 +144,7 @@
             this.lbl_roomNum.Size = new System.Drawing.Size(50, 20);
             this.lbl_roomNum.TabIndex = 1;
             this.lbl_roomNum.Text = "label2";
+            this.lbl_roomNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_roomID
             // 
@@ -150,6 +156,7 @@
             this.lbl_roomID.Size = new System.Drawing.Size(48, 20);
             this.lbl_roomID.TabIndex = 0;
             this.lbl_roomID.Text = "label1";
+            this.lbl_roomID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserControl_LabItem
             // 
