@@ -43,7 +43,9 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
         private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var ui = UserInterface.GetInstance();
+            ui.userControl_ViewLab.LoadLab(lab);
+            ui.userControl_ViewLab.BringToFront();
         }
 
         private void eDITToolStripMenuItem_Click(object sender, EventArgs e)

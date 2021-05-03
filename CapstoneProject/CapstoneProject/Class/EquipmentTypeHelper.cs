@@ -68,8 +68,8 @@ namespace CapstoneProject.Class
 
                 SqlParameter[] param = { new  SqlParameter("@id",saveType.id),
                                        new  SqlParameter("@name",  saveType.name),
-                                        new  SqlParameter("@description",  saveType.description)
-
+                                        new  SqlParameter("@description",  saveType.description),
+                                         new  SqlParameter("@isPCPart",  saveType.isPcPart)
 
 
 
@@ -140,7 +140,8 @@ namespace CapstoneProject.Class
                     {
                         id = dr.Field<int>("id"),
                         name = dr.Field<string>("name"),
-                        description = dr.Field<string>("description")
+                        description = dr.Field<string>("description"),
+                        isPcPart = dr.Field<int>("isPcPart")
                         // equipments = EquipmentHelper.Equipments(dr.Field<int>("id"))
 
 

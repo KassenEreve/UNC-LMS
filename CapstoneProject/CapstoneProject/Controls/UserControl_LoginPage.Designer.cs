@@ -91,7 +91,7 @@
             this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xuiButton1.ButtonImage = null;
             this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "Button";
+            this.xuiButton1.ButtonText = "LOG IN";
             this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.CornerRadius = 5;

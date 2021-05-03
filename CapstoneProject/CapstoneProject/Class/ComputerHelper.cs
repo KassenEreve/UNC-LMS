@@ -70,5 +70,59 @@ namespace CapstoneProject.Class
                 return comp;
             }
         }
+
+        public static Computer SaveComputer(Computer computer)
+        {
+            Computer compReturn = null;
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return null;
+
+
+                SqlParameter[] param = { new  SqlParameter("@id",computer.id),
+                                       new  SqlParameter("@pc_num",  computer.pc_num)
+                                        
+
+
+
+                                       };
+
+                try
+                {
+
+                    var table = dal.ExecuteQuery("SaveComputer", param).Tables[0];
+
+
+                    foreach (DataRow dr in table.AsEnumerable())
+                    {
+                       compReturn = new Computer()
+                        {
+                            id = dr.Field<int>("id"),
+                            pc_num = dr.Field<string>("pc_num")
+                           
+                        };
+
+
+                    }
+
+
+                    return compReturn;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return null;
+                }
+
+
+
+
+            }
+
+        }
     }
 }

@@ -84,6 +84,12 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLab.Designer.cs">
       <DependentUpon>UserControl_AddLab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLabEquipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddLabEquipment.Designer.cs">
+      <DependentUpon>UserControl_AddLabEquipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddPCSpecs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +132,18 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.Designer.cs">
       <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLab.Designer.cs">
+      <DependentUpon>UserControl_ViewLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.Designer.cs">
+      <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +170,9 @@
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddLab.resx">
       <DependentUpon>UserControl_AddLab.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddLabEquipment.resx">
+      <DependentUpon>UserControl_AddLabEquipment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddPCSpecs.resx">
       <DependentUpon>UserControl_AddPCSpecs.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +193,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.resx">
       <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLab.resx">
+      <DependentUpon>UserControl_ViewLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.resx">
+      <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">
       <DependentUpon>UserControl_LoginPage.cs</DependentUpon>

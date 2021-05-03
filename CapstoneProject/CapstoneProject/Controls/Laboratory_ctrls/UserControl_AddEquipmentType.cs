@@ -28,7 +28,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            var saveType = new EquipmentType() { name = textBox_name.Text,description = textBox_desc.Text };
+            var saveType = new EquipmentType() { name = textBox_name.Text,description = textBox_desc.Text,isPcPart=(checkBox1.Checked)?1:0 };
             if (type != null)
                 saveType.id = type.id;
             if (EquipmentTypeHelper.SaveType(saveType))
