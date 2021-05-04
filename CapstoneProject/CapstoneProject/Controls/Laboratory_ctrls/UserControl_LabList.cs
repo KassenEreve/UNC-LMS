@@ -29,6 +29,8 @@ namespace CapstoneProject.Controls
             panel_roomList.Controls.Clear();
             //var labs = Singleton.GetInstance().GetCachedAllLaboratory();
             var labs = LaboratoryHelper.GetAllLaboratories();
+            if (labs == null)
+                return;
             labs.Reverse();
             int ctr = labs.Count;
            foreach(Laboratory lab in labs)

@@ -31,7 +31,7 @@
             this.dropDownPanel_tools = new System.Windows.Forms.Panel();
             this.btn_Tools = new XanderUI.XUIButton();
             this.dropDownPanel_report = new System.Windows.Forms.Panel();
-            this.btn_Report = new XanderUI.XUIButton();
+            this.btn_User = new XanderUI.XUIButton();
             this.dropDownPanel_lab = new System.Windows.Forms.Panel();
             this.btn_specsList = new XanderUI.XUIButton();
             this.btn_softwares = new XanderUI.XUIButton();
@@ -42,6 +42,8 @@
             this.btn_Main = new XanderUI.XUIButton();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Technician = new XanderUI.XUIButton();
+            this.btn_StudentAssistant = new XanderUI.XUIButton();
             this.dropDownPanel_tools.SuspendLayout();
             this.dropDownPanel_report.SuspendLayout();
             this.dropDownPanel_lab.SuspendLayout();
@@ -86,36 +88,38 @@
             // dropDownPanel_report
             // 
             this.dropDownPanel_report.BackColor = System.Drawing.Color.Gainsboro;
-            this.dropDownPanel_report.Controls.Add(this.btn_Report);
+            this.dropDownPanel_report.Controls.Add(this.btn_StudentAssistant);
+            this.dropDownPanel_report.Controls.Add(this.btn_Technician);
+            this.dropDownPanel_report.Controls.Add(this.btn_User);
             this.dropDownPanel_report.Dock = System.Windows.Forms.DockStyle.Top;
             this.dropDownPanel_report.Location = new System.Drawing.Point(0, 194);
-            this.dropDownPanel_report.MaximumSize = new System.Drawing.Size(246, 250);
+            this.dropDownPanel_report.MaximumSize = new System.Drawing.Size(246, 300);
             this.dropDownPanel_report.MinimumSize = new System.Drawing.Size(246, 97);
             this.dropDownPanel_report.Name = "dropDownPanel_report";
             this.dropDownPanel_report.Size = new System.Drawing.Size(246, 97);
             this.dropDownPanel_report.TabIndex = 2;
             // 
-            // btn_Report
+            // btn_User
             // 
-            this.btn_Report.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Report.ButtonImage = null;
-            this.btn_Report.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_Report.ButtonText = "Report";
-            this.btn_Report.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_Report.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.CornerRadius = 5;
-            this.btn_Report.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Report.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Report.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_Report.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_Report.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btn_Report.Location = new System.Drawing.Point(0, 0);
-            this.btn_Report.Name = "btn_Report";
-            this.btn_Report.Size = new System.Drawing.Size(246, 94);
-            this.btn_Report.TabIndex = 2;
-            this.btn_Report.TextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Report.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_User.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_User.ButtonImage = null;
+            this.btn_User.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_User.ButtonText = "User";
+            this.btn_User.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_User.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_User.CornerRadius = 5;
+            this.btn_User.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_User.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_User.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_User.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_User.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_User.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_User.Location = new System.Drawing.Point(0, 0);
+            this.btn_User.Name = "btn_User";
+            this.btn_User.Size = new System.Drawing.Size(246, 94);
+            this.btn_User.TabIndex = 2;
+            this.btn_User.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_User.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // dropDownPanel_lab
             // 
@@ -300,6 +304,50 @@
             this.panel3.Size = new System.Drawing.Size(246, 554);
             this.panel3.TabIndex = 2;
             // 
+            // btn_Technician
+            // 
+            this.btn_Technician.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_Technician.ButtonImage = null;
+            this.btn_Technician.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_Technician.ButtonText = "Technician";
+            this.btn_Technician.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_Technician.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Technician.CornerRadius = 5;
+            this.btn_Technician.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Technician.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_Technician.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Technician.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Technician.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Technician.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_Technician.Location = new System.Drawing.Point(0, 94);
+            this.btn_Technician.Name = "btn_Technician";
+            this.btn_Technician.Size = new System.Drawing.Size(246, 94);
+            this.btn_Technician.TabIndex = 3;
+            this.btn_Technician.TextColor = System.Drawing.Color.Gray;
+            this.btn_Technician.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // btn_StudentAssistant
+            // 
+            this.btn_StudentAssistant.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_StudentAssistant.ButtonImage = null;
+            this.btn_StudentAssistant.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_StudentAssistant.ButtonText = "Student Assistant";
+            this.btn_StudentAssistant.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_StudentAssistant.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_StudentAssistant.CornerRadius = 5;
+            this.btn_StudentAssistant.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_StudentAssistant.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_StudentAssistant.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_StudentAssistant.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_StudentAssistant.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_StudentAssistant.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_StudentAssistant.Location = new System.Drawing.Point(0, 188);
+            this.btn_StudentAssistant.Name = "btn_StudentAssistant";
+            this.btn_StudentAssistant.Size = new System.Drawing.Size(246, 94);
+            this.btn_StudentAssistant.TabIndex = 4;
+            this.btn_StudentAssistant.TextColor = System.Drawing.Color.Gray;
+            this.btn_StudentAssistant.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // UserControl_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,7 +374,7 @@
         private System.Windows.Forms.Panel dropDownPanel;
         private XanderUI.XUIButton btn_Main;
         private XanderUI.XUIButton btn_Tools;
-        private XanderUI.XUIButton btn_Report;
+        private XanderUI.XUIButton btn_User;
         private XanderUI.XUIButton btn_lab;
         private System.Windows.Forms.Panel panel_main;
         private System.Windows.Forms.Panel panel3;
@@ -334,5 +382,7 @@
         private XanderUI.XUIButton btn_equipmentType;
         private XanderUI.XUIButton btn_softwares;
         private XanderUI.XUIButton btn_specsList;
+        private XanderUI.XUIButton btn_StudentAssistant;
+        private XanderUI.XUIButton btn_Technician;
     }
 }

@@ -67,5 +67,13 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                 MessageBox.Show("Failed to delete item!");
             }
         }
+
+        private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_AddPCSpecs.UpdateItem(specs);
+
+            ui.userControl_AddPCSpecs.BringToFront();
+        }
     }
 }

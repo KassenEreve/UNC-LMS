@@ -31,6 +31,8 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_AddPCSpecs);
             panel_main.Controls.Add(instance.userControl_ViewLab);
             panel_main.Controls.Add(instance.userControl_AddLabEquipment);
+            panel_main.Controls.Add(instance.userControl_TechnicianList);
+            panel_main.Controls.Add(instance.userControl_AddTechnician);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -41,13 +43,19 @@ namespace CapstoneProject.Controls
             btn_labList.Tag = 2;
             btn_equipmentType.Tag =3;
             btn_specsList.Tag = 4;
+            btn_User.Tag = 5;
+            btn_Technician.Tag = 6;
+            btn_StudentAssistant.Tag = 7;
 
 
             //click event handler
             btn_lab.Click += Button_Click;
             btn_labList.Click += Button_Click;
             btn_equipmentType.Click += Button_Click;
-            btn_specsList.Click += Button_Click; 
+            btn_specsList.Click += Button_Click;
+            btn_User.Click += Button_Click;
+            btn_Technician.Click += Button_Click;
+            btn_StudentAssistant.Click += Button_Click;
 
         }
 
@@ -81,9 +89,18 @@ namespace CapstoneProject.Controls
                 case 4: ui.userControl_PcSpecsList.BringToFront();
                     ui.userControl_PcSpecsList.LoadList();
                     break;
+                case 5: expandCollapseMenu(sender as XUIButton);
+                    break;
+                case 6: ui.userControl_TechnicianList.BringToFront();
+                    ui.userControl_TechnicianList.LoadList();
+                    break;
+                case 7:
+                    break;
 
-              
-              
+
+
+
+
             }
         }
         private void expandCollapseMenu(XUIButton btn)

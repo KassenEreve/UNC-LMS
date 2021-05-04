@@ -31,7 +31,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             {
 
                 var newList = list.GroupBy(x => x.equipmentType.id).Select(y => y.First()).ToList<Equipment>();
-                list.Reverse();
+                newList.Reverse();
                 if (newList != null)
                 {
                     int ctr = newList.Count + 1;

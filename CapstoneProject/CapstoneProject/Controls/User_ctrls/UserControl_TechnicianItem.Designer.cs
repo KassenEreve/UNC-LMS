@@ -1,6 +1,6 @@
-﻿namespace CapstoneProject.Controls.Laboratory_ctrls
+﻿namespace CapstoneProject.Controls.User_ctrls
 {
-    partial class UserControl_PcSpecsItem
+    partial class UserControl_TechnicianItem
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_video = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_motherboard = new System.Windows.Forms.Label();
-            this.lbl_processor = new System.Windows.Forms.Label();
-            this.lbl_ctr = new System.Windows.Forms.Label();
+            this.lbl_email = new System.Windows.Forms.Label();
+            this.lbl_phone = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.lbl_roomID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,28 +46,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.lbl_video);
             this.panel1.Controls.Add(this.xuiButton1);
-            this.panel1.Controls.Add(this.lbl_motherboard);
-            this.panel1.Controls.Add(this.lbl_processor);
-            this.panel1.Controls.Add(this.lbl_ctr);
+            this.panel1.Controls.Add(this.lbl_email);
+            this.panel1.Controls.Add(this.lbl_phone);
+            this.panel1.Controls.Add(this.lbl_name);
+            this.panel1.Controls.Add(this.lbl_roomID);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(656, 66);
+            this.panel1.Size = new System.Drawing.Size(751, 86);
             this.panel1.TabIndex = 1;
-            // 
-            // lbl_video
-            // 
-            this.lbl_video.AutoEllipsis = true;
-            this.lbl_video.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_video.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_video.Location = new System.Drawing.Point(346, 12);
-            this.lbl_video.Name = "lbl_video";
-            this.lbl_video.Size = new System.Drawing.Size(140, 46);
-            this.lbl_video.TabIndex = 5;
-            this.lbl_video.Text = "label3";
-            this.lbl_video.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // xuiButton1
             // 
@@ -83,9 +71,9 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.xuiButton1.Location = new System.Drawing.Point(563, 26);
+            this.xuiButton1.Location = new System.Drawing.Point(638, 30);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(20, 20);
+            this.xuiButton1.Size = new System.Drawing.Size(20, 30);
             this.xuiButton1.TabIndex = 4;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -122,52 +110,63 @@
             this.dELETEToolStripMenuItem.Text = "DELETE";
             this.dELETEToolStripMenuItem.Click += new System.EventHandler(this.dELETEToolStripMenuItem_Click);
             // 
-            // lbl_motherboard
+            // lbl_email
             // 
-            this.lbl_motherboard.AutoEllipsis = true;
-            this.lbl_motherboard.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_motherboard.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_motherboard.Location = new System.Drawing.Point(201, 12);
-            this.lbl_motherboard.Name = "lbl_motherboard";
-            this.lbl_motherboard.Size = new System.Drawing.Size(126, 46);
-            this.lbl_motherboard.TabIndex = 2;
-            this.lbl_motherboard.Text = "label4";
-            this.lbl_motherboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_email.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_email.Location = new System.Drawing.Point(432, 16);
+            this.lbl_email.Name = "lbl_email";
+            this.lbl_email.Size = new System.Drawing.Size(157, 58);
+            this.lbl_email.TabIndex = 3;
+            this.lbl_email.Text = "label3";
+            this.lbl_email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_processor
+            // lbl_phone
             // 
-            this.lbl_processor.AutoEllipsis = true;
-            this.lbl_processor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_processor.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_processor.Location = new System.Drawing.Point(61, 12);
-            this.lbl_processor.Name = "lbl_processor";
-            this.lbl_processor.Size = new System.Drawing.Size(123, 46);
-            this.lbl_processor.TabIndex = 1;
-            this.lbl_processor.Text = "label2";
-            this.lbl_processor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_phone.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_phone.Location = new System.Drawing.Point(252, 16);
+            this.lbl_phone.Name = "lbl_phone";
+            this.lbl_phone.Size = new System.Drawing.Size(158, 58);
+            this.lbl_phone.TabIndex = 2;
+            this.lbl_phone.Text = "label4";
+            this.lbl_phone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_ctr
+            // lbl_name
             // 
-            this.lbl_ctr.AutoSize = true;
-            this.lbl_ctr.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ctr.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_ctr.Location = new System.Drawing.Point(23, 26);
-            this.lbl_ctr.Name = "lbl_ctr";
-            this.lbl_ctr.Size = new System.Drawing.Size(48, 20);
-            this.lbl_ctr.TabIndex = 0;
-            this.lbl_ctr.Text = "label1";
-            this.lbl_ctr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_name.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_name.Location = new System.Drawing.Point(90, 16);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(157, 58);
+            this.lbl_name.TabIndex = 1;
+            this.lbl_name.Text = "label2";
+            this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // UserControl_PcSpecsItem
+            // lbl_roomID
+            // 
+            this.lbl_roomID.AutoSize = true;
+            this.lbl_roomID.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_roomID.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_roomID.Location = new System.Drawing.Point(23, 36);
+            this.lbl_roomID.Name = "lbl_roomID";
+            this.lbl_roomID.Size = new System.Drawing.Size(48, 20);
+            this.lbl_roomID.TabIndex = 0;
+            this.lbl_roomID.Text = "label1";
+            this.lbl_roomID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UserControl_TechnicianItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.Controls.Add(this.panel1);
-            this.Name = "UserControl_PcSpecsItem";
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "UserControl_TechnicianItem";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.Size = new System.Drawing.Size(656, 69);
-            this.Load += new System.EventHandler(this.UserControl_PcSpecsItem_Load);
+            this.Size = new System.Drawing.Size(751, 89);
+            this.Load += new System.EventHandler(this.UserControl_TechnicianItemcs_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -183,9 +182,9 @@
         private System.Windows.Forms.ToolStripMenuItem vIEWToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
-        private System.Windows.Forms.Label lbl_motherboard;
-        private System.Windows.Forms.Label lbl_processor;
-        private System.Windows.Forms.Label lbl_ctr;
-        private System.Windows.Forms.Label lbl_video;
+        private System.Windows.Forms.Label lbl_email;
+        private System.Windows.Forms.Label lbl_phone;
+        private System.Windows.Forms.Label lbl_name;
+        private System.Windows.Forms.Label lbl_roomID;
     }
 }

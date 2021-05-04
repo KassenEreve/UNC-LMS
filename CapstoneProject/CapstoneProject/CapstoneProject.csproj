@@ -71,6 +71,8 @@
     <Compile Include="Class\SoftwareStatusHistory.cs" />
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
+    <Compile Include="Class\Technician.cs" />
+    <Compile Include="Class\TechnicianHelper.cs" />
     <Compile Include="Class\UserInterface.cs" />
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.cs">
       <SubType>UserControl</SubType>
@@ -156,6 +158,24 @@
     <Compile Include="Controls\UserControl_mainWindow.Designer.cs">
       <DependentUpon>UserControl_mainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_AddTechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_AddTechnician.Designer.cs">
+      <DependentUpon>UserControl_AddTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_TechnicianItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_TechnicianItem.Designer.cs">
+      <DependentUpon>UserControl_TechnicianItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_TechnicianList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_TechnicianList.Designer.cs">
+      <DependentUpon>UserControl_TechnicianList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +225,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_mainWindow.resx">
       <DependentUpon>UserControl_mainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_AddTechnician.resx">
+      <DependentUpon>UserControl_AddTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_TechnicianItem.resx">
+      <DependentUpon>UserControl_TechnicianItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_TechnicianList.resx">
+      <DependentUpon>UserControl_TechnicianList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

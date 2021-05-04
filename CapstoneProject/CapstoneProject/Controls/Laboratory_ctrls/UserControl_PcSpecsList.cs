@@ -22,6 +22,8 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
             panel_List.Controls.Clear();
             var list = PCSpecsHelper.GetAllPCSpecs();
+            if (list == null)
+                return;
             list.Reverse();
             int ctr = list.Count;
             foreach (PCSpecs specs in list)

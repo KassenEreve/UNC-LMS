@@ -8,40 +8,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapstoneProject.Class;
+using CapstoneProject.Controls.User_ctrls;
 
-namespace CapstoneProject.Controls.Laboratory_ctrls
+namespace CapstoneProject.Controls.User_ctrls
 {
-    public partial class UserControl_EquipmentType : UserControl
+    public partial class UserControl_TechnicianList : UserControl
     {
-        public UserControl_EquipmentType()
+        public UserControl_TechnicianList()
         {
             InitializeComponent();
         }
 
         internal void LoadList()
         {
-            panel_typeList.Controls.Clear();
+            panel_roomList.Controls.Clear();
             //var labs = Singleton.GetInstance().GetCachedAllLaboratory();
-            var types = EquipmentTypeHelper.GetAllEquipmentTypes();
-            if (types == null)
+            var list = TechnicianHelper.GetAllTechnicians();
+            if (list == null)
                 return;
-            types.Reverse();
-            int ctr = types.Count;
-            foreach (EquipmentType type in types)
+
+            list.Reverse();
+            int ctr = list.Count;
+            foreach (Technician tech in list)
             {
-                var ctrl = new UserControl_EquipmentTypeItem(type,ctr--);
+                var ctrl = new UserControl_TechnicianItem(tech, ctr--);
                 ctrl.Dock = DockStyle.Top;
-                panel_typeList.Controls.Add(ctrl);
+                panel_roomList.Controls.Add(ctrl);
             }
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             var ui = UserInterface.GetInstance();
-            ui.userControl_AddEquipmentType.ClearItem();
-            ui.userControl_AddEquipmentType.BringToFront();
+            ui.userControl_AddTechnician.ClearItem();
+            ui.userControl_AddTechnician.BringToFront();
         }
-
-        
     }
 }
