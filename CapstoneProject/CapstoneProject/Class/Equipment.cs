@@ -10,5 +10,7 @@ namespace CapstoneProject.Class
 
         public EquipmentType equipmentType { get; set; }
         public List<EquipmentStatusHistory> equipmentHistory { get; set; }
+
+        public int count { get; set; }
     }
 }

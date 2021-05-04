@@ -48,7 +48,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                
 
                 lbl_equipment.Text = Equipment.equipmentType.name;
-                lbl_count.Text = "";
+                lbl_count.Text = Equipment.count.ToString();
             }
         }
     }

@@ -18,7 +18,7 @@ namespace CapstoneProject.Class
             {
                 if (!dal.IsConnected) return null;
                 SqlParameter[] param = { new SqlParameter("@lab_id", laboratory_id) };
-                var table = dal.ExecuteQuery("GetAllOtherEquipments", param).Tables[0];
+                var table = dal.ExecuteQuery("GetOtherEquipmentWithCount", param).Tables[0];
 
                 list = new List<Equipment>();
 
@@ -29,11 +29,12 @@ namespace CapstoneProject.Class
                     Equipment equipment = new Equipment()
                     {
                         id = dr.Field<int>("id"),
-                        laboratory = new Laboratory() { id = dr.Field<int>("laboratory_id") },
+                        laboratory = new Laboratory() { id = laboratory_id },
                         //computer_id = dr.Field<int>("comp_id"),
-                        equipmentType = new EquipmentType() { id = dr.Field<int>("typeID"),name = dr.Field<string>("name") }
-                       // equipmentHistory = 
-                       
+                        equipmentType = new EquipmentType() { id = dr.Field<int>("equipmentType_id"),name = dr.Field<string>("name") },
+                        count = dr.Field<int>("count")
+                        // equipmentHistory = 
+
 
 
                     };

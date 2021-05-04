@@ -26,19 +26,25 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             panel_roomList.Controls.Clear();
             //other equipments
             var list = EquipmentHelper.Equipments(lab.id);
-            if(list!=null)
+
+            if (list != null)
             {
-                int ctr = list.Count + 1;
-                foreach(Equipment equipment in list)
+
+                var newList = list.GroupBy(x => x.equipmentType.id).Select(y => y.First()).ToList<Equipment>();
+                list.Reverse();
+                if (newList != null)
                 {
-                    var new_ctrl = new UserControl_ViewLabItem(equipment, ctr--);
+                    int ctr = newList.Count + 1;
+                    foreach (Equipment equipment in newList)
+                    {
+                        var new_ctrl = new UserControl_ViewLabItem(equipment, ctr--);
 
 
-                    new_ctrl.Dock = DockStyle.Top;
-                    panel_roomList.Controls.Add(new_ctrl);
+                        new_ctrl.Dock = DockStyle.Top;
+                        panel_roomList.Controls.Add(new_ctrl);
+                    }
                 }
             }
-
 
             //computer list item
             var ctrl = new UserControl_ViewLabItem(null, 1, EquipmentHelper.GetComputerCount(lab.id));
