@@ -30,18 +30,32 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
             xuiButton1.ButtonText = computer.pc_num;
         }
-
-        private void xuiButton1_Click(object sender, EventArgs e)
+        public void SelectItem(bool forceSelect=false)
         {
-            if(isSelected)
+            if (isSelected&&!forceSelect)
             {
                 isSelected = false;
                 xuiButton1.BackgroundColor = Color.White;
-            } 
+            }
             else
             {
                 isSelected = true;
                 xuiButton1.BackgroundColor = Color.Gray;
+            }
+        }
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            SelectItem();
+            if (ModifierKeys.HasFlag(Keys.Control))
+            {
+               int from= this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList().FindIndex(o => o.isSelected);
+                int to = this.Parent.Controls.IndexOf(this);
+              
+                for(int i =from;i<=to;i++)
+                {
+                    this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList()[i].SelectItem(true);
+                }
+
             }
         }
     }

@@ -94,7 +94,7 @@
             this.xuiButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xuiButton2.ButtonImage = null;
             this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton2.ButtonText = "SET SPECS";
+            this.xuiButton2.ButtonText = "SPECIFICATION";
             this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.CornerRadius = 5;
@@ -115,7 +115,7 @@
             this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xuiButton3.ButtonImage = null;
             this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton3.ButtonText = "SET SOFTWARE LIST";
+            this.xuiButton3.ButtonText = "SOFTWARE LIST";
             this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton3.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton3.CornerRadius = 5;
