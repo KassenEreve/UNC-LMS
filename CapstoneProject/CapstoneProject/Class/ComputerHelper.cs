@@ -18,7 +18,7 @@ namespace CapstoneProject.Class
             using (DAL dal = new DAL())
             {
                 if (!dal.IsConnected) return null;
-                SqlParameter[] param = { new SqlParameter("@id", laboratory.id) };
+                SqlParameter[] param = { new SqlParameter("@lab_id", laboratory.id) };
                 var table = dal.ExecuteQuery("GetAllComputers",param).Tables[0];
 
                 list = new List<Computer>();
