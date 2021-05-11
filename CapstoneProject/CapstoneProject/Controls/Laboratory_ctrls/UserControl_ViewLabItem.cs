@@ -17,12 +17,14 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         
         private int computerCount = 0,ctr=0;
         Equipment Equipment;
-        public UserControl_ViewLabItem(Equipment equipment, int ctr,int  computerCount=0 )
+        Laboratory lab;
+        public UserControl_ViewLabItem(Equipment equipment, int ctr, Laboratory lab, int computerCount = 0)
         {
             InitializeComponent();
             this.Equipment = equipment;
             this.computerCount = computerCount;
             this.ctr = ctr;
+            this.lab = lab;
         }
 
         private void UserControl_ViewLabItem_Load(object sender, EventArgs e)
@@ -33,6 +35,14 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         private void xuiButton1_MouseClick(object sender, MouseEventArgs e)
         {
             xuiButton1.ContextMenuStrip.Show(xuiButton1, new Point(e.X, e.Y));
+        }
+
+        private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+            var ui = UserInterface.GetInstance();
+            ui.userControl_ViewLabEquipments.BringToFront();
+            ui.userControl_ViewLabEquipments.UpdateUI(Equipment,lab);
         }
 
         private void UpdateItem()

@@ -74,6 +74,18 @@
     <Compile Include="Class\Technician.cs" />
     <Compile Include="Class\TechnicianHelper.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\First_Setup\UserControl_FirstRun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\First_Setup\UserControl_FirstRun.Designer.cs">
+      <DependentUpon>UserControl_FirstRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\First_Setup\UserControl_SetupLabItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\First_Setup\UserControl_SetupLabItem.Designer.cs">
+      <DependentUpon>UserControl_SetupLabItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLab.Designer.cs">
       <DependentUpon>UserControl_ViewLab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabEquipments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabEquipments.Designer.cs">
+      <DependentUpon>UserControl_ViewLabEquipments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +202,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\First_Setup\UserControl_FirstRun.resx">
+      <DependentUpon>UserControl_FirstRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\First_Setup\UserControl_SetupLabItem.resx">
+      <DependentUpon>UserControl_SetupLabItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.resx">
       <DependentUpon>UserControl_AddEquipmentType.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLab.resx">
       <DependentUpon>UserControl_ViewLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabEquipments.resx">
+      <DependentUpon>UserControl_ViewLabEquipments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.resx">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>

@@ -37,7 +37,8 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                     int ctr = newList.Count + 1;
                     foreach (Equipment equipment in newList)
                     {
-                        var new_ctrl = new UserControl_ViewLabItem(equipment, ctr--);
+                        equipment.laboratory = lab;
+                        var new_ctrl = new UserControl_ViewLabItem(equipment, ctr--,lab);
 
 
                         new_ctrl.Dock = DockStyle.Top;
@@ -47,7 +48,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             }
 
             //computer list item
-            var ctrl = new UserControl_ViewLabItem(null, 1, EquipmentHelper.GetComputerCount(lab.id));
+            var ctrl = new UserControl_ViewLabItem(null, 1, lab,EquipmentHelper.GetComputerCount(lab.id));
             
 
             ctrl.Dock = DockStyle.Top;

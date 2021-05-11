@@ -33,6 +33,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_AddLabEquipment);
             panel_main.Controls.Add(instance.userControl_TechnicianList);
             panel_main.Controls.Add(instance.userControl_AddTechnician);
+            panel_main.Controls.Add(instance.userControl_ViewLabEquipments);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -48,6 +49,10 @@ namespace CapstoneProject.Controls
             btn_StudentAssistant.Tag = 7;
 
 
+
+            btn_logOut.Tag = 0;
+
+
             //click event handler
             btn_lab.Click += Button_Click;
             btn_labList.Click += Button_Click;
@@ -56,6 +61,7 @@ namespace CapstoneProject.Controls
             btn_User.Click += Button_Click;
             btn_Technician.Click += Button_Click;
             btn_StudentAssistant.Click += Button_Click;
+            btn_logOut.Click += Button_Click;
 
         }
 
@@ -74,6 +80,8 @@ namespace CapstoneProject.Controls
            
             switch (tag)
             {
+                case 0: ui.userControl_LoginPage.BringToFront();
+                    break;
                 case 1:
                     expandCollapseMenu(sender as XUIButton);
 
@@ -107,6 +115,11 @@ namespace CapstoneProject.Controls
         {
             UserInterface.button = btn;
             UserInterface.timer.Start();
+        }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

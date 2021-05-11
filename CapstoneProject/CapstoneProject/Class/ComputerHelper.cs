@@ -10,6 +10,7 @@ namespace CapstoneProject.Class
 {
     public class ComputerHelper
     {
+        public static string firstRunTxt = @"d:\UncLMS\firstRun.txt";
         public static List<Computer> Computers(Laboratory laboratory)
         {
             List<Computer> list = null;

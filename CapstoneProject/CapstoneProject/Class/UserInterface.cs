@@ -1,4 +1,5 @@
 ﻿using CapstoneProject.Controls;
+using CapstoneProject.Controls.First_Setup;
 using CapstoneProject.Controls.Laboratory_ctrls;
 using CapstoneProject.Controls.User_ctrls;
 using System;
@@ -24,6 +25,10 @@ namespace CapstoneProject.Class
         public UserControl_AddLabEquipment userControl_AddLabEquipment;
         public UserControl_TechnicianList userControl_TechnicianList;
         public UserControl_AddTechnician userControl_AddTechnician;
+        public UserControl_ViewLabEquipments userControl_ViewLabEquipments;
+
+        //first run
+        public UserControl_FirstRun userControl_FirstRun;
 
 
         private static UserInterface instance;
@@ -83,6 +88,12 @@ namespace CapstoneProject.Class
 
             userControl_AddTechnician = new UserControl_AddTechnician();
             userControl_AddTechnician.Dock = DockStyle.Fill;
+
+            userControl_FirstRun = new UserControl_FirstRun();
+            userControl_FirstRun.Dock = DockStyle.Fill;
+
+            userControl_ViewLabEquipments = new UserControl_ViewLabEquipments();
+            userControl_ViewLabEquipments.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

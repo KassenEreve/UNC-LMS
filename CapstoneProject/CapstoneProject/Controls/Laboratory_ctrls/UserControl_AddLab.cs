@@ -28,7 +28,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            var saveLab = new Laboratory() { roomNum = textBox_room.Text };
+            var saveLab = new Laboratory() { roomNum = textBox_room.Text.ToUpper() };
             if (lab != null)
                 saveLab.id = lab.id;
             if(LaboratoryHelper.SaveLab(saveLab))

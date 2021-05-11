@@ -85,24 +85,25 @@
             this.eDITToolStripMenuItem,
             this.dELETEToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(129, 76);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
             // 
             // vIEWToolStripMenuItem
             // 
             this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.vIEWToolStripMenuItem.Text = "VIEW";
+            this.vIEWToolStripMenuItem.Click += new System.EventHandler(this.vIEWToolStripMenuItem_Click);
             // 
             // eDITToolStripMenuItem
             // 
             this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.eDITToolStripMenuItem.Text = "EDIT";
             // 
             // dELETEToolStripMenuItem
             // 
             this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
+            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.dELETEToolStripMenuItem.Text = "DELETE";
             // 
             // lbl_count
