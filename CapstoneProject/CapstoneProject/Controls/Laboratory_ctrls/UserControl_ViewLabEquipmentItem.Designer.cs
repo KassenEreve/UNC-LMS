@@ -64,6 +64,7 @@
             this.xuiButton1.TabIndex = 0;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
             // UserControl_ViewLabEquipmentItem
             // 

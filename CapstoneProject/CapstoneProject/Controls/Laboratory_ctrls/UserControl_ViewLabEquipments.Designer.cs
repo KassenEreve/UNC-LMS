@@ -32,11 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
+            this.xuiButton2 = new XanderUI.XUIButton();
+            this.xuiButton3 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -73,23 +76,68 @@
             this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(597, 3);
+            this.xuiButton1.Location = new System.Drawing.Point(688, 3);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(186, 52);
+            this.xuiButton1.Size = new System.Drawing.Size(95, 52);
             this.xuiButton1.TabIndex = 13;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
+            // 
+            // xuiButton2
+            // 
+            this.xuiButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton2.ButtonImage = null;
+            this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton2.ButtonText = "SET SPECS";
+            this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton2.CornerRadius = 5;
+            this.xuiButton2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.xuiButton2.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton2.Location = new System.Drawing.Point(466, 3);
+            this.xuiButton2.Name = "xuiButton2";
+            this.xuiButton2.Size = new System.Drawing.Size(150, 52);
+            this.xuiButton2.TabIndex = 14;
+            this.xuiButton2.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // xuiButton3
+            // 
+            this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton3.ButtonImage = null;
+            this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton3.ButtonText = "SET SOFTWARE LIST";
+            this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton3.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.CornerRadius = 5;
+            this.xuiButton3.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.xuiButton3.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton3.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton3.Location = new System.Drawing.Point(293, 3);
+            this.xuiButton3.Name = "xuiButton3";
+            this.xuiButton3.Size = new System.Drawing.Size(150, 52);
+            this.xuiButton3.TabIndex = 15;
+            this.xuiButton3.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_ViewLabEquipments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.xuiButton3);
+            this.Controls.Add(this.xuiButton2);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -109,5 +157,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private XanderUI.XUIButton xuiButton1;
+        private XanderUI.XUIButton xuiButton2;
+        private XanderUI.XUIButton xuiButton3;
     }
 }

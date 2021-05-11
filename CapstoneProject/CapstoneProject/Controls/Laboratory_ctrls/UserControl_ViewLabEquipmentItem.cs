@@ -14,6 +14,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
     public partial class UserControl_ViewLabEquipmentItem : UserControl
     {
         Computer computer;
+        public bool isSelected = false;
         public UserControl_ViewLabEquipmentItem(Computer computer)
         {
             InitializeComponent();
@@ -28,6 +29,20 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         private void LoadItem()
         {
             xuiButton1.ButtonText = computer.pc_num;
+        }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            if(isSelected)
+            {
+                isSelected = false;
+                xuiButton1.BackgroundColor = Color.White;
+            } 
+            else
+            {
+                isSelected = true;
+                xuiButton1.BackgroundColor = Color.Gray;
+            }
         }
     }
 }
