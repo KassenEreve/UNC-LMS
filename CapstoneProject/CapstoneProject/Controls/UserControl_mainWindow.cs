@@ -34,6 +34,8 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_TechnicianList);
             panel_main.Controls.Add(instance.userControl_AddTechnician);
             panel_main.Controls.Add(instance.userControl_ViewLabEquipments);
+            panel_main.Controls.Add(instance.userControl_SoftwareList);
+            panel_main.Controls.Add(instance.userControl_AddSoftware);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -47,6 +49,7 @@ namespace CapstoneProject.Controls
             btn_User.Tag = 5;
             btn_Technician.Tag = 6;
             btn_StudentAssistant.Tag = 7;
+            btn_softwares.Tag = 8;
 
 
 
@@ -62,7 +65,7 @@ namespace CapstoneProject.Controls
             btn_Technician.Click += Button_Click;
             btn_StudentAssistant.Click += Button_Click;
             btn_logOut.Click += Button_Click;
-
+            btn_softwares.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -104,7 +107,9 @@ namespace CapstoneProject.Controls
                     break;
                 case 7:
                     break;
-
+                case 8: ui.userControl_SoftwareList.BringToFront();
+                    ui.userControl_SoftwareList.LoadList();
+                    break;
 
 
 
