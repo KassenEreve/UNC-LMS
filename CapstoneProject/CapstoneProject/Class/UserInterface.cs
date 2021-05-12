@@ -28,6 +28,7 @@ namespace CapstoneProject.Class
         public UserControl_ViewLabEquipments userControl_ViewLabEquipments;
         public UserControl_SoftwareList userControl_SoftwareList;
         public UserControl_AddSoftware userControl_AddSoftware;
+        public UserControl_SetSpecification userControl_SetSpecification;
 
         //first run
         public UserControl_FirstRun userControl_FirstRun;
@@ -102,6 +103,9 @@ namespace CapstoneProject.Class
 
             userControl_AddSoftware = new UserControl_AddSoftware();
             userControl_AddSoftware.Dock = DockStyle.Fill;
+
+            userControl_SetSpecification = new UserControl_SetSpecification();
+            userControl_SetSpecification.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

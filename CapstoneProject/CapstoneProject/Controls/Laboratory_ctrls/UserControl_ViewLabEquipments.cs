@@ -47,5 +47,24 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             var ui = UserInterface.GetInstance();
             ui.userControl_ViewLab.BringToFront();
         }
+
+     
+        private void xuiButton2_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_SetSpecification.BringToFront();
+            /*
+            int from = this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList().FindIndex(o => o.isSelected);
+            int to = this.Parent.Controls.IndexOf(this);
+            List<Computer> selectedComp = new List<Computer>();
+            for (int i = from; i <= to; i++)
+            {
+                this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList()[i].SelectItem(true);
+              
+            }
+            if (selectedComp!=null)
+            */
+            ui.userControl_SetSpecification.LoadControl();//selectedComp);
+        }
     }
 }

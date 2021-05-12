@@ -36,6 +36,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_ViewLabEquipments);
             panel_main.Controls.Add(instance.userControl_SoftwareList);
             panel_main.Controls.Add(instance.userControl_AddSoftware);
+            panel_main.Controls.Add(instance.userControl_SetSpecification);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)

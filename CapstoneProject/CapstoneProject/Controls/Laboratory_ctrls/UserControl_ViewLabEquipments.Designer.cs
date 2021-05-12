@@ -109,13 +109,14 @@
             this.xuiButton2.TabIndex = 14;
             this.xuiButton2.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton2.Click += new System.EventHandler(this.xuiButton2_Click);
             // 
             // xuiButton3
             // 
             this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xuiButton3.ButtonImage = null;
             this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton3.ButtonText = "SOFTWARE LIST";
+            this.xuiButton3.ButtonText = "SOFTWARE GROUP";
             this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton3.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton3.CornerRadius = 5;
