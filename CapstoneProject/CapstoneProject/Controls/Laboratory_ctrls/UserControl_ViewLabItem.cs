@@ -42,7 +42,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
           
             var ui = UserInterface.GetInstance();
             ui.userControl_ViewLabEquipments.BringToFront();
-            ui.userControl_ViewLabEquipments.UpdateUI(Equipment,lab);
+            ui.userControl_ViewLabEquipments.LoadList(Equipment,lab);
         }
 
         private void UpdateItem()

@@ -18,9 +18,17 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
             InitializeComponent();
         }
-
-        public void UpdateUI(Equipment equipment,Laboratory lab)
+        Equipment equipment1;
+        Laboratory laboratory;
+        public void RefreshControl()
         {
+            LoadList(equipment1, laboratory);
+        }
+
+        public void LoadList(Equipment equipment,Laboratory lab)
+        {
+            equipment1 = equipment;
+            laboratory = lab;
             label1.Text = lab.roomNum+" ";
             flowLayoutPanel1.Controls.Clear();
             if (equipment == null)

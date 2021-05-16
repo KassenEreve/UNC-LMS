@@ -24,6 +24,8 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
             var ui = UserInterface.GetInstance();
             ui.userControl_ViewLabEquipments.BringToFront();
+            ui.userControl_ViewLabEquipments.selectedComputers = null;
+            ui.userControl_ViewLabEquipments.RefreshControl();
         }
 
         public void LoadControl(List<Computer> computers)
@@ -67,8 +69,12 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
             foreach (Computer computer in computers)
             {
-
+                computer.specifcation = selectedSpecs;
+                PCSpecsHelper.AssignPCSpecs(computer);
             }
+           var ui = UserInterface.GetInstance();
+            ui.userControl_ViewLabEquipments.BringToFront();
+            ui.userControl_ViewLabEquipments.RefreshControl();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

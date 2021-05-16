@@ -71,6 +71,51 @@ namespace CapstoneProject.Class
             return false;
         }
 
+        internal static void AssignPCSpecs(Computer computer)
+        {
+            if (computer == null)
+                return ;
+
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return ;
+
+
+                SqlParameter[] param = { new  SqlParameter("@comp_id",computer.id),
+                                       new  SqlParameter("@specs_id",computer.specifcation.id)
+                                       
+
+
+
+
+                                       };
+
+                try
+                {
+
+                    dal.ExecuteNonQuery("AssignPCSPecs", param);
+
+
+
+
+                    return ;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return ;
+                }
+
+
+
+
+            }
+        }
+
         internal static bool SavePCSpecs(PCSpecs saveSpec)
         {
             if (saveSpec == null)
