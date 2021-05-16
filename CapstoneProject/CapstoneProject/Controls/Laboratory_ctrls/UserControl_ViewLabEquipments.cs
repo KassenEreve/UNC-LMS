@@ -13,6 +13,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 {
     public partial class UserControl_ViewLabEquipments : UserControl
     {
+       public List<Computer> selectedComputers;
         public UserControl_ViewLabEquipments()
         {
             InitializeComponent();
@@ -51,8 +52,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
      
         private void xuiButton2_Click(object sender, EventArgs e)
         {
-            var ui = UserInterface.GetInstance();
-            ui.userControl_SetSpecification.BringToFront();
+            
             /*
             int from = this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList().FindIndex(o => o.isSelected);
             int to = this.Parent.Controls.IndexOf(this);
@@ -64,7 +64,14 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             }
             if (selectedComp!=null)
             */
-            ui.userControl_SetSpecification.LoadControl();//selectedComp);
+            if (selectedComputers != null)
+            {
+                var ui = UserInterface.GetInstance();
+                ui.userControl_SetSpecification.BringToFront();
+                ui.userControl_SetSpecification.LoadControl(selectedComputers);//selectedComp);
+            }
+            else
+                MessageBox.Show("No selected computers");
         }
     }
 }

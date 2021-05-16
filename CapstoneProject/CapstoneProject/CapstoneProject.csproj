@@ -67,6 +67,8 @@
     <Compile Include="Class\PCSpecsHelper.cs" />
     <Compile Include="Class\Singleton.cs" />
     <Compile Include="Class\Software.cs" />
+    <Compile Include="Class\SoftwareGroup.cs" />
+    <Compile Include="Class\SoftwareGroupHelper.cs" />
     <Compile Include="Class\SoftwareHelper.cs" />
     <Compile Include="Class\SoftwareInventory.cs" />
     <Compile Include="Class\SoftwareStatusHistory.cs" />
@@ -117,6 +119,18 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddSoftware.Designer.cs">
       <DependentUpon>UserControl_AddSoftware.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroup.Designer.cs">
+      <DependentUpon>UserControl_AddSoftwareGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroupItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroupItem.Designer.cs">
+      <DependentUpon>UserControl_AddSoftwareGroupItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_EquipmentType.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +172,18 @@
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_SetSpecification.Designer.cs">
       <DependentUpon>UserControl_SetSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupList.Designer.cs">
+      <DependentUpon>UserControl_SoftwareGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupListItem.Designer.cs">
+      <DependentUpon>UserControl_SoftwareGroupListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_SoftwareList.cs">
       <SubType>UserControl</SubType>
@@ -254,6 +280,12 @@
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddSoftware.resx">
       <DependentUpon>UserControl_AddSoftware.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroup.resx">
+      <DependentUpon>UserControl_AddSoftwareGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddSoftwareGroupItem.resx">
+      <DependentUpon>UserControl_AddSoftwareGroupItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_EquipmentType.resx">
       <DependentUpon>UserControl_EquipmentType.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +306,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SetSpecification.resx">
       <DependentUpon>UserControl_SetSpecification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupList.resx">
+      <DependentUpon>UserControl_SoftwareGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SoftwareGroupListItem.resx">
+      <DependentUpon>UserControl_SoftwareGroupListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SoftwareList.resx">
       <DependentUpon>UserControl_SoftwareList.cs</DependentUpon>

@@ -29,6 +29,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         private void xuiButton1_Click(object sender, EventArgs e)
         {
             var saveSpec = new PCSpecs() {
+                code = textBox_code.Text.ToUpper(),
                 processor = textBox_processor.Text,
                 motherboard = textBox_motherboard.Text,
                 memory = textBox_memory.Text,
@@ -59,6 +60,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         internal void UpdateItem(PCSpecs specs)
         {
             this.specs = specs;
+            textBox_code.Text = specs.code;
             textBox_casePsu.Text = specs.casePsu;
             textBox_hdd.Text = specs.hdd;
             textBox_keyboardMouse.Text = specs.keyboardMouse;
@@ -71,6 +73,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         }
         internal void ClearItem()
         {
+            textBox_code.Text = String.Empty;
             textBox_casePsu.Text = String.Empty;
             textBox_hdd.Text = String.Empty;
             textBox_keyboardMouse.Text = String.Empty;

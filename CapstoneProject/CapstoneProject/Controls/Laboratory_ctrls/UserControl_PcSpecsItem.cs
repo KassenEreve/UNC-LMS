@@ -39,7 +39,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         {
             if (specs == null)
                 return;
-
+            lbl_code.Text = specs.code;
             lbl_ctr.Text = ctr.ToString();
             lbl_processor.Text = specs.processor;
             lbl_motherboard.Text = specs.motherboard;

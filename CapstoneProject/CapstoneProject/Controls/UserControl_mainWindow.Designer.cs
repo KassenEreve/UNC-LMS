@@ -35,6 +35,7 @@
             this.btn_Technician = new XanderUI.XUIButton();
             this.btn_User = new XanderUI.XUIButton();
             this.dropDownPanel_lab = new System.Windows.Forms.Panel();
+            this.btn_softwareGroup = new XanderUI.XUIButton();
             this.btn_specsList = new XanderUI.XUIButton();
             this.btn_softwares = new XanderUI.XUIButton();
             this.btn_equipmentType = new XanderUI.XUIButton();
@@ -46,7 +47,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_logOut = new XanderUI.XUIButton();
-            this.btn_softwareGroup = new XanderUI.XUIButton();
             this.dropDownPanel_tools.SuspendLayout();
             this.dropDownPanel_report.SuspendLayout();
             this.dropDownPanel_lab.SuspendLayout();
@@ -185,6 +185,28 @@
             this.dropDownPanel_lab.Name = "dropDownPanel_lab";
             this.dropDownPanel_lab.Size = new System.Drawing.Size(246, 97);
             this.dropDownPanel_lab.TabIndex = 1;
+            // 
+            // btn_softwareGroup
+            // 
+            this.btn_softwareGroup.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_softwareGroup.ButtonImage = null;
+            this.btn_softwareGroup.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_softwareGroup.ButtonText = "Software Group";
+            this.btn_softwareGroup.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_softwareGroup.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_softwareGroup.CornerRadius = 5;
+            this.btn_softwareGroup.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_softwareGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_softwareGroup.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_softwareGroup.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_softwareGroup.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_softwareGroup.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_softwareGroup.Location = new System.Drawing.Point(0, 470);
+            this.btn_softwareGroup.Name = "btn_softwareGroup";
+            this.btn_softwareGroup.Size = new System.Drawing.Size(246, 94);
+            this.btn_softwareGroup.TabIndex = 6;
+            this.btn_softwareGroup.TextColor = System.Drawing.Color.Gray;
+            this.btn_softwareGroup.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btn_specsList
             // 
@@ -388,28 +410,6 @@
             this.btn_logOut.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_logOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btn_logOut.Click += new System.EventHandler(this.xuiButton1_Click);
-            // 
-            // btn_softwareGroup
-            // 
-            this.btn_softwareGroup.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_softwareGroup.ButtonImage = null;
-            this.btn_softwareGroup.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_softwareGroup.ButtonText = "Software Group";
-            this.btn_softwareGroup.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_softwareGroup.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_softwareGroup.CornerRadius = 5;
-            this.btn_softwareGroup.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_softwareGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
-            this.btn_softwareGroup.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_softwareGroup.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_softwareGroup.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_softwareGroup.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_softwareGroup.Location = new System.Drawing.Point(0, 470);
-            this.btn_softwareGroup.Name = "btn_softwareGroup";
-            this.btn_softwareGroup.Size = new System.Drawing.Size(246, 94);
-            this.btn_softwareGroup.TabIndex = 6;
-            this.btn_softwareGroup.TextColor = System.Drawing.Color.Gray;
-            this.btn_softwareGroup.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_mainWindow
             // 

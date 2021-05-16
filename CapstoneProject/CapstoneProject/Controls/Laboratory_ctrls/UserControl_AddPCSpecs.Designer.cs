@@ -50,13 +50,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_motherboard = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox_code = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox_processor
             // 
             this.textBox_processor.ForeColor = System.Drawing.Color.Black;
-            this.textBox_processor.Location = new System.Drawing.Point(187, 73);
+            this.textBox_processor.Location = new System.Drawing.Point(194, 137);
             this.textBox_processor.Multiline = true;
             this.textBox_processor.Name = "textBox_processor";
             this.textBox_processor.Size = new System.Drawing.Size(210, 51);
@@ -66,7 +68,7 @@
             // 
             this.lbl_room.AutoSize = true;
             this.lbl_room.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_room.Location = new System.Drawing.Point(24, 83);
+            this.lbl_room.Location = new System.Drawing.Point(31, 147);
             this.lbl_room.Name = "lbl_room";
             this.lbl_room.Size = new System.Drawing.Size(130, 28);
             this.lbl_room.TabIndex = 14;
@@ -128,6 +130,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.textBox_code);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.textBox_optical);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.textBox_monitor);
@@ -156,7 +160,7 @@
             // textBox_optical
             // 
             this.textBox_optical.ForeColor = System.Drawing.Color.Black;
-            this.textBox_optical.Location = new System.Drawing.Point(586, 268);
+            this.textBox_optical.Location = new System.Drawing.Point(586, 331);
             this.textBox_optical.Multiline = true;
             this.textBox_optical.Name = "textBox_optical";
             this.textBox_optical.Size = new System.Drawing.Size(210, 51);
@@ -166,7 +170,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(423, 277);
+            this.label6.Location = new System.Drawing.Point(423, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 28);
             this.label6.TabIndex = 30;
@@ -175,7 +179,7 @@
             // textBox_monitor
             // 
             this.textBox_monitor.ForeColor = System.Drawing.Color.Black;
-            this.textBox_monitor.Location = new System.Drawing.Point(586, 204);
+            this.textBox_monitor.Location = new System.Drawing.Point(586, 267);
             this.textBox_monitor.Multiline = true;
             this.textBox_monitor.Name = "textBox_monitor";
             this.textBox_monitor.Size = new System.Drawing.Size(210, 51);
@@ -185,7 +189,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(423, 215);
+            this.label7.Location = new System.Drawing.Point(423, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 28);
             this.label7.TabIndex = 28;
@@ -194,7 +198,7 @@
             // textBox_keyboardMouse
             // 
             this.textBox_keyboardMouse.ForeColor = System.Drawing.Color.Black;
-            this.textBox_keyboardMouse.Location = new System.Drawing.Point(586, 138);
+            this.textBox_keyboardMouse.Location = new System.Drawing.Point(586, 201);
             this.textBox_keyboardMouse.Multiline = true;
             this.textBox_keyboardMouse.Name = "textBox_keyboardMouse";
             this.textBox_keyboardMouse.Size = new System.Drawing.Size(210, 51);
@@ -203,7 +207,7 @@
             // label8
             // 
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(423, 147);
+            this.label8.Location = new System.Drawing.Point(423, 210);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(164, 62);
             this.label8.TabIndex = 26;
@@ -212,7 +216,7 @@
             // textBox_casePsu
             // 
             this.textBox_casePsu.ForeColor = System.Drawing.Color.Black;
-            this.textBox_casePsu.Location = new System.Drawing.Point(586, 74);
+            this.textBox_casePsu.Location = new System.Drawing.Point(586, 137);
             this.textBox_casePsu.Multiline = true;
             this.textBox_casePsu.Name = "textBox_casePsu";
             this.textBox_casePsu.Size = new System.Drawing.Size(210, 51);
@@ -222,7 +226,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(423, 84);
+            this.label9.Location = new System.Drawing.Point(423, 147);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 28);
             this.label9.TabIndex = 24;
@@ -231,7 +235,7 @@
             // textBox_hdd
             // 
             this.textBox_hdd.ForeColor = System.Drawing.Color.Black;
-            this.textBox_hdd.Location = new System.Drawing.Point(187, 326);
+            this.textBox_hdd.Location = new System.Drawing.Point(586, 73);
             this.textBox_hdd.Multiline = true;
             this.textBox_hdd.Name = "textBox_hdd";
             this.textBox_hdd.Size = new System.Drawing.Size(210, 51);
@@ -241,7 +245,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(24, 335);
+            this.label5.Location = new System.Drawing.Point(423, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 28);
             this.label5.TabIndex = 22;
@@ -250,7 +254,7 @@
             // textBox_video
             // 
             this.textBox_video.ForeColor = System.Drawing.Color.Black;
-            this.textBox_video.Location = new System.Drawing.Point(187, 265);
+            this.textBox_video.Location = new System.Drawing.Point(194, 329);
             this.textBox_video.Multiline = true;
             this.textBox_video.Name = "textBox_video";
             this.textBox_video.Size = new System.Drawing.Size(210, 51);
@@ -260,7 +264,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(24, 276);
+            this.label3.Location = new System.Drawing.Point(31, 340);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 28);
             this.label3.TabIndex = 20;
@@ -269,7 +273,7 @@
             // textBox_memory
             // 
             this.textBox_memory.ForeColor = System.Drawing.Color.Black;
-            this.textBox_memory.Location = new System.Drawing.Point(187, 203);
+            this.textBox_memory.Location = new System.Drawing.Point(194, 267);
             this.textBox_memory.Multiline = true;
             this.textBox_memory.Name = "textBox_memory";
             this.textBox_memory.Size = new System.Drawing.Size(210, 51);
@@ -279,7 +283,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(24, 214);
+            this.label4.Location = new System.Drawing.Point(31, 278);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 28);
             this.label4.TabIndex = 18;
@@ -288,7 +292,7 @@
             // textBox_motherboard
             // 
             this.textBox_motherboard.ForeColor = System.Drawing.Color.Black;
-            this.textBox_motherboard.Location = new System.Drawing.Point(187, 137);
+            this.textBox_motherboard.Location = new System.Drawing.Point(194, 201);
             this.textBox_motherboard.Multiline = true;
             this.textBox_motherboard.Name = "textBox_motherboard";
             this.textBox_motherboard.Size = new System.Drawing.Size(210, 51);
@@ -298,11 +302,30 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(24, 146);
+            this.label2.Location = new System.Drawing.Point(31, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 28);
             this.label2.TabIndex = 16;
             this.label2.Text = "MOTHERBOARD :";
+            // 
+            // textBox_code
+            // 
+            this.textBox_code.ForeColor = System.Drawing.Color.Black;
+            this.textBox_code.Location = new System.Drawing.Point(194, 73);
+            this.textBox_code.Multiline = true;
+            this.textBox_code.Name = "textBox_code";
+            this.textBox_code.Size = new System.Drawing.Size(210, 51);
+            this.textBox_code.TabIndex = 31;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Blue;
+            this.label10.Location = new System.Drawing.Point(31, 83);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 28);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "CODE :";
             // 
             // UserControl_AddPCSpecs
             // 
@@ -346,5 +369,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox_memory;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_code;
+        private System.Windows.Forms.Label label10;
     }
 }

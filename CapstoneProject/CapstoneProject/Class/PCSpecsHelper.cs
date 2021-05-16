@@ -29,6 +29,7 @@ namespace CapstoneProject.Class
                     var save = new PCSpecs()
                     {
                         id = dr.Field<int>("id"),
+                        code = dr.Field<string>("specs_code"),
                         processor = dr.Field<string>("processor"),
                         motherboard = dr.Field<string>("motherboard"),
                         memory = dr.Field<string>("memory"),
@@ -49,6 +50,27 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
         }
 
+        internal static bool HasSpecsAssignment(Computer computer)
+        {
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return false;
+                SqlParameter[] param = { new SqlParameter("@computer_id", computer.id) };
+                var table = dal.ExecuteQuery("GetCountSpecsAssignment", param).Tables[0];
+
+
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+                    if (dr.Field<int>("count") > 0)
+                        return true;
+
+                }
+            }
+            return false;
+        }
+
         internal static bool SavePCSpecs(PCSpecs saveSpec)
         {
             if (saveSpec == null)
@@ -61,6 +83,7 @@ namespace CapstoneProject.Class
 
 
                 SqlParameter[] param = { new  SqlParameter("@id",saveSpec.id),
+                                       new  SqlParameter("@code",saveSpec.code),
                                        new  SqlParameter("@processor",saveSpec.processor),
                                        new  SqlParameter("@motherboard",saveSpec.motherboard),
                                        new  SqlParameter("@memory",saveSpec.memory),

@@ -9,6 +9,7 @@ namespace CapstoneProject.Class
     public class PCSpecs
     {
         public int id { get; set; }
+        public string code { get; set; }
         public  string processor { get; set; }
         public string motherboard { get; set; }
         public string memory { get; set; }

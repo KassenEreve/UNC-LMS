@@ -15,5 +15,7 @@ namespace CapstoneProject.Class
         public List<Equipment> pcparts_equipment { get; set; }
 
         public Laboratory laboratory { get; set; }
+
+        public PCSpecs specifcation { get; set; }
     }
 }
