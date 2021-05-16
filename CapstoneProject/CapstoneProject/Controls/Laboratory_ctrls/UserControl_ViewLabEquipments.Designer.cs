@@ -37,8 +37,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel_legend = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_legend.SuspendLayout();
             this.SuspendLayout();
@@ -87,9 +87,9 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(688, 3);
+            this.xuiButton1.Location = new System.Drawing.Point(713, 3);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(95, 52);
+            this.xuiButton1.Size = new System.Drawing.Size(70, 52);
             this.xuiButton1.TabIndex = 13;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -109,7 +109,7 @@
             this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton2.Location = new System.Drawing.Point(551, 3);
+            this.xuiButton2.Location = new System.Drawing.Point(577, 3);
             this.xuiButton2.Name = "xuiButton2";
             this.xuiButton2.Size = new System.Drawing.Size(131, 52);
             this.xuiButton2.TabIndex = 14;
@@ -131,7 +131,7 @@
             this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton3.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton3.Location = new System.Drawing.Point(413, 3);
+            this.xuiButton3.Location = new System.Drawing.Point(439, 3);
             this.xuiButton3.Name = "xuiButton3";
             this.xuiButton3.Size = new System.Drawing.Size(131, 52);
             this.xuiButton3.TabIndex = 15;
@@ -160,21 +160,10 @@
             this.panel_legend.Controls.Add(this.label2);
             this.panel_legend.Controls.Add(this.panel2);
             this.panel_legend.Controls.Add(this.panel3);
-            this.panel_legend.Location = new System.Drawing.Point(176, -4);
+            this.panel_legend.Location = new System.Drawing.Point(208, -4);
             this.panel_legend.Name = "panel_legend";
             this.panel_legend.Size = new System.Drawing.Size(232, 60);
             this.panel_legend.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(45, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 23);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Missing Software Group";
             // 
             // label3
             // 
@@ -186,6 +175,17 @@
             this.label3.Size = new System.Drawing.Size(168, 23);
             this.label3.TabIndex = 19;
             this.label3.Text = "Missing Specification";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label2.ForeColor = System.Drawing.Color.Gray;
+            this.label2.Location = new System.Drawing.Point(45, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 23);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Missing Software Group";
             // 
             // UserControl_ViewLabEquipments
             // 
