@@ -39,6 +39,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_SetSpecification);
             panel_main.Controls.Add(instance.userControl_SoftwareGroupList);
             panel_main.Controls.Add(instance.userControl_AddSoftwareGroup);
+            panel_main.Controls.Add(instance.userControl_SetSoftwareGroup);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)

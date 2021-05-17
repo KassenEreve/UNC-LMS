@@ -81,5 +81,17 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             else
                 MessageBox.Show("No selected computers");
         }
+
+        private void xuiButton3_Click(object sender, EventArgs e)
+        {
+            if(selectedComputers != null)
+            {
+                var ui = UserInterface.GetInstance();
+                ui.userControl_SetSoftwareGroup.BringToFront();
+                ui.userControl_SetSoftwareGroup.LoadControl(selectedComputers);//selectedComp);
+            }
+            else
+                MessageBox.Show("No selected computers");
+        }
     }
 }

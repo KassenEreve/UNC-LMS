@@ -31,7 +31,8 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         public void LoadControl(List<Computer> computers)
         {
             this.computers = computers;
-          
+            textBox1.Text = string.Empty;
+            
             foreach(Computer computer in computers)
             {
                 textBox1.Text += computer.pc_num+", ";
@@ -76,11 +77,22 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             ui.userControl_ViewLabEquipments.BringToFront();
             ui.userControl_ViewLabEquipments.RefreshControl();
         }
+        void ClearSpecs()
+        {
+            lbl_case.Text = String.Empty;
+            lbl_hdd.Text = String.Empty;
+            lbl_memory.Text = String.Empty;
+            lbl_monitor.Text = String.Empty;
+            lbl_motherboard.Text = String.Empty;
+            lbl_mouse.Text = String.Empty;
+            lbl_processor.Text = String.Empty;
+            lbl_video.Text = String.Empty;
+        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selected = 0;
-
+            ClearSpecs();
             try
             {
                 selected = Convert.ToInt32(comboBox1.SelectedValue);
@@ -93,6 +105,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
             var selectedSpecs = list.Find(o => o.id.Equals(selected));
             if (selectedSpecs == null)
                 return;
+
             lbl_case.Text = selectedSpecs.casePsu;
             lbl_hdd.Text = selectedSpecs.hdd;
             lbl_memory.Text = selectedSpecs.memory;

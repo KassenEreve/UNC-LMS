@@ -34,25 +34,25 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_roomList = new System.Windows.Forms.Panel();
-            this.lbl_room = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_processor = new System.Windows.Forms.Label();
-            this.lbl_motherboard = new System.Windows.Forms.Label();
-            this.lbl_memory = new System.Windows.Forms.Label();
             this.lbl_video = new System.Windows.Forms.Label();
+            this.lbl_memory = new System.Windows.Forms.Label();
+            this.lbl_motherboard = new System.Windows.Forms.Label();
+            this.lbl_processor = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lbl_case = new System.Windows.Forms.Label();
             this.lbl_mouse = new System.Windows.Forms.Label();
             this.lbl_monitor = new System.Windows.Forms.Label();
             this.lbl_hdd = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_room = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel_roomList.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +118,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(688, 123);
             this.textBox1.TabIndex = 20;
             // 
@@ -158,56 +159,15 @@
             this.panel_roomList.Size = new System.Drawing.Size(688, 246);
             this.panel_roomList.TabIndex = 1;
             // 
-            // lbl_room
+            // lbl_video
             // 
-            this.lbl_room.AutoSize = true;
-            this.lbl_room.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_room.Location = new System.Drawing.Point(20, 19);
-            this.lbl_room.Name = "lbl_room";
-            this.lbl_room.Size = new System.Drawing.Size(184, 28);
-            this.lbl_room.TabIndex = 15;
-            this.lbl_room.Text = "Specification Code :";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(226, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(316, 36);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(28, 201);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 28);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Specification";
-            // 
-            // lbl_processor
-            // 
-            this.lbl_processor.AutoEllipsis = true;
-            this.lbl_processor.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbl_processor.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_processor.Location = new System.Drawing.Point(141, 68);
-            this.lbl_processor.Name = "lbl_processor";
-            this.lbl_processor.Size = new System.Drawing.Size(199, 28);
-            this.lbl_processor.TabIndex = 16;
-            // 
-            // lbl_motherboard
-            // 
-            this.lbl_motherboard.AutoEllipsis = true;
-            this.lbl_motherboard.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbl_motherboard.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_motherboard.Location = new System.Drawing.Point(141, 112);
-            this.lbl_motherboard.Name = "lbl_motherboard";
-            this.lbl_motherboard.Size = new System.Drawing.Size(199, 28);
-            this.lbl_motherboard.TabIndex = 17;
+            this.lbl_video.AutoEllipsis = true;
+            this.lbl_video.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lbl_video.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_video.Location = new System.Drawing.Point(141, 195);
+            this.lbl_video.Name = "lbl_video";
+            this.lbl_video.Size = new System.Drawing.Size(199, 28);
+            this.lbl_video.TabIndex = 19;
             // 
             // lbl_memory
             // 
@@ -219,15 +179,105 @@
             this.lbl_memory.Size = new System.Drawing.Size(199, 28);
             this.lbl_memory.TabIndex = 18;
             // 
-            // lbl_video
+            // lbl_motherboard
             // 
-            this.lbl_video.AutoEllipsis = true;
-            this.lbl_video.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lbl_video.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_video.Location = new System.Drawing.Point(141, 195);
-            this.lbl_video.Name = "lbl_video";
-            this.lbl_video.Size = new System.Drawing.Size(199, 28);
-            this.lbl_video.TabIndex = 19;
+            this.lbl_motherboard.AutoEllipsis = true;
+            this.lbl_motherboard.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lbl_motherboard.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_motherboard.Location = new System.Drawing.Point(141, 112);
+            this.lbl_motherboard.Name = "lbl_motherboard";
+            this.lbl_motherboard.Size = new System.Drawing.Size(199, 28);
+            this.lbl_motherboard.TabIndex = 17;
+            // 
+            // lbl_processor
+            // 
+            this.lbl_processor.AutoEllipsis = true;
+            this.lbl_processor.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lbl_processor.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_processor.Location = new System.Drawing.Point(141, 68);
+            this.lbl_processor.Name = "lbl_processor";
+            this.lbl_processor.Size = new System.Drawing.Size(199, 28);
+            this.lbl_processor.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Gray;
+            this.label7.Location = new System.Drawing.Point(346, 195);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 28);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Case/PSU :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(19, 195);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 28);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Video :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(19, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 28);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Memory :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(346, 154);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(173, 28);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Mouse/Keyboard :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Location = new System.Drawing.Point(19, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 28);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Motherboard :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Gray;
+            this.label9.Location = new System.Drawing.Point(346, 112);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 28);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Monitor :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(19, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 28);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Processor :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(346, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 28);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "HDD :";
             // 
             // lbl_case
             // 
@@ -269,85 +319,36 @@
             this.lbl_hdd.Size = new System.Drawing.Size(179, 28);
             this.lbl_hdd.TabIndex = 20;
             // 
-            // label3
+            // lbl_room
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(19, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 28);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Video :";
+            this.lbl_room.AutoSize = true;
+            this.lbl_room.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_room.Location = new System.Drawing.Point(20, 19);
+            this.lbl_room.Name = "lbl_room";
+            this.lbl_room.Size = new System.Drawing.Size(184, 28);
+            this.lbl_room.TabIndex = 15;
+            this.lbl_room.Text = "Specification Code :";
             // 
-            // label4
+            // comboBox1
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(19, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 28);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Memory :";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(226, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(316, 36);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(19, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 28);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Motherboard :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(19, 68);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 28);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Processor :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(346, 195);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 28);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Case/PSU :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(346, 154);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 28);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Mouse/Keyboard :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(346, 112);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 28);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Monitor :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(346, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 28);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "HDD :";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Location = new System.Drawing.Point(28, 201);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 28);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Specification";
             // 
             // UserControl_SetSpecification
             // 

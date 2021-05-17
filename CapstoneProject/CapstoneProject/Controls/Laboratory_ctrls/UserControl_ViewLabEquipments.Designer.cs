@@ -137,6 +137,7 @@
             this.xuiButton3.TabIndex = 15;
             this.xuiButton3.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton3.Click += new System.EventHandler(this.xuiButton3_Click);
             // 
             // panel2
             // 

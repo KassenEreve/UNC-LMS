@@ -34,8 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -109,9 +109,9 @@
             this.label1.Location = new System.Drawing.Point(64, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 28);
+            this.label1.Size = new System.Drawing.Size(278, 28);
             this.label1.TabIndex = 10;
-            this.label1.Text = "ADD NEW EQUIPMENT";
+            this.label1.Text = "GENERATE NEW EQUIPMENTS";
             // 
             // panel1
             // 
@@ -127,14 +127,6 @@
             this.panel1.Size = new System.Drawing.Size(795, 361);
             this.panel1.TabIndex = 20;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(317, 190);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(271, 34);
-            this.numericUpDown1.TabIndex = 17;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -142,6 +134,14 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 36);
             this.comboBox1.TabIndex = 18;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(317, 190);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(271, 34);
+            this.numericUpDown1.TabIndex = 17;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UserControl_AddLabEquipment
             // 

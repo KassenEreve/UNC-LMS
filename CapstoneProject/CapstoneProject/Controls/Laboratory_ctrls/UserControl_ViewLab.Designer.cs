@@ -48,7 +48,7 @@
             this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.xuiButton1.ButtonImage = global::CapstoneProject.Properties.Resources.plus;
             this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "ADD NEW EQUIPMENT";
+            this.xuiButton1.ButtonText = "GENERATE NEW EQUIPMENTS";
             this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.CornerRadius = 5;
@@ -56,9 +56,9 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(584, 6);
+            this.xuiButton1.Location = new System.Drawing.Point(545, 6);
             this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(186, 52);
+            this.xuiButton1.Size = new System.Drawing.Size(225, 52);
             this.xuiButton1.TabIndex = 8;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;

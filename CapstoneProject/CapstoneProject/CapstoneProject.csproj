@@ -68,9 +68,12 @@
     <Compile Include="Class\Singleton.cs" />
     <Compile Include="Class\Software.cs" />
     <Compile Include="Class\SoftwareGroup.cs" />
+    <Compile Include="Class\SoftwareGroupAssignment.cs" />
+    <Compile Include="Class\SoftwareGroupAssignmentHelper.cs" />
     <Compile Include="Class\SoftwareGroupHelper.cs" />
     <Compile Include="Class\SoftwareHelper.cs" />
     <Compile Include="Class\SoftwareInventory.cs" />
+    <Compile Include="Class\SoftwareInventoryHelper.cs" />
     <Compile Include="Class\SoftwareStatusHistory.cs" />
     <Compile Include="Class\Status.cs" />
     <Compile Include="Class\Student.cs" />
@@ -166,6 +169,12 @@
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.Designer.cs">
       <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SetSoftwareGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_SetSoftwareGroup.Designer.cs">
+      <DependentUpon>UserControl_SetSoftwareGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_SetSpecification.cs">
       <SubType>UserControl</SubType>
@@ -303,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsList.resx">
       <DependentUpon>UserControl_PcSpecsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SetSoftwareGroup.resx">
+      <DependentUpon>UserControl_SetSoftwareGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_SetSpecification.resx">
       <DependentUpon>UserControl_SetSpecification.cs</DependentUpon>

@@ -10,12 +10,14 @@ namespace CapstoneProject.Class
     {
         public int id { get; set; }
         public string pc_num { get; set; }
-        public List<SoftwareInventory> softwareInventories { get; set; }
+        public SoftwareGroupAssignment softwareGroupAssignment { get; set; }
         public List<ComputerLog> computeLogs { get; set; }
         public List<Equipment> pcparts_equipment { get; set; }
 
         public Laboratory laboratory { get; set; }
 
         public PCSpecs specifcation { get; set; }
+
+        public SoftwareGroup softwareGroup { get; set; }
     }
 }

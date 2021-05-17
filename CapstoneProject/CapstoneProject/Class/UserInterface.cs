@@ -31,6 +31,7 @@ namespace CapstoneProject.Class
         public UserControl_SetSpecification userControl_SetSpecification;
         public UserControl_SoftwareGroupList userControl_SoftwareGroupList;
         public UserControl_AddSoftwareGroup userControl_AddSoftwareGroup;
+        public UserControl_SetSoftwareGroup userControl_SetSoftwareGroup;
 
         //first run
         public UserControl_FirstRun userControl_FirstRun;
@@ -114,6 +115,9 @@ namespace CapstoneProject.Class
 
             userControl_AddSoftwareGroup = new UserControl_AddSoftwareGroup();
             userControl_AddSoftwareGroup.Dock = DockStyle.Fill;
+
+            userControl_SetSoftwareGroup = new UserControl_SetSoftwareGroup();
+            userControl_SetSoftwareGroup.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;
