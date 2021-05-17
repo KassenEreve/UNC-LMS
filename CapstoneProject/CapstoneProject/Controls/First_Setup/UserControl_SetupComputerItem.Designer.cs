@@ -1,6 +1,6 @@
 ﻿namespace CapstoneProject.Controls.First_Setup
 {
-    partial class UserControl_SetupLabItem
+    partial class UserControl_SetupComputerItem
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.xuiButton1 = new XanderUI.XUIButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.xuiButton1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(5, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(110, 90);
+            this.panel1.TabIndex = 6;
             // 
             // xuiButton1
             // 
@@ -56,26 +66,16 @@
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.xuiButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(5, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(110, 90);
-            this.panel1.TabIndex = 5;
-            // 
-            // UserControl_SetupLabItem
+            // UserControl_SetupComputerItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
             this.Controls.Add(this.panel1);
-            this.Name = "UserControl_SetupLabItem";
+            this.Name = "UserControl_SetupComputerItem";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Size = new System.Drawing.Size(120, 100);
-            this.Load += new System.EventHandler(this.UserControl_SetupLabItem_Load);
+            this.Load += new System.EventHandler(this.UserControl_SetupComputerItem_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -83,7 +83,7 @@
 
         #endregion
 
-        private XanderUI.XUIButton xuiButton1;
         private System.Windows.Forms.Panel panel1;
+        private XanderUI.XUIButton xuiButton1;
     }
 }

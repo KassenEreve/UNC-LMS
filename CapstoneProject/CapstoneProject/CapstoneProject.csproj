@@ -86,6 +86,12 @@
     <Compile Include="Controls\First_Setup\UserControl_FirstRun.Designer.cs">
       <DependentUpon>UserControl_FirstRun.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\First_Setup\UserControl_SetupComputerItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\First_Setup\UserControl_SetupComputerItem.Designer.cs">
+      <DependentUpon>UserControl_SetupComputerItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\First_Setup\UserControl_SetupLabItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,6 +276,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\First_Setup\UserControl_FirstRun.resx">
       <DependentUpon>UserControl_FirstRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\First_Setup\UserControl_SetupComputerItem.resx">
+      <DependentUpon>UserControl_SetupComputerItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\First_Setup\UserControl_SetupLabItem.resx">
       <DependentUpon>UserControl_SetupLabItem.cs</DependentUpon>

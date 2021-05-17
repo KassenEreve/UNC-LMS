@@ -35,7 +35,7 @@ namespace CapstoneProject.Controls
               
                 test.Add("0", "Technician");
                 test.Add("1", "Admin");
-
+                test.Add("2", "Custodian");
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
                 comboBox1.DataSource = new BindingSource(test, null);
@@ -51,13 +51,24 @@ namespace CapstoneProject.Controls
 
         private void xuiButton1_Click_1(object sender, EventArgs e)
         {
-            ui.userControl_MainWindow.BringToFront();
-            if (!comboBox1.SelectedIndex.Equals(0)) 
-                return;
-            if (!File.Exists(ComputerHelper.firstRunTxt))
+            
+           
+           
+            switch(comboBox1.SelectedIndex)
             {
-                var ui = UserInterface.GetInstance();
-                ui.userControl_FirstRun.BringToFront();
+                case 0:
+                    if (!File.Exists(ComputerHelper.firstRunTxt)) //if first run show setup computer panel
+                    {  
+                        ui.userControl_FirstRun.BringToFront();
+                    }
+                    else //show the dashboard for technician
+                    {
+
+                    }
+                    break;
+                case 1:
+                    ui.userControl_MainWindow.BringToFront();
+                    break;
             }
         }
     }
