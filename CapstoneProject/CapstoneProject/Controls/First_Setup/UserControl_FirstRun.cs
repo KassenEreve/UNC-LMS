@@ -22,12 +22,14 @@ namespace CapstoneProject.Controls.First_Setup
         }
         public void SelectLaboratory(Laboratory lab)
         {
+            lbl_selectedComp.Text = string.Empty;
             selectedLab = lab;
             lbl_selectedComp.Text = "Laboratory : " + selectedLab.roomNum;
             LoadComputers();
         }
         public void SelectComputer(Computer computer)
         {
+            lbl_selectedComp.Text = "Laboratory : " + selectedLab.roomNum;
             lbl_selectedComp.Text += "  Computer : " + computer.pc_num;
             selectedComp = computer;
         }
