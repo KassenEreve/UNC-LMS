@@ -54,6 +54,7 @@
     <Compile Include="Class\ComputerHelper.cs" />
     <Compile Include="Class\ComputerLog.cs" />
     <Compile Include="Class\Computer.cs" />
+    <Compile Include="Class\ComputerLogHelper.cs" />
     <Compile Include="Class\DAL.cs" />
     <Compile Include="Class\Equipment.cs" />
     <Compile Include="Class\EquipmentHelper.cs" />
