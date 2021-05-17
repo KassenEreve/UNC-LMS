@@ -101,8 +101,8 @@ namespace CapstoneProject.Controls.First_Setup
             using (StreamWriter sw = File.AppendText(ComputerHelper.firstRunTxt))
             {
                
-                    sw.WriteLine(selectedLab.id);
-                    sw.WriteLine(selectedComp.id);
+                    sw.WriteLine("Laboratory_id, "+selectedLab.id);
+                    sw.WriteLine("Computer_id, " + selectedComp.id);
                   
                 
             }
