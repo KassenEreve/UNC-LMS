@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapstoneProject.Class;
+using System.IO;
 
 namespace CapstoneProject.Controls.First_Setup
 {
@@ -91,6 +92,22 @@ namespace CapstoneProject.Controls.First_Setup
                 MessageBox.Show("No selected computer");
                 return;
             }
+
+            string[] lines = { selectedLab.id.ToString(), selectedComp.id.ToString() };
+
+           
+            using (StreamWriter sw = File.AppendText(ComputerHelper.firstRunTxt))
+            {
+               
+                    sw.WriteLine(selectedLab.id);
+                    sw.WriteLine(selectedComp.id);
+                  
+                
+            }
+            //open main window
+            var ui = UserInterface.GetInstance();
+            ui.userControl_TechnicianMainWindow.BringToFront();
+
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -63,7 +63,9 @@ namespace CapstoneProject.Controls
                     }
                     else //show the dashboard for technician
                     {
-
+                        //open main window
+                       
+                        ui.userControl_TechnicianMainWindow.BringToFront();
                     }
                     break;
                 case 1:

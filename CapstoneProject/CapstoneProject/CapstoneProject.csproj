@@ -236,6 +236,12 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.Designer.cs">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.Designer.cs">
+      <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.resx">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.resx">
+      <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">
       <DependentUpon>UserControl_LoginPage.cs</DependentUpon>

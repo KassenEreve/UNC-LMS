@@ -1,6 +1,7 @@
 ﻿using CapstoneProject.Controls;
 using CapstoneProject.Controls.First_Setup;
 using CapstoneProject.Controls.Laboratory_ctrls;
+using CapstoneProject.Controls.Technician_ctrls;
 using CapstoneProject.Controls.User_ctrls;
 using System;
 using System.Collections.Generic;
@@ -33,9 +34,11 @@ namespace CapstoneProject.Class
         public UserControl_AddSoftwareGroup userControl_AddSoftwareGroup;
         public UserControl_SetSoftwareGroup userControl_SetSoftwareGroup;
 
+
+        //Technician
         //first run
         public UserControl_FirstRun userControl_FirstRun;
-
+        public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
 
         private static UserInterface instance;
 
@@ -118,6 +121,9 @@ namespace CapstoneProject.Class
 
             userControl_SetSoftwareGroup = new UserControl_SetSoftwareGroup();
             userControl_SetSoftwareGroup.Dock = DockStyle.Fill;
+
+            userControl_TechnicianMainWindow = new UserControl_TechnicianMainWindow();
+            userControl_TechnicianMainWindow.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;
