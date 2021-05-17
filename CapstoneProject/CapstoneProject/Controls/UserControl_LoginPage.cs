@@ -66,8 +66,8 @@ namespace CapstoneProject.Controls
                     if (File.Exists(ComputerHelper.firstRunTxt))
                     {
                         string[] comp_data = File.ReadAllLines(ComputerHelper.firstRunTxt);
-                        int labID = Convert.ToInt32(comp_data[0].Last().ToString());
-                        int compID = Convert.ToInt32(comp_data[1].Last().ToString());
+                        int labID = Convert.ToInt32(comp_data[0].Substring(comp_data[0].LastIndexOf(',') + 1));
+                        int compID = Convert.ToInt32(comp_data[1].Substring(comp_data[1].LastIndexOf(',') + 1));
                         var labList = LaboratoryHelper.GetAllLaboratories();
                         var compList = ComputerHelper.Computers(new Laboratory() { id = labID });
                         string studentNum = textBox_studentNum.Text;
