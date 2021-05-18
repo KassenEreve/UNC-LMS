@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,6 +71,20 @@ namespace CapstoneProject.Class
 
                 return comp;
             }
+        }
+        public static Computer GetComputerFromFile()
+        {
+            if (!File.Exists(ComputerHelper.firstRunTxt))
+                return null;
+            
+            string[] comp_data = File.ReadAllLines(ComputerHelper.firstRunTxt);
+            int labID = Convert.ToInt32(comp_data[0].Substring(comp_data[0].LastIndexOf(',') + 1));
+            int compID = Convert.ToInt32(comp_data[1].Substring(comp_data[1].LastIndexOf(',') + 1));
+            var compList = ComputerHelper.Computers(new Laboratory() { id = labID });
+            var labList = LaboratoryHelper.GetAllLaboratories();
+            var comp = compList.Find(o => o.id.Equals(compID));
+            comp.laboratory = labList.Find(o => o.id.Equals(labID));
+            return comp;
         }
 
         public static Computer SaveComputer(Computer computer)

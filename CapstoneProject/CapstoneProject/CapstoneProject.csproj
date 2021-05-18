@@ -237,6 +237,18 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.Designer.cs">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputer.Designer.cs">
+      <DependentUpon>UserControl_TechnicianComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputerLogItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputerLogItem.Designer.cs">
+      <DependentUpon>UserControl_TechnicianComputerLogItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -358,6 +370,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.resx">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianComputer.resx">
+      <DependentUpon>UserControl_TechnicianComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianComputerLogItem.resx">
+      <DependentUpon>UserControl_TechnicianComputerLogItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.resx">
       <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>

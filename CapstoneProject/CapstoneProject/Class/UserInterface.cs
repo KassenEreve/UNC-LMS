@@ -39,6 +39,7 @@ namespace CapstoneProject.Class
         //first run
         public UserControl_FirstRun userControl_FirstRun;
         public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
+        public UserControl_TechnicianComputer userControl_TechnicianComputer;
 
         private static UserInterface instance;
 
@@ -124,6 +125,9 @@ namespace CapstoneProject.Class
 
             userControl_TechnicianMainWindow = new UserControl_TechnicianMainWindow();
             userControl_TechnicianMainWindow.Dock = DockStyle.Fill;
+
+            userControl_TechnicianComputer = new UserControl_TechnicianComputer();
+            userControl_TechnicianComputer.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;
