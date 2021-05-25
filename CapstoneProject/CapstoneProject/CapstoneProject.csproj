@@ -64,6 +64,8 @@
     <Compile Include="Class\Laboratory.cs" />
     <Compile Include="Class\LaboratoryHelper.cs" />
     <Compile Include="Class\License.cs" />
+    <Compile Include="Class\MaintenanceLevel.cs" />
+    <Compile Include="Class\MaintenanceLevelHelper.cs" />
     <Compile Include="Class\PCSpecs.cs" />
     <Compile Include="Class\PCSpecsHelper.cs" />
     <Compile Include="Class\Singleton.cs" />
@@ -98,6 +100,24 @@
     </Compile>
     <Compile Include="Controls\First_Setup\UserControl_SetupLabItem.Designer.cs">
       <DependentUpon>UserControl_SetupLabItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_AddMaintenanceLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_AddMaintenanceLevel.Designer.cs">
+      <DependentUpon>UserControl_AddMaintenanceLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevel.Designer.cs">
+      <DependentUpon>UserControl_MaintenanceLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevelItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevelItem.Designer.cs">
+      <DependentUpon>UserControl_MaintenanceLevelItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.cs">
       <SubType>UserControl</SubType>
@@ -301,6 +321,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\First_Setup\UserControl_SetupLabItem.resx">
       <DependentUpon>UserControl_SetupLabItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_AddMaintenanceLevel.resx">
+      <DependentUpon>UserControl_AddMaintenanceLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevel.resx">
+      <DependentUpon>UserControl_MaintenanceLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevelItem.resx">
+      <DependentUpon>UserControl_MaintenanceLevelItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.resx">
       <DependentUpon>UserControl_AddEquipmentType.cs</DependentUpon>

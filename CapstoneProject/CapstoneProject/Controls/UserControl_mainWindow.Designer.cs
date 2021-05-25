@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dropDownPanel_tools = new System.Windows.Forms.Panel();
-            this.btn_Tools = new XanderUI.XUIButton();
+            this.dropDownPanel_maintenance = new System.Windows.Forms.Panel();
+            this.btn_maintenance = new XanderUI.XUIButton();
             this.dropDownPanel_report = new System.Windows.Forms.Panel();
             this.btn_StudentAssistant = new XanderUI.XUIButton();
             this.btn_Technician = new XanderUI.XUIButton();
@@ -47,7 +47,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_logOut = new XanderUI.XUIButton();
-            this.dropDownPanel_tools.SuspendLayout();
+            this.btn_emergencyMainte = new XanderUI.XUIButton();
+            this.btn_scheduledMainte = new XanderUI.XUIButton();
+            this.btn_maintenanceLevel = new XanderUI.XUIButton();
+            this.dropDownPanel_maintenance.SuspendLayout();
             this.dropDownPanel_report.SuspendLayout();
             this.dropDownPanel_lab.SuspendLayout();
             this.dropDownPanel.SuspendLayout();
@@ -55,39 +58,42 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dropDownPanel_tools
+            // dropDownPanel_maintenance
             // 
-            this.dropDownPanel_tools.BackColor = System.Drawing.Color.Gainsboro;
-            this.dropDownPanel_tools.Controls.Add(this.btn_Tools);
-            this.dropDownPanel_tools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dropDownPanel_tools.Location = new System.Drawing.Point(0, 291);
-            this.dropDownPanel_tools.MaximumSize = new System.Drawing.Size(246, 250);
-            this.dropDownPanel_tools.MinimumSize = new System.Drawing.Size(246, 97);
-            this.dropDownPanel_tools.Name = "dropDownPanel_tools";
-            this.dropDownPanel_tools.Size = new System.Drawing.Size(246, 97);
-            this.dropDownPanel_tools.TabIndex = 3;
+            this.dropDownPanel_maintenance.BackColor = System.Drawing.Color.Gainsboro;
+            this.dropDownPanel_maintenance.Controls.Add(this.btn_maintenanceLevel);
+            this.dropDownPanel_maintenance.Controls.Add(this.btn_scheduledMainte);
+            this.dropDownPanel_maintenance.Controls.Add(this.btn_emergencyMainte);
+            this.dropDownPanel_maintenance.Controls.Add(this.btn_maintenance);
+            this.dropDownPanel_maintenance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dropDownPanel_maintenance.Location = new System.Drawing.Point(0, 194);
+            this.dropDownPanel_maintenance.MaximumSize = new System.Drawing.Size(246, 400);
+            this.dropDownPanel_maintenance.MinimumSize = new System.Drawing.Size(246, 97);
+            this.dropDownPanel_maintenance.Name = "dropDownPanel_maintenance";
+            this.dropDownPanel_maintenance.Size = new System.Drawing.Size(246, 97);
+            this.dropDownPanel_maintenance.TabIndex = 3;
             // 
-            // btn_Tools
+            // btn_maintenance
             // 
-            this.btn_Tools.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_Tools.ButtonImage = null;
-            this.btn_Tools.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_Tools.ButtonText = "Tools";
-            this.btn_Tools.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_Tools.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.CornerRadius = 5;
-            this.btn_Tools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Tools.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Tools.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_Tools.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_Tools.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btn_Tools.Location = new System.Drawing.Point(0, 0);
-            this.btn_Tools.Name = "btn_Tools";
-            this.btn_Tools.Size = new System.Drawing.Size(246, 94);
-            this.btn_Tools.TabIndex = 2;
-            this.btn_Tools.TextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Tools.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_maintenance.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_maintenance.ButtonImage = null;
+            this.btn_maintenance.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_maintenance.ButtonText = "Maintenance";
+            this.btn_maintenance.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_maintenance.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenance.CornerRadius = 5;
+            this.btn_maintenance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_maintenance.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_maintenance.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_maintenance.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_maintenance.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenance.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_maintenance.Location = new System.Drawing.Point(0, 0);
+            this.btn_maintenance.Name = "btn_maintenance";
+            this.btn_maintenance.Size = new System.Drawing.Size(246, 94);
+            this.btn_maintenance.TabIndex = 2;
+            this.btn_maintenance.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenance.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // dropDownPanel_report
             // 
@@ -96,7 +102,7 @@
             this.dropDownPanel_report.Controls.Add(this.btn_Technician);
             this.dropDownPanel_report.Controls.Add(this.btn_User);
             this.dropDownPanel_report.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dropDownPanel_report.Location = new System.Drawing.Point(0, 194);
+            this.dropDownPanel_report.Location = new System.Drawing.Point(0, 291);
             this.dropDownPanel_report.MaximumSize = new System.Drawing.Size(246, 300);
             this.dropDownPanel_report.MinimumSize = new System.Drawing.Size(246, 97);
             this.dropDownPanel_report.Name = "dropDownPanel_report";
@@ -146,6 +152,7 @@
             this.btn_Technician.TabIndex = 3;
             this.btn_Technician.TextColor = System.Drawing.Color.Gray;
             this.btn_Technician.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Technician.Click += new System.EventHandler(this.btn_Technician_Click);
             // 
             // btn_User
             // 
@@ -366,8 +373,8 @@
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Controls.Add(this.panel1);
-            this.panel3.Controls.Add(this.dropDownPanel_tools);
             this.panel3.Controls.Add(this.dropDownPanel_report);
+            this.panel3.Controls.Add(this.dropDownPanel_maintenance);
             this.panel3.Controls.Add(this.dropDownPanel_lab);
             this.panel3.Controls.Add(this.dropDownPanel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
@@ -411,6 +418,73 @@
             this.btn_logOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btn_logOut.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
+            // btn_emergencyMainte
+            // 
+            this.btn_emergencyMainte.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_emergencyMainte.ButtonImage = null;
+            this.btn_emergencyMainte.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_emergencyMainte.ButtonText = "Emergency       Maintenance";
+            this.btn_emergencyMainte.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_emergencyMainte.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_emergencyMainte.CornerRadius = 5;
+            this.btn_emergencyMainte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_emergencyMainte.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_emergencyMainte.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_emergencyMainte.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_emergencyMainte.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_emergencyMainte.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_emergencyMainte.Location = new System.Drawing.Point(0, 94);
+            this.btn_emergencyMainte.Name = "btn_emergencyMainte";
+            this.btn_emergencyMainte.Size = new System.Drawing.Size(246, 94);
+            this.btn_emergencyMainte.TabIndex = 4;
+            this.btn_emergencyMainte.TextColor = System.Drawing.Color.Gray;
+            this.btn_emergencyMainte.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // btn_scheduledMainte
+            // 
+            this.btn_scheduledMainte.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_scheduledMainte.ButtonImage = null;
+            this.btn_scheduledMainte.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_scheduledMainte.ButtonText = "Scheduled          Maintenance";
+            this.btn_scheduledMainte.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_scheduledMainte.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_scheduledMainte.CornerRadius = 5;
+            this.btn_scheduledMainte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_scheduledMainte.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_scheduledMainte.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_scheduledMainte.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_scheduledMainte.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_scheduledMainte.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_scheduledMainte.Location = new System.Drawing.Point(0, 188);
+            this.btn_scheduledMainte.Name = "btn_scheduledMainte";
+            this.btn_scheduledMainte.Size = new System.Drawing.Size(246, 94);
+            this.btn_scheduledMainte.TabIndex = 5;
+            this.btn_scheduledMainte.TextColor = System.Drawing.Color.Gray;
+            this.btn_scheduledMainte.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_scheduledMainte.Click += new System.EventHandler(this.xuiButton2_Click);
+            // 
+            // btn_maintenanceLevel
+            // 
+            this.btn_maintenanceLevel.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_maintenanceLevel.ButtonImage = null;
+            this.btn_maintenanceLevel.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_maintenanceLevel.ButtonText = "Maintenance                     Level";
+            this.btn_maintenanceLevel.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_maintenanceLevel.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenanceLevel.CornerRadius = 5;
+            this.btn_maintenanceLevel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_maintenanceLevel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_maintenanceLevel.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_maintenanceLevel.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_maintenanceLevel.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenanceLevel.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_maintenanceLevel.Location = new System.Drawing.Point(0, 282);
+            this.btn_maintenanceLevel.Name = "btn_maintenanceLevel";
+            this.btn_maintenanceLevel.Size = new System.Drawing.Size(246, 94);
+            this.btn_maintenanceLevel.TabIndex = 6;
+            this.btn_maintenanceLevel.TextColor = System.Drawing.Color.Gray;
+            this.btn_maintenanceLevel.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // UserControl_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -421,7 +495,7 @@
             this.Name = "UserControl_mainWindow";
             this.Size = new System.Drawing.Size(1328, 554);
             this.Load += new System.EventHandler(this.UserControl_mainWindow_Load);
-            this.dropDownPanel_tools.ResumeLayout(false);
+            this.dropDownPanel_maintenance.ResumeLayout(false);
             this.dropDownPanel_report.ResumeLayout(false);
             this.dropDownPanel_lab.ResumeLayout(false);
             this.dropDownPanel.ResumeLayout(false);
@@ -432,12 +506,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel dropDownPanel_tools;
+        private System.Windows.Forms.Panel dropDownPanel_maintenance;
         private System.Windows.Forms.Panel dropDownPanel_report;
         private System.Windows.Forms.Panel dropDownPanel_lab;
         private System.Windows.Forms.Panel dropDownPanel;
         private XanderUI.XUIButton btn_Main;
-        private XanderUI.XUIButton btn_Tools;
+        private XanderUI.XUIButton btn_maintenance;
         private XanderUI.XUIButton btn_User;
         private XanderUI.XUIButton btn_lab;
         private System.Windows.Forms.Panel panel_main;
@@ -451,5 +525,8 @@
         private XanderUI.XUIButton btn_logOut;
         private System.Windows.Forms.Panel panel1;
         private XanderUI.XUIButton btn_softwareGroup;
+        private XanderUI.XUIButton btn_maintenanceLevel;
+        private XanderUI.XUIButton btn_scheduledMainte;
+        private XanderUI.XUIButton btn_emergencyMainte;
     }
 }

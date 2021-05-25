@@ -1,6 +1,7 @@
 ﻿using CapstoneProject.Controls;
 using CapstoneProject.Controls.First_Setup;
 using CapstoneProject.Controls.Laboratory_ctrls;
+using CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls;
 using CapstoneProject.Controls.Technician_ctrls;
 using CapstoneProject.Controls.User_ctrls;
 using System;
@@ -16,6 +17,9 @@ namespace CapstoneProject.Class
     {
         public  UserControl_LoginPage userControl_LoginPage;
         public  UserControl_mainWindow userControl_MainWindow;
+
+        #region ADMIN CONTROLS
+        //laboratory
         public UserControl_LabList userControl_LabList;
         public UserControl_AddLab userControl_AddLab;
         public UserControl_EquipmentType userControl_EquipmentType;
@@ -33,13 +37,19 @@ namespace CapstoneProject.Class
         public UserControl_SoftwareGroupList userControl_SoftwareGroupList;
         public UserControl_AddSoftwareGroup userControl_AddSoftwareGroup;
         public UserControl_SetSoftwareGroup userControl_SetSoftwareGroup;
+        //maintenance
+        public UserControl_MaintenanceLevel userControl_MaintenanceLevel;
+        public UserControl_AddMaintenanceLevel userControl_AddMaintenanceLevel;
+        #endregion
 
 
+        #region TECHNICIAN CONTROLS
         //Technician
         //first run
         public UserControl_FirstRun userControl_FirstRun;
         public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
         public UserControl_TechnicianComputer userControl_TechnicianComputer;
+        #endregion
 
         private static UserInterface instance;
 
@@ -128,6 +138,12 @@ namespace CapstoneProject.Class
 
             userControl_TechnicianComputer = new UserControl_TechnicianComputer();
             userControl_TechnicianComputer.Dock = DockStyle.Fill;
+
+            userControl_MaintenanceLevel = new UserControl_MaintenanceLevel();
+            userControl_MaintenanceLevel.Dock = DockStyle.Fill;
+
+            userControl_AddMaintenanceLevel = new UserControl_AddMaintenanceLevel();
+            userControl_AddMaintenanceLevel.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

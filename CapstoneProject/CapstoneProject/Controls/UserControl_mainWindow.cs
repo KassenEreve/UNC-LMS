@@ -40,6 +40,8 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_SoftwareGroupList);
             panel_main.Controls.Add(instance.userControl_AddSoftwareGroup);
             panel_main.Controls.Add(instance.userControl_SetSoftwareGroup);
+            panel_main.Controls.Add(instance.userControl_MaintenanceLevel);
+            panel_main.Controls.Add(instance.userControl_AddMaintenanceLevel);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -55,6 +57,8 @@ namespace CapstoneProject.Controls
             btn_StudentAssistant.Tag = 7;
             btn_softwares.Tag = 8;
             btn_softwareGroup.Tag = 9;
+            btn_maintenance.Tag = 10;
+            btn_maintenanceLevel.Tag = 11;
 
 
 
@@ -72,6 +76,8 @@ namespace CapstoneProject.Controls
             btn_logOut.Click += Button_Click;
             btn_softwares.Click += Button_Click;
             btn_softwareGroup.Click += Button_Click;
+            btn_maintenance.Click += Button_Click;
+            btn_maintenanceLevel.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -119,6 +125,11 @@ namespace CapstoneProject.Controls
                 case 9:ui.userControl_SoftwareGroupList.BringToFront();
                     ui.userControl_SoftwareGroupList.LoadList();
                     break;
+                case 10: expandCollapseMenu(sender as XUIButton);
+                    break;
+                case 11: ui.userControl_MaintenanceLevel.BringToFront();
+                    ui.userControl_MaintenanceLevel.LoadList();
+                    break;
 
 
 
@@ -132,6 +143,16 @@ namespace CapstoneProject.Controls
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Technician_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiButton2_Click(object sender, EventArgs e)
         {
 
         }
