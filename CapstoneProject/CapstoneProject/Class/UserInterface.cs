@@ -28,8 +28,6 @@ namespace CapstoneProject.Class
         public UserControl_AddPCSpecs userControl_AddPCSpecs;
         public UserControl_ViewLab userControl_ViewLab;
         public UserControl_AddLabEquipment userControl_AddLabEquipment;
-        public UserControl_TechnicianList userControl_TechnicianList;
-        public UserControl_AddTechnician userControl_AddTechnician;
         public UserControl_ViewLabEquipments userControl_ViewLabEquipments;
         public UserControl_SoftwareList userControl_SoftwareList;
         public UserControl_AddSoftware userControl_AddSoftware;
@@ -43,6 +41,13 @@ namespace CapstoneProject.Class
         public UserControl_EmeregencyMaintenance userControl_EmergencyMaintenance;
         public UserControl_MaintenanceStatus userControl_MaintenanceStatus;
         public UserControl_AddMaintenanceStatus userControl_AddMaintenanceStatus;
+
+        //users
+        public UserControl_TechnicianList userControl_TechnicianList;
+        public UserControl_AddTechnician userControl_AddTechnician;
+        public UserControl_CustodianList userControl_CustodianList;
+        public UserControl_AddCustodian userControl_AddCustodian;
+        
         #endregion
 
 
@@ -156,6 +161,12 @@ namespace CapstoneProject.Class
 
             userControl_AddMaintenanceStatus = new UserControl_AddMaintenanceStatus();
             userControl_AddMaintenanceStatus.Dock = DockStyle.Fill;
+
+            userControl_CustodianList = new UserControl_CustodianList();
+            userControl_CustodianList.Dock = DockStyle.Fill;
+
+            userControl_AddCustodian = new UserControl_AddCustodian();
+            userControl_AddCustodian.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

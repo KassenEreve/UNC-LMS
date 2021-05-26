@@ -66,6 +66,11 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
                 }
                 if(custodianReport.laboratory!=null)
                 lbl_laboratory.Text = custodianReport.laboratory.roomNum;
+
+                if (custodianReport.custodian != null)
+                    lbl_custodian.Text = custodianReport.custodian.lname + ", " + custodianReport.custodian.fname+" "+custodianReport.custodian.mname[0]+".";
+
+                lbl_date.Text = custodianReport.date.ToString();
                           
             }
            

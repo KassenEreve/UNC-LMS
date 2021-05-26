@@ -14,9 +14,10 @@ namespace CapstoneProject.Class
         public string lname { get; set; }
         public string idNum { get; set; }
         public int gender { get; set; }
-        public DateTime dateHired { get; set; }
+        public DateTime birthDate { get; set; }
         public string photo { get; set; }
         public string phone { get; set; }
         public string email { get; set; }
+        public string password { get; set; }
     }
 }

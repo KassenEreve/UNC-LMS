@@ -195,9 +195,9 @@
             this.label9.ForeColor = System.Drawing.Color.Gray;
             this.label9.Location = new System.Drawing.Point(74, 342);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 28);
+            this.label9.Size = new System.Drawing.Size(108, 28);
             this.label9.TabIndex = 24;
-            this.label9.Text = "Date Hired :";
+            this.label9.Text = "Birth Date :";
             // 
             // label8
             // 

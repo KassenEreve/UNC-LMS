@@ -45,6 +45,8 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_EmergencyMaintenance);
             panel_main.Controls.Add(instance.userControl_MaintenanceStatus);
             panel_main.Controls.Add(instance.userControl_AddMaintenanceStatus);
+            panel_main.Controls.Add(instance.userControl_CustodianList);
+            panel_main.Controls.Add(instance.userControl_AddCustodian);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -57,13 +59,14 @@ namespace CapstoneProject.Controls
             btn_specsList.Tag = 4;
             btn_User.Tag = 5;
             btn_Technician.Tag = 6;
-            btn_StudentAssistant.Tag = 7;
+            btn_Custodian.Tag = 7;
             btn_softwares.Tag = 8;
             btn_softwareGroup.Tag = 9;
             btn_maintenance.Tag = 10;
             btn_maintenanceLevel.Tag = 11;
             btn_emergencyMainte.Tag = 12;
             btn_mainteStatus.Tag = 13;
+            btn_Custodian.Tag = 14;
 
 
             btn_logOut.Tag = 0;
@@ -76,7 +79,7 @@ namespace CapstoneProject.Controls
             btn_specsList.Click += Button_Click;
             btn_User.Click += Button_Click;
             btn_Technician.Click += Button_Click;
-            btn_StudentAssistant.Click += Button_Click;
+            btn_Custodian.Click += Button_Click;
             btn_logOut.Click += Button_Click;
             btn_softwares.Click += Button_Click;
             btn_softwareGroup.Click += Button_Click;
@@ -84,6 +87,7 @@ namespace CapstoneProject.Controls
             btn_maintenanceLevel.Click += Button_Click;
             btn_emergencyMainte.Click += Button_Click;
             btn_mainteStatus.Click += Button_Click;
+            btn_Custodian.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -141,6 +145,9 @@ namespace CapstoneProject.Controls
                     break;
                 case 13: ui.userControl_MaintenanceStatus.BringToFront();
                     ui.userControl_MaintenanceStatus.LoadList();
+                    break;
+                case 14: ui.userControl_CustodianList.BringToFront();
+                    ui.userControl_CustodianList.LoadList();
                     break;
 
 

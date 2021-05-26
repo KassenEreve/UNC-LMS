@@ -35,7 +35,7 @@
             this.btn_maintenanceList = new XanderUI.XUIButton();
             this.btn_maintenance = new XanderUI.XUIButton();
             this.dropDownPanel_report = new System.Windows.Forms.Panel();
-            this.btn_StudentAssistant = new XanderUI.XUIButton();
+            this.btn_Custodian = new XanderUI.XUIButton();
             this.btn_Technician = new XanderUI.XUIButton();
             this.btn_User = new XanderUI.XUIButton();
             this.dropDownPanel_lab = new System.Windows.Forms.Panel();
@@ -191,7 +191,7 @@
             // dropDownPanel_report
             // 
             this.dropDownPanel_report.BackColor = System.Drawing.Color.Gainsboro;
-            this.dropDownPanel_report.Controls.Add(this.btn_StudentAssistant);
+            this.dropDownPanel_report.Controls.Add(this.btn_Custodian);
             this.dropDownPanel_report.Controls.Add(this.btn_Technician);
             this.dropDownPanel_report.Controls.Add(this.btn_User);
             this.dropDownPanel_report.Dock = System.Windows.Forms.DockStyle.Top;
@@ -202,27 +202,27 @@
             this.dropDownPanel_report.Size = new System.Drawing.Size(246, 97);
             this.dropDownPanel_report.TabIndex = 2;
             // 
-            // btn_StudentAssistant
+            // btn_Custodian
             // 
-            this.btn_StudentAssistant.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_StudentAssistant.ButtonImage = null;
-            this.btn_StudentAssistant.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_StudentAssistant.ButtonText = "Custodian";
-            this.btn_StudentAssistant.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_StudentAssistant.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_StudentAssistant.CornerRadius = 5;
-            this.btn_StudentAssistant.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_StudentAssistant.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
-            this.btn_StudentAssistant.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_StudentAssistant.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_StudentAssistant.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_StudentAssistant.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_StudentAssistant.Location = new System.Drawing.Point(0, 188);
-            this.btn_StudentAssistant.Name = "btn_StudentAssistant";
-            this.btn_StudentAssistant.Size = new System.Drawing.Size(246, 94);
-            this.btn_StudentAssistant.TabIndex = 4;
-            this.btn_StudentAssistant.TextColor = System.Drawing.Color.Gray;
-            this.btn_StudentAssistant.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Custodian.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_Custodian.ButtonImage = null;
+            this.btn_Custodian.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_Custodian.ButtonText = "Custodian";
+            this.btn_Custodian.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_Custodian.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Custodian.CornerRadius = 5;
+            this.btn_Custodian.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Custodian.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_Custodian.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_Custodian.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_Custodian.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Custodian.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_Custodian.Location = new System.Drawing.Point(0, 188);
+            this.btn_Custodian.Name = "btn_Custodian";
+            this.btn_Custodian.Size = new System.Drawing.Size(246, 94);
+            this.btn_Custodian.TabIndex = 4;
+            this.btn_Custodian.TextColor = System.Drawing.Color.Gray;
+            this.btn_Custodian.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btn_Technician
             // 
@@ -568,7 +568,7 @@
         private XanderUI.XUIButton btn_equipmentType;
         private XanderUI.XUIButton btn_softwares;
         private XanderUI.XUIButton btn_specsList;
-        private XanderUI.XUIButton btn_StudentAssistant;
+        private XanderUI.XUIButton btn_Custodian;
         private XanderUI.XUIButton btn_Technician;
         private XanderUI.XUIButton btn_logOut;
         private System.Windows.Forms.Panel panel1;

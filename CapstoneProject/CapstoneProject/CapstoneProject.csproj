@@ -325,11 +325,29 @@
     <Compile Include="Controls\UserControl_mainWindow.Designer.cs">
       <DependentUpon>UserControl_mainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_AddCustodian.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_AddCustodian.Designer.cs">
+      <DependentUpon>UserControl_AddCustodian.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\User_ctrls\UserControl_AddTechnician.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\User_ctrls\UserControl_AddTechnician.Designer.cs">
       <DependentUpon>UserControl_AddTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_CustodianItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_CustodianItem.Designer.cs">
+      <DependentUpon>UserControl_CustodianItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_CustodianList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\User_ctrls\UserControl_CustodianList.Designer.cs">
+      <DependentUpon>UserControl_CustodianList.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\User_ctrls\UserControl_TechnicianItem.cs">
       <SubType>UserControl</SubType>
@@ -468,8 +486,17 @@
     <EmbeddedResource Include="Controls\UserControl_mainWindow.resx">
       <DependentUpon>UserControl_mainWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_AddCustodian.resx">
+      <DependentUpon>UserControl_AddCustodian.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\User_ctrls\UserControl_AddTechnician.resx">
       <DependentUpon>UserControl_AddTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_CustodianItem.resx">
+      <DependentUpon>UserControl_CustodianItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\User_ctrls\UserControl_CustodianList.resx">
+      <DependentUpon>UserControl_CustodianList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\User_ctrls\UserControl_TechnicianItem.resx">
       <DependentUpon>UserControl_TechnicianItem.cs</DependentUpon>

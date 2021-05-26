@@ -25,14 +25,14 @@ namespace CapstoneProject.Controls.User_ctrls
         {
             var saveTech = new Technician()
             {
-                idNum = textBox_idNum.Text,
-                fname = textBox_fname.Text,
-                mname = textBox_mname.Text,
-                lname = textBox_lname.Text,
+                idNum = textBox_idNum.Text.Trim(),
+                fname = textBox_fname.Text.Trim(),
+                mname = textBox_mname.Text.Trim(),
+                lname = textBox_lname.Text.Trim(),
                 gender = 0,
-                dateHired = dateTimePicker1.Value,
-                phone = textBox_phone.Text,
-                email = textBox_email.Text,
+                birthDate = dateTimePicker1.Value,
+                phone = textBox_phone.Text.Trim(),
+                email = textBox_email.Text.Trim(),
                 photo = ""
 
             };
@@ -67,12 +67,13 @@ namespace CapstoneProject.Controls.User_ctrls
             textBox_mname.Text = technician.mname;
             textBox_lname.Text = technician.lname;
             comboBox1.SelectedIndex = 0;
-            dateTimePicker1.Value = technician.dateHired;
+            dateTimePicker1.Value = technician.birthDate;
             textBox_phone.Text = technician.phone;
             textBox_email.Text = technician.email;
         }
         public void ClearItem()
         {
+            technician = null;
             textBox_idNum.Text = string.Empty;
             textBox_fname.Text = string.Empty;
             textBox_mname.Text = string.Empty;

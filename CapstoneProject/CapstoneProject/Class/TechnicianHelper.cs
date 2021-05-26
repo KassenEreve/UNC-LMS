@@ -31,10 +31,11 @@ namespace CapstoneProject.Class
                         lname = dr.Field<string>("lname"),
                         idNum = dr.Field<string>("idNumber"),
                         gender = dr.Field<int>("gender"),
-                        dateHired = dr.Field<DateTime>("dateHired"),
+                        birthDate = dr.Field<DateTime>("birthDate"),
                         photo = dr.Field<string>("photo"),
                         phone = dr.Field<string>("phone"),
-                        email = dr.Field<string>("email")
+                        email = dr.Field<string>("email"),
+                        password = dr.Field<string>("password")
                     };
 
                    
@@ -84,10 +85,11 @@ namespace CapstoneProject.Class
                                          new  SqlParameter("@lname",  saveTech.lname),
                                           new  SqlParameter("@idNum",  saveTech.idNum),
                                           new  SqlParameter("@gender",  saveTech.gender),
-                                        new  SqlParameter("@dateHired",  saveTech.dateHired),
+                                        new  SqlParameter("@birthDate",  saveTech.birthDate),
                                          new  SqlParameter("@photo",  saveTech.photo),
                                          new  SqlParameter("@phone",  saveTech.phone),
-                                         new  SqlParameter("@email",  saveTech.email)
+                                         new  SqlParameter("@email",  saveTech.email),
+                                         new  SqlParameter("@password", (saveTech.password==null)?(object)DBNull.Value:saveTech.password )
 
 
 
