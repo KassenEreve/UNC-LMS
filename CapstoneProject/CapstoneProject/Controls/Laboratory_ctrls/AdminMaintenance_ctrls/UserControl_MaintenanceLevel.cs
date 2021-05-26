@@ -37,7 +37,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
 
         private void UserControl_MaintenanceLevel_Load(object sender, EventArgs e)
         {
-            LoadList();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)

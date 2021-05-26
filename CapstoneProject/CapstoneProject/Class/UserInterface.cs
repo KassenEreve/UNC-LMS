@@ -41,6 +41,8 @@ namespace CapstoneProject.Class
         public UserControl_MaintenanceLevel userControl_MaintenanceLevel;
         public UserControl_AddMaintenanceLevel userControl_AddMaintenanceLevel;
         public UserControl_EmeregencyMaintenance userControl_EmergencyMaintenance;
+        public UserControl_MaintenanceStatus userControl_MaintenanceStatus;
+        public UserControl_AddMaintenanceStatus userControl_AddMaintenanceStatus;
         #endregion
 
 
@@ -148,6 +150,12 @@ namespace CapstoneProject.Class
 
             userControl_EmergencyMaintenance = new UserControl_EmeregencyMaintenance();
             userControl_EmergencyMaintenance.Dock = DockStyle.Fill;
+
+            userControl_MaintenanceStatus = new UserControl_MaintenanceStatus();
+            userControl_MaintenanceStatus.Dock = DockStyle.Fill;
+
+            userControl_AddMaintenanceStatus = new UserControl_AddMaintenanceStatus();
+            userControl_AddMaintenanceStatus.Dock = DockStyle.Fill;
 
             timer = new Timer();
             timer.Interval = 15;

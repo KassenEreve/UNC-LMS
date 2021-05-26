@@ -73,6 +73,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         }
         internal void ClearItem()
         {
+            specs = null;
             textBox_code.Text = String.Empty;
             textBox_casePsu.Text = String.Empty;
             textBox_hdd.Text = String.Empty;

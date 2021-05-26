@@ -31,7 +31,8 @@ namespace CapstoneProject.Class
                         id = dr.Field<int>("id"),
                         custodian = CustodianHelper.GetCustodian(dr.Field<int>("custodian_id")),
                         custodianReportedItems = CustodianReportedItemHelper.GetReportedItems(dr.Field<int>("id")),
-                        date = dr.Field<DateTime>("date")
+                        date = dr.Field<DateTime>("date"),
+                        laboratory = new Laboratory() { id =  dr.Field<int>("lab_id"),roomNum = dr.Field<string>("room_num"), }
                         
 
 
@@ -44,6 +45,7 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
         }
 
+        /*
         internal static Laboratory GetLaboratory(CustodianReport custodianReport)
         {
             Laboratory lab = null;
@@ -60,5 +62,6 @@ namespace CapstoneProject.Class
 
             return lab;
         }
+        */
     }
 }

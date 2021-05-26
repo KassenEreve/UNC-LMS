@@ -54,6 +54,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
         internal void ClearItem()
         {
+            type = null;
             textBox_name.Text = "";
             textBox_desc.Text = "";
         }

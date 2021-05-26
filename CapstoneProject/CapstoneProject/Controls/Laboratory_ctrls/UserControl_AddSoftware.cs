@@ -40,6 +40,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
 
         internal void ClearItem()
         {
+            software = null;
             txtBox_desc.Text = string.Empty;
             txtBox_name.Text = string.Empty;
         }

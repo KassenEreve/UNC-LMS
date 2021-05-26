@@ -32,6 +32,7 @@
             this.btn_maintenanceLevel = new XanderUI.XUIButton();
             this.btn_scheduledMainte = new XanderUI.XUIButton();
             this.btn_emergencyMainte = new XanderUI.XUIButton();
+            this.btn_maintenanceList = new XanderUI.XUIButton();
             this.btn_maintenance = new XanderUI.XUIButton();
             this.dropDownPanel_report = new System.Windows.Forms.Panel();
             this.btn_StudentAssistant = new XanderUI.XUIButton();
@@ -50,7 +51,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_logOut = new XanderUI.XUIButton();
-            this.btn_maintenanceList = new XanderUI.XUIButton();
+            this.btn_mainteStatus = new XanderUI.XUIButton();
             this.dropDownPanel_maintenance.SuspendLayout();
             this.dropDownPanel_report.SuspendLayout();
             this.dropDownPanel_lab.SuspendLayout();
@@ -62,6 +63,7 @@
             // dropDownPanel_maintenance
             // 
             this.dropDownPanel_maintenance.BackColor = System.Drawing.Color.Gainsboro;
+            this.dropDownPanel_maintenance.Controls.Add(this.btn_mainteStatus);
             this.dropDownPanel_maintenance.Controls.Add(this.btn_maintenanceLevel);
             this.dropDownPanel_maintenance.Controls.Add(this.btn_scheduledMainte);
             this.dropDownPanel_maintenance.Controls.Add(this.btn_emergencyMainte);
@@ -69,7 +71,7 @@
             this.dropDownPanel_maintenance.Controls.Add(this.btn_maintenance);
             this.dropDownPanel_maintenance.Dock = System.Windows.Forms.DockStyle.Top;
             this.dropDownPanel_maintenance.Location = new System.Drawing.Point(0, 194);
-            this.dropDownPanel_maintenance.MaximumSize = new System.Drawing.Size(246, 500);
+            this.dropDownPanel_maintenance.MaximumSize = new System.Drawing.Size(246, 600);
             this.dropDownPanel_maintenance.MinimumSize = new System.Drawing.Size(246, 97);
             this.dropDownPanel_maintenance.Name = "dropDownPanel_maintenance";
             this.dropDownPanel_maintenance.Size = new System.Drawing.Size(246, 97);
@@ -141,6 +143,28 @@
             this.btn_emergencyMainte.TabIndex = 4;
             this.btn_emergencyMainte.TextColor = System.Drawing.Color.Gray;
             this.btn_emergencyMainte.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
+            // btn_maintenanceList
+            // 
+            this.btn_maintenanceList.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_maintenanceList.ButtonImage = null;
+            this.btn_maintenanceList.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_maintenanceList.ButtonText = "Maintenance                   History";
+            this.btn_maintenanceList.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_maintenanceList.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenanceList.CornerRadius = 5;
+            this.btn_maintenanceList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_maintenanceList.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_maintenanceList.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_maintenanceList.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_maintenanceList.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_maintenanceList.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_maintenanceList.Location = new System.Drawing.Point(0, 94);
+            this.btn_maintenanceList.Name = "btn_maintenanceList";
+            this.btn_maintenanceList.Size = new System.Drawing.Size(246, 94);
+            this.btn_maintenanceList.TabIndex = 7;
+            this.btn_maintenanceList.TextColor = System.Drawing.Color.Gray;
+            this.btn_maintenanceList.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // btn_maintenance
             // 
@@ -487,27 +511,27 @@
             this.btn_logOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btn_logOut.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
-            // btn_maintenanceList
+            // btn_mainteStatus
             // 
-            this.btn_maintenanceList.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_maintenanceList.ButtonImage = null;
-            this.btn_maintenanceList.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btn_maintenanceList.ButtonText = "Maintenance                   History";
-            this.btn_maintenanceList.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btn_maintenanceList.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_maintenanceList.CornerRadius = 5;
-            this.btn_maintenanceList.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_maintenanceList.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
-            this.btn_maintenanceList.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btn_maintenanceList.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btn_maintenanceList.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btn_maintenanceList.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_maintenanceList.Location = new System.Drawing.Point(0, 94);
-            this.btn_maintenanceList.Name = "btn_maintenanceList";
-            this.btn_maintenanceList.Size = new System.Drawing.Size(246, 94);
-            this.btn_maintenanceList.TabIndex = 7;
-            this.btn_maintenanceList.TextColor = System.Drawing.Color.Gray;
-            this.btn_maintenanceList.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_mainteStatus.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_mainteStatus.ButtonImage = null;
+            this.btn_mainteStatus.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_mainteStatus.ButtonText = "Maintenance                     Status";
+            this.btn_mainteStatus.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_mainteStatus.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_mainteStatus.CornerRadius = 5;
+            this.btn_mainteStatus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mainteStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_mainteStatus.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_mainteStatus.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_mainteStatus.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_mainteStatus.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_mainteStatus.Location = new System.Drawing.Point(0, 470);
+            this.btn_mainteStatus.Name = "btn_mainteStatus";
+            this.btn_mainteStatus.Size = new System.Drawing.Size(246, 94);
+            this.btn_mainteStatus.TabIndex = 8;
+            this.btn_mainteStatus.TextColor = System.Drawing.Color.Gray;
+            this.btn_mainteStatus.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_mainWindow
             // 
@@ -553,5 +577,6 @@
         private XanderUI.XUIButton btn_scheduledMainte;
         private XanderUI.XUIButton btn_emergencyMainte;
         private XanderUI.XUIButton btn_maintenanceList;
+        private XanderUI.XUIButton btn_mainteStatus;
     }
 }

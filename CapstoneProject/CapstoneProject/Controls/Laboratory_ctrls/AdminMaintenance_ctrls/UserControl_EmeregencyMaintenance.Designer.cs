@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -128,9 +129,9 @@
             this.label1.Location = new System.Drawing.Point(50, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 28);
+            this.label1.Size = new System.Drawing.Size(332, 28);
             this.label1.TabIndex = 10;
-            this.label1.Text = "EMERGENCY MAINTENANCE REPORT";
+            this.label1.Text = "ACTIVE EMERGENCY MAINTENANCE";
             // 
             // UserControl_EmeregencyMaintenance
             // 
@@ -164,5 +165,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

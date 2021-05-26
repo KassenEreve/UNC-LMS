@@ -23,6 +23,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
         {
             textBox_name.Text = string.Empty;
             textBox_desc.Text = string.Empty;
+            level = null; 
         }
 
         private void xuiButton1_Click(object sender, EventArgs e)

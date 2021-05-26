@@ -47,6 +47,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
         internal void ClearItem()
         {
             textBox_room.Text = "";
+            lab = null;
         }
 
         internal void UpdateItem(Laboratory lab)
