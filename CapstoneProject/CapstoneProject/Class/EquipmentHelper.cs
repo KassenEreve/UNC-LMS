@@ -46,6 +46,36 @@ namespace CapstoneProject.Class
 
         }
 
+        internal static Equipment GetEquipment(int equipment_id)
+        {
+            Equipment equipment = null;
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+
+                SqlParameter[] param = { new SqlParameter("@id", equipment_id) };
+                var table = dal.ExecuteQuery("GetEquipment", param).Tables[0];
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    equipment = new Equipment()
+                    {
+                        id = dr.Field<int>("id"),
+                        laboratory = new Laboratory() { id = dr.Field<int>("laboratory_id"), roomNum = dr.Field<string>("room_num") },
+                        computer_id = (dr.IsNull("comp_id")) ? 0 : dr.Field<int>("comp_id"),
+                        equipmentType = new EquipmentType() { id = dr.Field<int>("type_id"),name = dr.Field<string>("type_name"), }
+
+                    };
+
+
+                }
+
+                return equipment;
+            }
+        }
+
         public static int GetComputerCount(int lab_id)
         {
             int count = 0;

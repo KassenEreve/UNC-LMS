@@ -42,6 +42,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_SetSoftwareGroup);
             panel_main.Controls.Add(instance.userControl_MaintenanceLevel);
             panel_main.Controls.Add(instance.userControl_AddMaintenanceLevel);
+            panel_main.Controls.Add(instance.userControl_EmergencyMaintenance);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace CapstoneProject.Controls
             btn_softwareGroup.Tag = 9;
             btn_maintenance.Tag = 10;
             btn_maintenanceLevel.Tag = 11;
+            btn_emergencyMainte.Tag = 12;
 
 
 
@@ -78,6 +80,7 @@ namespace CapstoneProject.Controls
             btn_softwareGroup.Click += Button_Click;
             btn_maintenance.Click += Button_Click;
             btn_maintenanceLevel.Click += Button_Click;
+            btn_emergencyMainte.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -130,7 +133,9 @@ namespace CapstoneProject.Controls
                 case 11: ui.userControl_MaintenanceLevel.BringToFront();
                     ui.userControl_MaintenanceLevel.LoadList();
                     break;
-
+                case 12: ui.userControl_EmergencyMaintenance.BringToFront();
+                    ui.userControl_EmergencyMaintenance.LoadList();
+                    break;
 
 
 

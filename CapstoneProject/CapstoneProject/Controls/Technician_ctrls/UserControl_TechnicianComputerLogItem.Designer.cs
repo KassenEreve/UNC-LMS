@@ -55,27 +55,29 @@
             // 
             // lbl_date
             // 
-            this.lbl_date.AutoSize = true;
+            this.lbl_date.AutoEllipsis = true;
             this.lbl_date.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_date.Location = new System.Drawing.Point(275, 26);
+            this.lbl_date.Location = new System.Drawing.Point(271, 10);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(51, 20);
+            this.lbl_date.Size = new System.Drawing.Size(126, 46);
             this.lbl_date.TabIndex = 2;
             this.lbl_date.Text = "label4";
             this.lbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_date.Click += new System.EventHandler(this.lbl_date_Click);
             // 
             // lbl_studentNum
             // 
-            this.lbl_studentNum.AutoSize = true;
+            this.lbl_studentNum.AutoEllipsis = true;
             this.lbl_studentNum.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_studentNum.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_studentNum.Location = new System.Drawing.Point(131, 26);
+            this.lbl_studentNum.Location = new System.Drawing.Point(90, 10);
             this.lbl_studentNum.Name = "lbl_studentNum";
-            this.lbl_studentNum.Size = new System.Drawing.Size(50, 20);
+            this.lbl_studentNum.Size = new System.Drawing.Size(125, 46);
             this.lbl_studentNum.TabIndex = 1;
             this.lbl_studentNum.Text = "label2";
             this.lbl_studentNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_studentNum.Click += new System.EventHandler(this.lbl_studentNum_Click);
             // 
             // lbl_roomID
             // 

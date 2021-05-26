@@ -35,5 +35,15 @@ namespace CapstoneProject.Controls.Technician_ctrls
                 lbl_date.Text = log.date.ToString();
             }
         }
+
+        private void lbl_studentNum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_date_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

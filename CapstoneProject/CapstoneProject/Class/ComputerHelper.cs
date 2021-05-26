@@ -52,7 +52,7 @@ namespace CapstoneProject.Class
             {
                 if (!dal.IsConnected) return null;
 
-                SqlParameter[] param = { new SqlParameter("@comp_id", comp_id) };
+                SqlParameter[] param = { new SqlParameter("@id", comp_id) };
                 var table = dal.ExecuteQuery("GetComputer", param).Tables[0];
 
                 foreach (DataRow dr in table.AsEnumerable())
