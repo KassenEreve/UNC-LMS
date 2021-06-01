@@ -32,13 +32,13 @@
             this.panel_List = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -88,6 +88,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(738, 80);
             this.panel3.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Location = new System.Drawing.Point(296, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 23);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "STATUS";
             // 
             // label6
             // 
@@ -157,6 +169,7 @@
             this.xuiButton1.TabIndex = 11;
             this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
             // label1
             // 
@@ -168,18 +181,6 @@
             this.label1.Size = new System.Drawing.Size(265, 28);
             this.label1.TabIndex = 10;
             this.label1.Text = "EMERGENCY MAINTENANCE";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(296, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 23);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "STATUS";
             // 
             // UserControl_CustodianReport
             // 

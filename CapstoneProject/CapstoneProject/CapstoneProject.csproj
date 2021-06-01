@@ -97,6 +97,24 @@
     <Compile Include="Class\Technician.cs" />
     <Compile Include="Class\TechnicianHelper.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReport.Designer.cs">
+      <DependentUpon>UserControl_CustodianAddReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportEquipmentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportEquipmentItem.Designer.cs">
+      <DependentUpon>UserControl_CustodianAddReportEquipmentItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportSelectedItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportSelectedItem.Designer.cs">
+      <DependentUpon>UserControl_CustodianAddReportSelectedItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianMainWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -393,6 +411,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianAddReport.resx">
+      <DependentUpon>UserControl_CustodianAddReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportEquipmentItem.resx">
+      <DependentUpon>UserControl_CustodianAddReportEquipmentItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianAddReportSelectedItem.resx">
+      <DependentUpon>UserControl_CustodianAddReportSelectedItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianMainWindow.resx">
       <DependentUpon>UserControl_CustodianMainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -574,6 +601,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Expand Arrow_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

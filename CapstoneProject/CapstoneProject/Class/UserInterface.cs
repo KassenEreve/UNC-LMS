@@ -64,7 +64,7 @@ namespace CapstoneProject.Class
 
         public UserControl_CustodianReport userControl_CustodianReport;
         public UserControl_CustodianMainWindow userControl_CustodianMainWindow;
-
+        public UserControl_CustodianAddReport userControl_CustodianAddReport;
 
         #endregion
 
@@ -185,6 +185,9 @@ namespace CapstoneProject.Class
 
             userControl_CustodianMainWindow = new UserControl_CustodianMainWindow();
             userControl_CustodianMainWindow.Dock = DockStyle.Fill;
+
+            userControl_CustodianAddReport = new UserControl_CustodianAddReport();
+            userControl_CustodianAddReport.Dock = DockStyle.Fill;
 
             #endregion CUSTODIAN CONTROLS
 

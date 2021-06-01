@@ -28,8 +28,10 @@ namespace CapstoneProject.Controls.Custodian_ctrls
         {
             var instance = UserInterface.GetInstance();
             panel_main.Controls.Add(instance.userControl_CustodianReport);
+            panel_main.Controls.Add(instance.userControl_CustodianAddReport);
             instance.userControl_CustodianReport.Login(current_custodian);
             instance.userControl_CustodianReport.LoadList();
+           
         }
     }
 }

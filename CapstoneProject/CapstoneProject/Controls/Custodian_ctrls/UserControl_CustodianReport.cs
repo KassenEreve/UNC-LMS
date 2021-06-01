@@ -49,5 +49,13 @@ namespace CapstoneProject.Controls.Custodian_ctrls
 
 
         }
+
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_CustodianAddReport.ClearItem();
+            ui.userControl_CustodianAddReport.LoadList();
+            ui.userControl_CustodianAddReport.BringToFront();
+        }
     }
 }
