@@ -107,7 +107,18 @@ namespace CapstoneProject.Controls
                         ui.userControl_TechnicianMainWindow.BringToFront();
                     }
                     break;
-                case 3:
+                case 3: //custodian
+                    var custodian = CustodianHelper.LoginCustodian(textBox_username.Text.Trim(), textBox_password.Text.Trim());
+                    if (custodian !=null)
+                    {
+                        //successfull login
+                        ui.userControl_CustodianMainWindow.BringToFront();
+                        ui.userControl_CustodianMainWindow.Login(custodian);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid login information");
+                    }
                    
                     break;
             }
@@ -124,6 +135,11 @@ namespace CapstoneProject.Controls
         private void xuiButton2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

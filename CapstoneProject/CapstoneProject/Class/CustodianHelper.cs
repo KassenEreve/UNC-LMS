@@ -30,7 +30,11 @@ namespace CapstoneProject.Class
                         studentNum = dr.Field<string>("id_num"),
                         fname = dr.Field<string>("fname"),
                         mname = dr.Field<string>("mname"),
-                        lname = dr.Field<string>("lname")
+                        lname = dr.Field<string>("lname"),
+                        birthDate = dr.Field<DateTime>("birthDate"),
+                        phone = dr.Field<string>("phone"),
+                        email = dr.Field<string>("email"),
+                        password = dr.Field<string>("password")
                     };
 
 
@@ -123,6 +127,40 @@ namespace CapstoneProject.Class
             }
 
             return (list.Count() > 0) ? list : null;
+        }
+
+        internal static Custodian LoginCustodian(string username, string password)
+        {
+            Custodian custodian = null;
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+
+                SqlParameter[] param = { new SqlParameter("@id_num", username), new SqlParameter("@password", password) };
+                var table = dal.ExecuteQuery("LoginCustodian", param).Tables[0];
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    custodian = new Custodian()
+                    {
+                        id = dr.Field<int>("id"),
+                        studentNum = dr.Field<string>("id_num"),
+                        fname = dr.Field<string>("fname"),
+                        mname = dr.Field<string>("mname"),
+                        lname = dr.Field<string>("lname"),    
+                        birthDate = dr.Field<DateTime>("birthDate"),
+                        phone = dr.Field<string>("phone"),
+                        email = dr.Field<string>("email"),
+                        password = dr.Field<string>("password")
+                    };
+
+
+                }
+
+                return custodian;
+            }
         }
     }
 }

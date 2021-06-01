@@ -1,4 +1,5 @@
 ﻿using CapstoneProject.Controls;
+using CapstoneProject.Controls.Custodian_ctrls;
 using CapstoneProject.Controls.First_Setup;
 using CapstoneProject.Controls.Laboratory_ctrls;
 using CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls;
@@ -58,6 +59,15 @@ namespace CapstoneProject.Class
         public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
         public UserControl_TechnicianComputer userControl_TechnicianComputer;
         #endregion
+       
+        #region CUSTODIAN CONTROLS
+
+        public UserControl_CustodianReport userControl_CustodianReport;
+        public UserControl_CustodianMainWindow userControl_CustodianMainWindow;
+
+
+        #endregion
+
 
         private static UserInterface instance;
 
@@ -167,6 +177,16 @@ namespace CapstoneProject.Class
 
             userControl_AddCustodian = new UserControl_AddCustodian();
             userControl_AddCustodian.Dock = DockStyle.Fill;
+
+            #region CUSTODIAN CONTROLS
+
+            userControl_CustodianReport = new UserControl_CustodianReport();
+            userControl_CustodianReport.Dock = DockStyle.Fill;
+
+            userControl_CustodianMainWindow = new UserControl_CustodianMainWindow();
+            userControl_CustodianMainWindow.Dock = DockStyle.Fill;
+
+            #endregion CUSTODIAN CONTROLS
 
             timer = new Timer();
             timer.Interval = 15;

@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.xuiCustomPictureBox1 = new XanderUI.XUICustomPictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_username = new System.Windows.Forms.TextBox();
+            this.textBox_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -39,12 +39,12 @@
             this.textBox_studentNum = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel_studentLog = new System.Windows.Forms.Panel();
-            this.xuiButton2 = new XanderUI.XUIButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbl_studentNum = new System.Windows.Forms.Label();
-            this.lbl_lab = new System.Windows.Forms.Label();
-            this.lbl_comp = new System.Windows.Forms.Label();
             this.lbl_dateTime = new System.Windows.Forms.Label();
+            this.lbl_comp = new System.Windows.Forms.Label();
+            this.lbl_lab = new System.Windows.Forms.Label();
+            this.lbl_studentNum = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.xuiButton2 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.panel_studentLog.SuspendLayout();
             this.SuspendLayout();
@@ -75,19 +75,20 @@
             this.xuiCustomPictureBox1.TabIndex = 1;
             this.xuiCustomPictureBox1.Text = "xuiCustomPictureBox1";
             // 
-            // textBox1
+            // textBox_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(392, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 34);
-            this.textBox1.TabIndex = 2;
+            this.textBox_username.Location = new System.Drawing.Point(392, 214);
+            this.textBox_username.Name = "textBox_username";
+            this.textBox_username.Size = new System.Drawing.Size(262, 34);
+            this.textBox_username.TabIndex = 2;
             // 
-            // textBox2
+            // textBox_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(392, 275);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(262, 34);
-            this.textBox2.TabIndex = 4;
+            this.textBox_password.Location = new System.Drawing.Point(392, 275);
+            this.textBox_password.Name = "textBox_password";
+            this.textBox_password.PasswordChar = '*';
+            this.textBox_password.Size = new System.Drawing.Size(262, 34);
+            this.textBox_password.TabIndex = 4;
             // 
             // label2
             // 
@@ -135,11 +136,12 @@
             // 
             this.panel1.Controls.Add(this.textBox_studentNum);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(213, 194);
+            this.panel1.Location = new System.Drawing.Point(213, 190);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 125);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBox_studentNum
             // 
@@ -166,11 +168,61 @@
             this.panel_studentLog.Controls.Add(this.lbl_studentNum);
             this.panel_studentLog.Controls.Add(this.label4);
             this.panel_studentLog.Controls.Add(this.xuiButton2);
-            this.panel_studentLog.Location = new System.Drawing.Point(172, 190);
+            this.panel_studentLog.Location = new System.Drawing.Point(172, 193);
             this.panel_studentLog.Name = "panel_studentLog";
             this.panel_studentLog.Size = new System.Drawing.Size(716, 269);
             this.panel_studentLog.TabIndex = 8;
             this.panel_studentLog.Visible = false;
+            // 
+            // lbl_dateTime
+            // 
+            this.lbl_dateTime.AutoSize = true;
+            this.lbl_dateTime.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl_dateTime.Location = new System.Drawing.Point(62, 91);
+            this.lbl_dateTime.Name = "lbl_dateTime";
+            this.lbl_dateTime.Size = new System.Drawing.Size(118, 28);
+            this.lbl_dateTime.TabIndex = 14;
+            this.lbl_dateTime.Text = "DATE/TIME :";
+            // 
+            // lbl_comp
+            // 
+            this.lbl_comp.AutoSize = true;
+            this.lbl_comp.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl_comp.Location = new System.Drawing.Point(432, 134);
+            this.lbl_comp.Name = "lbl_comp";
+            this.lbl_comp.Size = new System.Drawing.Size(122, 28);
+            this.lbl_comp.TabIndex = 13;
+            this.lbl_comp.Text = "COMPUTER :";
+            // 
+            // lbl_lab
+            // 
+            this.lbl_lab.AutoSize = true;
+            this.lbl_lab.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl_lab.Location = new System.Drawing.Point(62, 142);
+            this.lbl_lab.Name = "lbl_lab";
+            this.lbl_lab.Size = new System.Drawing.Size(141, 28);
+            this.lbl_lab.TabIndex = 12;
+            this.lbl_lab.Text = "LABORATORY :";
+            // 
+            // lbl_studentNum
+            // 
+            this.lbl_studentNum.AutoSize = true;
+            this.lbl_studentNum.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lbl_studentNum.Location = new System.Drawing.Point(432, 89);
+            this.lbl_studentNum.Name = "lbl_studentNum";
+            this.lbl_studentNum.Size = new System.Drawing.Size(190, 28);
+            this.lbl_studentNum.TabIndex = 11;
+            this.lbl_studentNum.Text = "STUDENT NUMBER :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label4.Location = new System.Drawing.Point(242, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(224, 28);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "LOGGED SUCCESSFULLY";
             // 
             // xuiButton2
             // 
@@ -193,56 +245,6 @@
             this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton2.Click += new System.EventHandler(this.xuiButton2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(242, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 28);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "LOGGED SUCCESSFULLY";
-            // 
-            // lbl_studentNum
-            // 
-            this.lbl_studentNum.AutoSize = true;
-            this.lbl_studentNum.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_studentNum.Location = new System.Drawing.Point(432, 89);
-            this.lbl_studentNum.Name = "lbl_studentNum";
-            this.lbl_studentNum.Size = new System.Drawing.Size(190, 28);
-            this.lbl_studentNum.TabIndex = 11;
-            this.lbl_studentNum.Text = "STUDENT NUMBER :";
-            // 
-            // lbl_lab
-            // 
-            this.lbl_lab.AutoSize = true;
-            this.lbl_lab.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_lab.Location = new System.Drawing.Point(62, 142);
-            this.lbl_lab.Name = "lbl_lab";
-            this.lbl_lab.Size = new System.Drawing.Size(141, 28);
-            this.lbl_lab.TabIndex = 12;
-            this.lbl_lab.Text = "LABORATORY :";
-            // 
-            // lbl_comp
-            // 
-            this.lbl_comp.AutoSize = true;
-            this.lbl_comp.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_comp.Location = new System.Drawing.Point(432, 134);
-            this.lbl_comp.Name = "lbl_comp";
-            this.lbl_comp.Size = new System.Drawing.Size(122, 28);
-            this.lbl_comp.TabIndex = 13;
-            this.lbl_comp.Text = "COMPUTER :";
-            // 
-            // lbl_dateTime
-            // 
-            this.lbl_dateTime.AutoSize = true;
-            this.lbl_dateTime.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_dateTime.Location = new System.Drawing.Point(62, 91);
-            this.lbl_dateTime.Name = "lbl_dateTime";
-            this.lbl_dateTime.Size = new System.Drawing.Size(118, 28);
-            this.lbl_dateTime.TabIndex = 14;
-            this.lbl_dateTime.Text = "DATE/TIME :";
-            // 
             // UserControl_LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
@@ -252,9 +254,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.xuiButton1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_username);
             this.Controls.Add(this.xuiCustomPictureBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -275,8 +277,8 @@
 
         private System.Windows.Forms.Label label1;
         private XanderUI.XUICustomPictureBox xuiCustomPictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_username;
+        private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Label label2;
         private XanderUI.XUIButton xuiButton1;
         private System.Windows.Forms.ComboBox comboBox1;

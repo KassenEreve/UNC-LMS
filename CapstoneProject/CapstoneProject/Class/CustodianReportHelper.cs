@@ -45,6 +45,48 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
         }
 
+        internal static List<CustodianReport> GetAllCustodianReport(Custodian custodian)
+        {
+            List<CustodianReport> list = null;
+
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+                SqlParameter[] param = { new  SqlParameter("@custodian_id",custodian.id)
+                                   
+
+
+
+                                       };
+                var table = dal.ExecuteQuery("GetAllCustodianReport",param).Tables[0];
+
+                list = new List<CustodianReport>();
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    var save = new CustodianReport()
+                    {
+                        id = dr.Field<int>("id"),
+                        custodian = CustodianHelper.GetCustodian(dr.Field<int>("custodian_id")),
+                        custodianReportedItems = CustodianReportedItemHelper.GetReportedItems(dr.Field<int>("id")),
+                        date = dr.Field<DateTime>("date"),
+                        laboratory = new Laboratory() { id = dr.Field<int>("lab_id"), roomNum = dr.Field<string>("room_num"), },
+                        maintenanceAssignment =  (dr.IsNull("assignmentID")) ? null :EmergenceMaintenanceAssignmentHelper.GetEmergencyMaintenanceAssignment(  dr.Field<int>("assignmentID"))
+                        
+
+
+
+
+                    };
+                    list.Add(save);
+                }
+            }
+
+            return (list.Count() > 0) ? list : null;
+        }
+
         /*
         internal static Laboratory GetLaboratory(CustodianReport custodianReport)
         {

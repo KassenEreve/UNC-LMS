@@ -41,6 +41,7 @@ namespace CapstoneProject
             panel_main.Controls.Add(ui.userControl_MainWindow);
             panel_main.Controls.Add(ui.userControl_FirstRun);
             panel_main.Controls.Add(ui.userControl_TechnicianMainWindow);
+            panel_main.Controls.Add(ui.userControl_CustodianMainWindow);
        
         }
     }

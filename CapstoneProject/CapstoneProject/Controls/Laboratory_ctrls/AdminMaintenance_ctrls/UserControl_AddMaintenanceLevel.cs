@@ -28,7 +28,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
 
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            var saveLevel = new MaintenanceLevel() { name = textBox_name.Text.Trim(),description = textBox_desc.Text.Trim() };
+            var saveLevel = new MaintenanceLevel() { name = textBox_name.Text.Trim().ToUpper(),description = textBox_desc.Text.Trim() };
             if (level != null)
                 saveLevel.id = level.id;
             if (MaintenanceLevelHelper.SaveMaintenanceLevel(saveLevel))

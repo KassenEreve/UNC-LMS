@@ -16,6 +16,10 @@ namespace CapstoneProject.Class
         public DateTime date { get; set; }
 
         public Laboratory laboratory { get; set; }
+
+        public EmergenceMaintenanceAssignment maintenanceAssignment { get; set; }
+
+
        // public Laboratory laboratory { get { return CustodianReportHelper.GetLaboratory(this); } }
 
     }

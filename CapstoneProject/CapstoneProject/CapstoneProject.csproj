@@ -62,6 +62,8 @@
     <Compile Include="Class\CustodianReportedItemHelper.cs" />
     <Compile Include="Class\CustodianReportHelper.cs" />
     <Compile Include="Class\DAL.cs" />
+    <Compile Include="Class\EmergenceMaintenanceAssignment.cs" />
+    <Compile Include="Class\EmergenceMaintenanceAssignmentHelper.cs" />
     <Compile Include="Class\Equipment.cs" />
     <Compile Include="Class\EquipmentHelper.cs" />
     <Compile Include="Class\EquipmentStatusHistory.cs" />
@@ -70,10 +72,14 @@
     <Compile Include="Class\Laboratory.cs" />
     <Compile Include="Class\LaboratoryHelper.cs" />
     <Compile Include="Class\License.cs" />
+    <Compile Include="Class\Maintenance.cs" />
+    <Compile Include="Class\MaintenanceHelper.cs" />
     <Compile Include="Class\MaintenanceLevel.cs" />
     <Compile Include="Class\MaintenanceLevelHelper.cs" />
     <Compile Include="Class\MaintenanceStatus.cs" />
     <Compile Include="Class\MaintenanceStatusHelper.cs" />
+    <Compile Include="Class\MaintenanceStatusHistory.cs" />
+    <Compile Include="Class\MaintenanceStatusHistoryHelper.cs" />
     <Compile Include="Class\PCSpecs.cs" />
     <Compile Include="Class\PCSpecsHelper.cs" />
     <Compile Include="Class\Singleton.cs" />
@@ -91,6 +97,24 @@
     <Compile Include="Class\Technician.cs" />
     <Compile Include="Class\TechnicianHelper.cs" />
     <Compile Include="Class\UserInterface.cs" />
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianMainWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianMainWindow.Designer.cs">
+      <DependentUpon>UserControl_CustodianMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianReport.Designer.cs">
+      <DependentUpon>UserControl_CustodianReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianReportItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Custodian_ctrls\UserControl_CustodianReportItem.Designer.cs">
+      <DependentUpon>UserControl_CustodianReportItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\First_Setup\UserControl_FirstRun.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -369,6 +393,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianMainWindow.resx">
+      <DependentUpon>UserControl_CustodianMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianReport.resx">
+      <DependentUpon>UserControl_CustodianReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Custodian_ctrls\UserControl_CustodianReportItem.resx">
+      <DependentUpon>UserControl_CustodianReportItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\First_Setup\UserControl_FirstRun.resx">
       <DependentUpon>UserControl_FirstRun.cs</DependentUpon>
     </EmbeddedResource>
