@@ -45,7 +45,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
             var saveStatus = new MaintenanceStatus()
             {
                 color_argb = color,
-                name = textBox_name.Text,
+                name = textBox_name.Text.ToUpper(),
                 description = textBox_desc.Text
 
             };

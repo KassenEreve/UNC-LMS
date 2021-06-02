@@ -38,7 +38,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                 this.BackColor = Color.Red;
 
         }
-        public void SelectItem(bool forceSelect=false)
+        public void SelectItem(bool forceSelect=false,bool deSelect=false)
         {
             if (isSelected&&!forceSelect)
             {
@@ -50,10 +50,16 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                 isSelected = true;
                 xuiButton1.BackgroundColor = Color.Gray;
             }
+
+            if(deSelect)
+            {
+                isSelected = false;
+                xuiButton1.BackgroundColor = Color.White;
+            }
         }
         private void xuiButton1_Click(object sender, EventArgs e)
         {
-            SelectItem();
+            
             List<Computer> selectedComputers  = null;
             if (ModifierKeys.HasFlag(Keys.Control))
             {
@@ -71,6 +77,16 @@ namespace CapstoneProject.Controls.Laboratory_ctrls
                 }
                
 
+            }
+            else
+            {
+               
+                foreach(UserControl_ViewLabEquipmentItem ctrl in this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList())
+                {
+                    ctrl.SelectItem(false, true);
+                }
+                      
+                SelectItem();
             }
             var list = this.Parent.Controls.OfType<UserControl_ViewLabEquipmentItem>().ToList().FindAll(o => o.isSelected);
             if (list != null&&list.Count>0)

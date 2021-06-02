@@ -87,6 +87,60 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
         }
 
+        internal static CustodianReport SaveReport(CustodianReport custodianReport)
+        {
+            CustodianReport reportReturn = null;
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return null;
+
+
+                SqlParameter[] param = { new  SqlParameter("@custodian_id",custodianReport.custodian.id),
+                                       new  SqlParameter("@lab_id",  custodianReport.laboratory.id),
+                                       new  SqlParameter("@date",  custodianReport.date)
+
+
+
+
+                                       };
+
+                try
+                {
+
+                    var table = dal.ExecuteQuery("SaveCustodianReport", param).Tables[0];
+
+
+                    foreach (DataRow dr in table.AsEnumerable())
+                    {
+                        reportReturn = new CustodianReport()
+                        {
+                            id = dr.Field<int>("id"),
+                         
+
+                        };
+
+
+                    }
+
+
+                    return reportReturn;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return null;
+                }
+
+
+
+
+            }
+        }
+
         /*
         internal static Laboratory GetLaboratory(CustodianReport custodianReport)
         {

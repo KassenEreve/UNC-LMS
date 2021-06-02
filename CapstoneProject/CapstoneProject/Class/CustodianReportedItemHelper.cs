@@ -43,5 +43,42 @@ namespace CapstoneProject.Class
 
             return (list.Count() > 0) ? list : null;
         }
+
+        internal static bool SaveReportedItems(CustodianReport report)
+        {
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return false;
+
+                foreach (CustodianReportedItem item in report.custodianReportedItems)
+                {
+
+
+
+
+                    SqlParameter[] param = { new  SqlParameter("@custodianReport_id",report.id),
+                                       new  SqlParameter("@issue_desc", item.issueDescription),
+                                        new  SqlParameter("@equipment_id", item.equipment.id)
+
+
+
+                                       };
+
+                    try
+                    {
+                        dal.ExecuteNonQuery("SaveCustodianReportedItem", param);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        //inspect ex.Message
+                        string sd = ex.Message;
+                        return false;
+                    }
+                }
+                return true;
+
+            }
+        }
     }
 }

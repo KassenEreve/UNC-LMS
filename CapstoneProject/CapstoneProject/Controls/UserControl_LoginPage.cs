@@ -123,7 +123,12 @@ namespace CapstoneProject.Controls
                     break;
             }
         }
-
+        public void ClearItems()
+        {
+            textBox_studentNum.Text = string.Empty;
+            textBox_password.Text = string.Empty;
+            textBox_username.Text = string.Empty;
+        }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex.Equals(0))

@@ -12,5 +12,7 @@ namespace CapstoneProject.Class
         public List<EquipmentStatusHistory> equipmentHistory { get; set; }
 
         public int count { get; set; }
+
+        public bool selectedDefective { get; set; }
     }
 }

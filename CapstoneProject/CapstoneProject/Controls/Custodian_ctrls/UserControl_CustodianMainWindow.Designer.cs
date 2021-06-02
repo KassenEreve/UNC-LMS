@@ -467,6 +467,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "UserControl_CustodianMainWindow";
             this.Size = new System.Drawing.Size(1328, 554);
+            this.Load += new System.EventHandler(this.UserControl_CustodianMainWindow_Load);
             this.panel1.ResumeLayout(false);
             this.dropDownPanel_tools.ResumeLayout(false);
             this.dropDownPanel_report.ResumeLayout(false);

@@ -14,6 +14,9 @@ namespace CapstoneProject.Controls.Custodian_ctrls
     public partial class UserControl_CustodianAddReport : UserControl
     {
         Laboratory laboratory;
+        List<Computer> selectedComputers;
+        List<Equipment> selectedEquipments;
+        Custodian custodian;
         public UserControl_CustodianAddReport()
         {
             InitializeComponent();
@@ -24,10 +27,15 @@ namespace CapstoneProject.Controls.Custodian_ctrls
 
         }
 
-        internal void LoadList()
+        internal void LoadList(Custodian _custodian)
         {
             if (laboratory == null)
                 return;
+
+            if (_custodian == null)
+                return;
+
+            this.custodian = _custodian;
             lbl_room.Text = laboratory.roomNum;
 
             panel_list.Controls.Clear();
@@ -68,6 +76,107 @@ namespace CapstoneProject.Controls.Custodian_ctrls
                 MessageBox.Show("This computer has not been setup yet.");
             }
         }
+        private void xuiButton3_Click(object sender, EventArgs e)
+        {
+            if (selectedComputers != null)
+            {
+                selectedComputers.Reverse();
+               
+                foreach (Computer computer in selectedComputers)
+                {
+                    
+
+
+                    var selectedCtrl = new UserControl_CustodianAddReportSelectedItem(computer,null);
+                    selectedCtrl.Dock = DockStyle.Top;
+                    panel_selectedEquipments.Controls.Add(selectedCtrl);
+                 
+
+
+
+                }
+            }
+
+            if(selectedEquipments!=null)
+            {
+                selectedEquipments.Reverse();
+               
+                foreach (Equipment equipment in selectedEquipments)
+                {
+                   
+
+                    var selectedCtrl = new UserControl_CustodianAddReportSelectedItem( null, equipment);
+                    selectedCtrl.Dock = DockStyle.Top;
+                    panel_selectedEquipments.Controls.Add(selectedCtrl);
+
+
+
+                }
+            }
+          
+        }
+        private void xuiButton1_Click(object sender, EventArgs e)
+        {
+           var list = selectedComputers.FindAll(o => o.pcparts_equipment.Exists(eq => eq.selectedDefective));
+            selectedComputers = new List<Computer>();
+            
+
+            var reportItems = new List<CustodianReportedItem>();
+            //save
+            foreach (UserControl_CustodianAddReportSelectedItem ctrl in panel_selectedEquipments.Controls.OfType<UserControl_CustodianAddReportSelectedItem>())
+            {
+                var save = new CustodianReportedItem();
+                if (ctrl.computer != null)
+                {
+                    selectedComputers.Add(ctrl.computer);
+                    var defective = ctrl.computer.pcparts_equipment.Find(o => o.selectedDefective);
+                    if(defective==null)
+                    {
+                        MessageBox.Show("Pls select the pc part for computer[ " + ctrl.computer.pc_num + " ].");
+                        return;
+                    }
+                    save.equipment = defective;
+                }
+                else if (ctrl.equipment != null)
+                {
+                    save.equipment = ctrl.equipment;
+                }
+
+                save.issueDescription = ctrl.GetDescription();
+               
+                reportItems.Add(save);
+            }
+
+
+            if (laboratory == null)
+            {
+                MessageBox.Show("Computer has not been setup yet.");
+                return;
+            }
+            //proceed saving
+
+            CustodianReport report = CustodianReportHelper.SaveReport(new CustodianReport() { custodian = this.custodian, laboratory = this.laboratory, date = DateTime.Now });
+
+            report.custodianReportedItems = reportItems;
+            if (CustodianReportedItemHelper.SaveReportedItems(report))
+            {
+                MessageBox.Show("Saved successfully!");
+            }
+
+        }
+
+        internal void SetSelectedEquipments(List<Computer> selectedComputers, List<Equipment> selectedEquipments)
+        {
+            this.selectedComputers = selectedComputers;
+            this.selectedEquipments = selectedEquipments;
+        }
+        private void xuiButton2_Click(object sender, EventArgs e)
+        {
+
+            var ui = UserInterface.GetInstance();
+            ui.userControl_CustodianReport.LoadList();
+            ui.userControl_CustodianReport.BringToFront();
+        }
         private void xuiRadio1_Click(object sender, EventArgs e)
         {
 
@@ -98,11 +207,7 @@ namespace CapstoneProject.Controls.Custodian_ctrls
 
         }
 
-        private void xuiButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -113,18 +218,13 @@ namespace CapstoneProject.Controls.Custodian_ctrls
 
         }
 
+      
+
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void xuiButton3_Click(object sender, EventArgs e)
-        {
-            var ctrl = new UserControl_CustodianAddReportSelectedItem();
-            ctrl.Dock = DockStyle.Top;
-            panel_selectedEquipments.Controls.Add(ctrl);
-            panel_selectedEquipments.Controls.Add(ctrl);
-            panel_selectedEquipments.Controls.Add(ctrl);
-        }
+      
     }
 }

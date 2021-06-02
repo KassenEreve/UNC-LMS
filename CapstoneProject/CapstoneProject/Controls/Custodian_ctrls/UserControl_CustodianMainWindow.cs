@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapstoneProject.Class;
+using XanderUI;
 
 namespace CapstoneProject.Controls.Custodian_ctrls
 {
@@ -32,6 +33,42 @@ namespace CapstoneProject.Controls.Custodian_ctrls
             instance.userControl_CustodianReport.Login(current_custodian);
             instance.userControl_CustodianReport.LoadList();
            
+        }
+        private void Button_Click(object sender, EventArgs e)
+        {
+            int tag = 0;
+            var ui = UserInterface.GetInstance();
+
+
+            if (sender is XUIButton)
+            {
+                var b = sender as XUIButton;
+                tag = (int)b.Tag;
+            }
+
+
+            switch (tag)
+            {
+                case 0:
+                    ui.userControl_LoginPage.ClearItems();
+                    ui.userControl_LoginPage.BringToFront();
+                    break;
+              
+
+
+            }
+        }
+        private void expandCollapseMenu(XUIButton btn)
+        {
+            UserInterface.button = btn;
+            UserInterface.timer.Start();
+        }
+        private void UserControl_CustodianMainWindow_Load(object sender, EventArgs e)
+        {
+            btn_logOut.Tag = 0;
+            btn_logOut.Click += Button_Click;
+
+
         }
     }
 }

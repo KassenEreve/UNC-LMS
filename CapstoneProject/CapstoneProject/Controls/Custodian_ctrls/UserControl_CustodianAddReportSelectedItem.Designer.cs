@@ -30,9 +30,9 @@
         {
             this.lbl_name = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbl_ctr = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.xuiButton1 = new XanderUI.XUIButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,9 +41,9 @@
             this.lbl_name.AutoEllipsis = true;
             this.lbl_name.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_name.Location = new System.Drawing.Point(93, 3);
+            this.lbl_name.Location = new System.Drawing.Point(4, 5);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(185, 46);
+            this.lbl_name.Size = new System.Drawing.Size(166, 46);
             this.lbl_name.TabIndex = 6;
             this.lbl_name.Text = "label3";
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,37 +52,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.xuiButton1);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.lbl_ctr);
             this.panel1.Controls.Add(this.lbl_name);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(664, 50);
             this.panel1.TabIndex = 9;
-            // 
-            // lbl_ctr
-            // 
-            this.lbl_ctr.AutoEllipsis = true;
-            this.lbl_ctr.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ctr.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_ctr.Location = new System.Drawing.Point(-2, 2);
-            this.lbl_ctr.Name = "lbl_ctr";
-            this.lbl_ctr.Size = new System.Drawing.Size(67, 46);
-            this.lbl_ctr.TabIndex = 8;
-            this.lbl_ctr.Text = "1";
-            this.lbl_ctr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(284, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 27);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // xuiButton1
             // 
@@ -105,6 +83,26 @@
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(326, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(198, 27);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(160, 15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.Visible = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // UserControl_CustodianAddReportSelectedItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,8 +122,8 @@
         #endregion
         private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lbl_ctr;
         private System.Windows.Forms.TextBox textBox1;
         private XanderUI.XUIButton xuiButton1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

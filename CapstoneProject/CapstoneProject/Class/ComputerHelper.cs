@@ -72,6 +72,38 @@ namespace CapstoneProject.Class
                 return comp;
             }
         }
+        public static List<Equipment> GetPCParts(int comp_id)
+        {
+            List<Equipment> list = null;
+
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+                SqlParameter[] param = { new SqlParameter("@comp_id", comp_id) };
+                var table = dal.ExecuteQuery("GetPCParts", param).Tables[0];
+
+                list = new List<Equipment>();
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                   var computer = new Equipment()
+                    {
+                        id = dr.Field<int>("id"),
+                      
+                        equipmentType = new EquipmentType() { id = dr.Field<int>("equipmentType_id"),name = dr.Field<string>("name") }
+
+
+
+
+                    };
+                    list.Add(computer);
+                }
+            }
+
+            return (list.Count() > 0) ? list : null;
+        }
         public static Computer GetComputerFromFile()
         {
             if (!File.Exists(ComputerHelper.firstRunTxt))
