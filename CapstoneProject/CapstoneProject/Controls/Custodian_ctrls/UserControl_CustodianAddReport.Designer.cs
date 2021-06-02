@@ -147,7 +147,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(715, 842);
+            this.panel1.Size = new System.Drawing.Size(751, 842);
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -366,7 +366,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserControl_CustodianAddReport";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Size = new System.Drawing.Size(751, 440);
+            this.Size = new System.Drawing.Size(812, 676);
             this.Load += new System.EventHandler(this.UserControl_CustodianAddReport_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

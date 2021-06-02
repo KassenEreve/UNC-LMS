@@ -46,5 +46,49 @@ namespace CapstoneProject.Class
 
         }
 
+        internal static bool SaveMaintenanceAssignment(EmergenceMaintenanceAssignment assignment)
+        {
+            if (assignment == null)
+                return false;
+
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return false;
+
+
+                SqlParameter[] param = { new  SqlParameter("@report_id",assignment.custodianReport.id),
+                                       new  SqlParameter("@maintenance_id",assignment.maintenance.id)
+                                   
+
+
+
+
+                                       };
+
+                try
+                {
+
+                    dal.ExecuteNonQuery("SaveMaintenanceAssignment", param);
+
+
+
+
+                    return true;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return false;
+                }
+
+
+
+
+            }
+        }
     }
 }

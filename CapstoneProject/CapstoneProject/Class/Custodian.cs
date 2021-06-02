@@ -17,5 +17,7 @@ namespace CapstoneProject.Class
         public string email { get; set; }
         public DateTime birthDate { get; set; }
         public string password { get; set; }
+
+        public string fullName { get { return lname + ", " + fname + " " + mname[0]; } }
     }
 }

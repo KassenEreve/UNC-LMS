@@ -45,5 +45,59 @@ namespace CapstoneProject.Class
 
             return maintenance;
         }
+
+        internal static Maintenance SaveMaintenance(Maintenance maintenance)
+        {
+            Maintenance maintenanceReturn = null;
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return null;
+
+
+                SqlParameter[] param = { new  SqlParameter("@maintenanceLvl_id",maintenance.maintenanceLevel.id),
+                                       new  SqlParameter("@tech_id",  maintenance.technician.id),
+                                       new  SqlParameter("@date",  maintenance.date)
+
+
+
+
+                                       };
+
+                try
+                {
+
+                    var table = dal.ExecuteQuery("SaveMaintenance", param).Tables[0];
+
+
+                    foreach (DataRow dr in table.AsEnumerable())
+                    {
+                        maintenanceReturn = new Maintenance()
+                        {
+                            id = dr.Field<int>("id"),
+
+
+                        };
+
+
+                    }
+
+
+                    return maintenanceReturn;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return null;
+                }
+
+
+
+
+            }
+        }
     }
 }

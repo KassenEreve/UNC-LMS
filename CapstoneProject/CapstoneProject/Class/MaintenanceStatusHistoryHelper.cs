@@ -45,5 +45,51 @@ namespace CapstoneProject.Class
 
             return (list.Count() > 0) ? list : null;
         }
+
+        internal static bool SaveStatusHistory(Maintenance maintenance)
+        {
+            if (maintenance == null)
+                return false;
+
+            using (DAL dal = new DAL())
+            {
+
+                if (!dal.IsConnected) return false;
+
+
+                SqlParameter[] param = { new  SqlParameter("@maintenance_id",maintenance.id),
+                                       new  SqlParameter("@maintenanceStatus_id",maintenance.statusHistory[0].status.id),
+                                       new  SqlParameter("@date",maintenance.statusHistory[0].date)
+
+
+
+
+
+                                       };
+
+                try
+                {
+
+                    dal.ExecuteNonQuery("SaveMaintenanceStatusHistory", param);
+
+
+
+
+                    return true;
+
+
+                }
+                catch (Exception ex)
+                {
+                    //inspect ex.Message
+                    string sd = ex.Message;
+                    return false;
+                }
+
+
+
+
+            }
+        }
     }
 }

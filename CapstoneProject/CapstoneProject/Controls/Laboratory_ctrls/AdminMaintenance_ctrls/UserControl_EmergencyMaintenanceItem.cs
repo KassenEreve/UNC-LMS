@@ -75,5 +75,16 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
             }
            
         }
+
+        private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (custodianReport is null)
+                return;
+
+            var ui = UserInterface.GetInstance();
+            ui.userControl_EmergencyMaintenanceAssignment.LoadItem(custodianReport);
+
+            ui.userControl_EmergencyMaintenanceAssignment.BringToFront();
+        }
     }
 }

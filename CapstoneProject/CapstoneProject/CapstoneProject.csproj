@@ -169,6 +169,18 @@
     <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmeregencyMaintenance.Designer.cs">
       <DependentUpon>UserControl_EmeregencyMaintenance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignment.Designer.cs">
+      <DependentUpon>UserControl_EmergencyMaintenanceAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignmentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignmentItem.Designer.cs">
+      <DependentUpon>UserControl_EmergencyMaintenanceAssignmentItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -446,6 +458,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmeregencyMaintenance.resx">
       <DependentUpon>UserControl_EmeregencyMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignment.resx">
+      <DependentUpon>UserControl_EmergencyMaintenanceAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceAssignmentItem.resx">
+      <DependentUpon>UserControl_EmergencyMaintenanceAssignmentItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceItem.resx">
       <DependentUpon>UserControl_EmergencyMaintenanceItem.cs</DependentUpon>
