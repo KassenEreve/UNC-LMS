@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Attendance.cs" />
+    <Compile Include="Class\AttendanceHelper.cs" />
     <Compile Include="Class\ComputerHelper.cs" />
     <Compile Include="Class\ComputerLog.cs" />
     <Compile Include="Class\Computer.cs" />

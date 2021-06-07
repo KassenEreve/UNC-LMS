@@ -76,7 +76,13 @@ namespace CapstoneProject.Controls.Teacher_ctrls
 
         private void xuiButton2_Click(object sender, EventArgs e)
         {
-
+            List<Attendance> attendance_print = new List<Attendance>();
+            foreach(UserControl_TeacherAttendanceItem ctrl in flowLayoutPanel1.Controls.OfType<UserControl_TeacherAttendanceItem>())
+            {
+                attendance_print.Add(ctrl.GetLatestLog());
+            }
+            if(attendance_print.Count>0)
+            AttendanceHelper.printAttendance(attendance_print);
         }
     }
 }

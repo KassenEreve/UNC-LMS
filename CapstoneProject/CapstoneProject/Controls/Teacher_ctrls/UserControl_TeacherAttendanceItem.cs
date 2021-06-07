@@ -15,6 +15,7 @@ namespace CapstoneProject.Controls.Teacher_ctrls
     {
         Computer computer;
         TimeSpan from, to;
+        Attendance attendance;
         public UserControl_TeacherAttendanceItem(Computer computer,TimeSpan from,TimeSpan to)
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace CapstoneProject.Controls.Teacher_ctrls
         {
             if (computer is null)
                 return;
-           
+            attendance = new Attendance();
             computer.computeLogs = ComputerLogHelper.GetAllLogs(computer);
             if (computer.computeLogs != null)
             {
@@ -45,6 +46,9 @@ namespace CapstoneProject.Controls.Teacher_ctrls
             {
                 if (computer.computeLogs.Count > 0)
                 {
+                    attendance.log = computer.computeLogs[0];
+                    attendance.fromTime = from;
+                    attendance.toTime = to;
                     lbl_student.Text = computer.computeLogs[0].student.studentNum;
                     lbl_time.Text = computer.computeLogs[0].date.TimeOfDay.ToString();
                     var timeSub = computer.computeLogs[0].date.TimeOfDay.Subtract(from);
@@ -53,6 +57,7 @@ namespace CapstoneProject.Controls.Teacher_ctrls
                         //means the student was late
                         lbl_time.ForeColor = Color.Red;
                         lbl_time.Text += "\n LATE";
+                        attendance.isLate = true;
                     }
                 }
                 else
@@ -66,6 +71,11 @@ namespace CapstoneProject.Controls.Teacher_ctrls
                 Parent.Controls.Remove(this);
             }
 
+        }
+        public Attendance GetLatestLog()
+        {
+
+            return attendance;
         }
     }
 }
