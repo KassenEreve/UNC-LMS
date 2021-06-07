@@ -37,6 +37,7 @@ namespace CapstoneProject.Controls
                 test.Add("1", "Admin");
                 test.Add("2", "Technician" );
                 test.Add("3", "Custodian");
+                test.Add("4", "Teacher");
 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
                 comboBox1.DataSource = new BindingSource(test, null);
@@ -129,6 +130,10 @@ namespace CapstoneProject.Controls
                     {
                         MessageBox.Show("Invalid login information");
                     }
+                   
+                    break;
+                case 4:
+                    ui.userControl_TeacherMainWindow.BringToFront();
                    
                     break;
             }

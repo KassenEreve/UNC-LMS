@@ -349,6 +349,24 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.Designer.cs">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherAttendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherAttendance.Designer.cs">
+      <DependentUpon>UserControl_TeacherAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherAttendanceItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherAttendanceItem.Designer.cs">
+      <DependentUpon>UserControl_TeacherAttendanceItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherMainWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Teacher_ctrls\UserControl_TeacherMainWindow.Designer.cs">
+      <DependentUpon>UserControl_TeacherMainWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -561,6 +579,15 @@
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_ViewLabItem.resx">
       <DependentUpon>UserControl_ViewLabItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Teacher_ctrls\UserControl_TeacherAttendance.resx">
+      <DependentUpon>UserControl_TeacherAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Teacher_ctrls\UserControl_TeacherAttendanceItem.resx">
+      <DependentUpon>UserControl_TeacherAttendanceItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Teacher_ctrls\UserControl_TeacherMainWindow.resx">
+      <DependentUpon>UserControl_TeacherMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianComputer.resx">
       <DependentUpon>UserControl_TechnicianComputer.cs</DependentUpon>
     </EmbeddedResource>
@@ -641,5 +668,6 @@
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

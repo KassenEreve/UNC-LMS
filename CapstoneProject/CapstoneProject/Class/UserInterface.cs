@@ -3,6 +3,7 @@ using CapstoneProject.Controls.Custodian_ctrls;
 using CapstoneProject.Controls.First_Setup;
 using CapstoneProject.Controls.Laboratory_ctrls;
 using CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls;
+using CapstoneProject.Controls.Teacher_ctrls;
 using CapstoneProject.Controls.Technician_ctrls;
 using CapstoneProject.Controls.User_ctrls;
 using System;
@@ -68,6 +69,11 @@ namespace CapstoneProject.Class
         public UserControl_CustodianMainWindow userControl_CustodianMainWindow;
         public UserControl_CustodianAddReport userControl_CustodianAddReport;
 
+        #endregion
+
+        #region TEACHER CONTROLS
+        public UserControl_TeacherAttendance userControl_TeacherAttendance;
+        public UserControl_TeacherMainWindow userControl_TeacherMainWindow;
         #endregion
 
 
@@ -201,6 +207,14 @@ namespace CapstoneProject.Class
             userControl_TechnicianMaintenance = new UserControl_TechnicianMaintenance();
             userControl_TechnicianMaintenance.Dock = DockStyle.Fill;
             #endregion TECHNICIAN CONTROLS
+
+            #region TEACHER CONTROLS
+            userControl_TeacherAttendance = new UserControl_TeacherAttendance();
+            userControl_TeacherAttendance.Dock = DockStyle.Fill;
+
+            userControl_TeacherMainWindow = new UserControl_TeacherMainWindow();
+            userControl_TeacherMainWindow.Dock = DockStyle.Fill;
+            #endregion
 
             timer = new Timer();
             timer.Interval = 15;
