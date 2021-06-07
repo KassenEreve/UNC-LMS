@@ -59,6 +59,7 @@ namespace CapstoneProject.Class
         public UserControl_FirstRun userControl_FirstRun;
         public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
         public UserControl_TechnicianComputer userControl_TechnicianComputer;
+        public UserControl_TechnicianMaintenance userControl_TechnicianMaintenance;
         #endregion
        
         #region CUSTODIAN CONTROLS
@@ -194,6 +195,12 @@ namespace CapstoneProject.Class
             userControl_CustodianAddReport.Dock = DockStyle.Fill;
 
             #endregion CUSTODIAN CONTROLS
+
+
+            #region TECHNICIAN CONTROLS
+            userControl_TechnicianMaintenance = new UserControl_TechnicianMaintenance();
+            userControl_TechnicianMaintenance.Dock = DockStyle.Fill;
+            #endregion TECHNICIAN CONTROLS
 
             timer = new Timer();
             timer.Interval = 15;

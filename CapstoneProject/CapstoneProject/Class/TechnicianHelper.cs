@@ -46,6 +46,41 @@ namespace CapstoneProject.Class
             return (list.Count() > 0) ? list : null;
         }
 
+        internal static List<Maintenance> GetAllTechnicianMaintenance(Technician current_technician)
+        {
+            List<Maintenance> list = null;
+
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+                SqlParameter[] param = { new SqlParameter("@technician_id", current_technician.id) };
+                var table = dal.ExecuteQuery("GetTechnicianMaintenance", param).Tables[0];
+
+                list = new List<Maintenance>();
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    var save = new Maintenance()
+                    {
+                        id = dr.Field<int>("id"),
+                       technician = current_technician,
+                        //computer_id = dr.Field<int>("comp_id"),
+                        maintenanceLevel = new MaintenanceLevel() { id = dr.Field<int>("maintenanceLvl_id"), name = dr.Field<string>("name") },
+                        date = dr.Field<DateTime>("date")
+                        // equipmentHistory = 
+
+
+
+                    };
+                    list.Add(save);
+                }
+            }
+
+            return (list.Count() > 0) ? list : null;
+        }
+
         internal static bool DeleteTechnician(Technician technician)
         {
             using (DAL dal = new DAL())
@@ -117,6 +152,40 @@ namespace CapstoneProject.Class
 
 
 
+            }
+        }
+
+        internal static Technician LoginTechnician(string username, string password)
+        {
+            Technician technician = null;
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+
+                SqlParameter[] param = { new SqlParameter("@id_num", username), new SqlParameter("@password", password) };
+                var table = dal.ExecuteQuery("LoginTechnician", param).Tables[0];
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    technician = new Technician()
+                    {
+                        id = dr.Field<int>("id"),
+                        idNum = dr.Field<string>("idNumber"),
+                        fname = dr.Field<string>("fname"),
+                        mname = dr.Field<string>("mname"),
+                        lname = dr.Field<string>("lname"),
+                        birthDate = dr.Field<DateTime>("birthDate"),
+                        phone = dr.Field<string>("phone"),
+                        email = dr.Field<string>("email"),
+                        password = dr.Field<string>("password")
+                    };
+
+
+                }
+
+                return technician;
             }
         }
     }

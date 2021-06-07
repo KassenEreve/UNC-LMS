@@ -96,6 +96,15 @@ namespace CapstoneProject.Controls
                     ui.userControl_MainWindow.BringToFront();
                     break;
                 case 2: //technician
+                    var technician = TechnicianHelper.LoginTechnician(textBox_username.Text.Trim(), textBox_password.Text.Trim());
+                    if (technician == null)
+                    {
+                        MessageBox.Show("Invalid login information");
+                        return;
+
+                    }
+                   
+
                     if (!File.Exists(ComputerHelper.firstRunTxt)) //if first run show setup computer panel
                     {
                         ui.userControl_FirstRun.BringToFront();
@@ -106,6 +115,7 @@ namespace CapstoneProject.Controls
 
                         ui.userControl_TechnicianMainWindow.BringToFront();
                     }
+                    ui.userControl_TechnicianMainWindow.Login(technician);
                     break;
                 case 3: //custodian
                     var custodian = CustodianHelper.LoginCustodian(textBox_username.Text.Trim(), textBox_password.Text.Trim());

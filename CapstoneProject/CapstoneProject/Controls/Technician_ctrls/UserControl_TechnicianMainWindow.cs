@@ -14,6 +14,7 @@ namespace CapstoneProject.Controls.Technician_ctrls
 {
     public partial class UserControl_TechnicianMainWindow : UserControl
     {
+        Technician current_technician;
         public UserControl_TechnicianMainWindow()
         {
             InitializeComponent();
@@ -27,10 +28,12 @@ namespace CapstoneProject.Controls.Technician_ctrls
 
         private void UserControl_TechnicianMainWindow_Load(object sender, EventArgs e)
         {
-            LoadPanel();
+            
 
             btn_Main.Tag= 1;
             btn_computer.Tag = 2;
+            btn_maintenance.Tag = 3;
+            btn_mainteList.Tag = 4;
          
 
 
@@ -44,6 +47,8 @@ namespace CapstoneProject.Controls.Technician_ctrls
 
             btn_logOut.Click += Button_Click;
             btn_computer.Click += Button_Click;
+            btn_maintenance.Click += Button_Click;
+            btn_mainteList.Click += Button_Click;
         }
         private void Button_Click(object sender, EventArgs e)
         {
@@ -74,12 +79,13 @@ namespace CapstoneProject.Controls.Technician_ctrls
                     ui.userControl_TechnicianComputer.LoadList();
                     break;
                 case 3:
-                    ui.userControl_EquipmentType.BringToFront();
-                    ui.userControl_EquipmentType.LoadList();
+                    expandCollapseMenu(sender as XUIButton);
                     break;
                 case 4:
-                    ui.userControl_PcSpecsList.BringToFront();
-                    ui.userControl_PcSpecsList.LoadList();
+                    ui.userControl_TechnicianMaintenance.BringToFront();
+                    ui.userControl_TechnicianMaintenance.Login(current_technician);
+                    ui.userControl_TechnicianMaintenance.LoadList();
+                    
                     break;
                 case 5:
                     expandCollapseMenu(sender as XUIButton);
@@ -114,6 +120,14 @@ namespace CapstoneProject.Controls.Technician_ctrls
         {
             var instance = UserInterface.GetInstance();
             panel_main.Controls.Add(instance.userControl_TechnicianComputer);
+            panel_main.Controls.Add(instance.userControl_TechnicianMaintenance);
+            instance.userControl_TechnicianComputer.Login(current_technician);
+        }
+
+        internal void Login(Technician technician)
+        {
+            current_technician = technician;
+            LoadPanel();
         }
     }
 }

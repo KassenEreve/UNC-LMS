@@ -14,6 +14,7 @@ namespace CapstoneProject.Controls.Technician_ctrls
     public partial class UserControl_TechnicianComputer : UserControl
     {
         Computer thisComputer;
+        Technician technician;
         public UserControl_TechnicianComputer()
         {
             InitializeComponent();
@@ -85,6 +86,11 @@ namespace CapstoneProject.Controls.Technician_ctrls
         private void xuiButton2_Click(object sender, EventArgs e)
         {
             panel_logHistory.Visible = false;
+        }
+
+        internal void Login(Technician technician)
+        {
+            this.technician = technician;
         }
     }
 }

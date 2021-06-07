@@ -361,6 +361,18 @@
     <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianComputerLogItem.Designer.cs">
       <DependentUpon>UserControl_TechnicianComputerLogItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenance.Designer.cs">
+      <DependentUpon>UserControl_TechnicianMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenanceItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenanceItem.Designer.cs">
+      <DependentUpon>UserControl_TechnicianMaintenanceItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -554,6 +566,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianComputerLogItem.resx">
       <DependentUpon>UserControl_TechnicianComputerLogItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenance.resx">
+      <DependentUpon>UserControl_TechnicianMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMaintenanceItem.resx">
+      <DependentUpon>UserControl_TechnicianMaintenanceItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.resx">
       <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>
