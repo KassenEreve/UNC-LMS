@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapstoneProject.Class;
+using CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls;
 
 namespace CapstoneProject.Controls.Technician_ctrls
 {
@@ -25,7 +26,24 @@ namespace CapstoneProject.Controls.Technician_ctrls
             lbl_status.Text = assignment.maintenance.statusHistory[0].status.name;
             lbl_status.ForeColor = Color.FromArgb(assignment.maintenance.statusHistory[0].status.color_argb);
             LoadCombobox();
+            LoadTable();
             
+        }
+
+        private void LoadTable()
+        {
+            panel_selectedEquipments.Controls.Clear();
+
+            if (assignment.custodianReport.custodianReportedItems == null)
+                return;
+            assignment.custodianReport.custodianReportedItems.Reverse();
+            int ctr = assignment.custodianReport.custodianReportedItems.Count;
+            foreach (CustodianReportedItem item in assignment.custodianReport.custodianReportedItems)
+            {
+                var ctrl = new UserControl_EmergencyMaintenanceAssignmentItem(item);
+                ctrl.Dock = DockStyle.Top;
+                panel_selectedEquipments.Controls.Add(ctrl);
+            }
         }
 
         private void LoadCombobox()

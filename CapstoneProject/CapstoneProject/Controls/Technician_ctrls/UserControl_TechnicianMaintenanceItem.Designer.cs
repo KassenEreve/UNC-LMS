@@ -36,8 +36,6 @@
             this.xuiButton1 = new XanderUI.XUIButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_level = new System.Windows.Forms.Label();
             this.lbl_items = new System.Windows.Forms.Label();
             this.lbl_ctr = new System.Windows.Forms.Label();
@@ -132,30 +130,16 @@
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.vIEWToolStripMenuItem,
-            this.eDITToolStripMenuItem,
-            this.dELETEToolStripMenuItem});
+            this.vIEWToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 104);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
             // 
             // vIEWToolStripMenuItem
             // 
             this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
             this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.vIEWToolStripMenuItem.Text = "VIEW";
+            this.vIEWToolStripMenuItem.Text = "UPDATE";
             this.vIEWToolStripMenuItem.Click += new System.EventHandler(this.vIEWToolStripMenuItem_Click);
-            // 
-            // eDITToolStripMenuItem
-            // 
-            this.eDITToolStripMenuItem.Name = "eDITToolStripMenuItem";
-            this.eDITToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
-            this.eDITToolStripMenuItem.Text = "EDIT";
-            // 
-            // dELETEToolStripMenuItem
-            // 
-            this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
-            this.dELETEToolStripMenuItem.Text = "DELETE";
             // 
             // lbl_level
             // 
@@ -217,8 +201,6 @@
         private XanderUI.XUIButton xuiButton1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem vIEWToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eDITToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
         private System.Windows.Forms.Label lbl_level;
         private System.Windows.Forms.Label lbl_items;
         private System.Windows.Forms.Label lbl_ctr;
