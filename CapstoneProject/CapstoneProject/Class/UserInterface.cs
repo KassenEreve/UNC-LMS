@@ -61,6 +61,7 @@ namespace CapstoneProject.Class
         public UserControl_TechnicianMainWindow userControl_TechnicianMainWindow;
         public UserControl_TechnicianComputer userControl_TechnicianComputer;
         public UserControl_TechnicianMaintenance userControl_TechnicianMaintenance;
+        public UserControl_TechnicianViewAssignment userControl_TechnicianViewAssignment;
         #endregion
        
         #region CUSTODIAN CONTROLS
@@ -206,6 +207,9 @@ namespace CapstoneProject.Class
             #region TECHNICIAN CONTROLS
             userControl_TechnicianMaintenance = new UserControl_TechnicianMaintenance();
             userControl_TechnicianMaintenance.Dock = DockStyle.Fill;
+
+            userControl_TechnicianViewAssignment = new UserControl_TechnicianViewAssignment();
+            userControl_TechnicianViewAssignment.Dock = DockStyle.Fill;
             #endregion TECHNICIAN CONTROLS
 
             #region TEACHER CONTROLS

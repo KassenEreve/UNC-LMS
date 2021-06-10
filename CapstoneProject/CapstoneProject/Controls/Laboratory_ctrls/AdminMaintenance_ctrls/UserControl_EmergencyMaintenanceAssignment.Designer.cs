@@ -38,24 +38,26 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox_Level = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.lbl_lab = new System.Windows.Forms.Label();
+            this.lbl_date = new System.Windows.Forms.Label();
+            this.lbl_custodian = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox_Status = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.comboBox_Technician = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.xuiButton2 = new XanderUI.XUIButton();
             this.xuiButton1 = new XanderUI.XUIButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox_Technician = new System.Windows.Forms.ComboBox();
-            this.comboBox_Status = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lbl_custodian = new System.Windows.Forms.Label();
-            this.lbl_date = new System.Windows.Forms.Label();
-            this.lbl_lab = new System.Windows.Forms.Label();
-            this.lbl_time = new System.Windows.Forms.Label();
-            this.comboBox_Level = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.textBox_description = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -166,6 +168,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.textBox_description);
             this.panel1.Controls.Add(this.comboBox_Level);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.lbl_time);
@@ -188,8 +192,143 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 862);
+            this.panel1.Size = new System.Drawing.Size(751, 973);
             this.panel1.TabIndex = 19;
+            // 
+            // comboBox_Level
+            // 
+            this.comboBox_Level.FormattingEnabled = true;
+            this.comboBox_Level.Location = new System.Drawing.Point(298, 765);
+            this.comboBox_Level.Name = "comboBox_Level";
+            this.comboBox_Level.Size = new System.Drawing.Size(342, 36);
+            this.comboBox_Level.TabIndex = 35;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.Gray;
+            this.label14.Location = new System.Drawing.Point(54, 768);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(212, 28);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "MAINTENANCE LEVEL :";
+            // 
+            // lbl_time
+            // 
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_time.Location = new System.Drawing.Point(570, 123);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(63, 28);
+            this.lbl_time.TabIndex = 33;
+            this.lbl_time.Text = "Time :";
+            // 
+            // lbl_lab
+            // 
+            this.lbl_lab.AutoSize = true;
+            this.lbl_lab.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_lab.Location = new System.Drawing.Point(570, 86);
+            this.lbl_lab.Name = "lbl_lab";
+            this.lbl_lab.Size = new System.Drawing.Size(117, 28);
+            this.lbl_lab.TabIndex = 32;
+            this.lbl_lab.Text = "Laboratory :";
+            // 
+            // lbl_date
+            // 
+            this.lbl_date.AutoSize = true;
+            this.lbl_date.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_date.Location = new System.Drawing.Point(167, 123);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(62, 28);
+            this.lbl_date.TabIndex = 31;
+            this.lbl_date.Text = "Date :";
+            // 
+            // lbl_custodian
+            // 
+            this.lbl_custodian.AutoSize = true;
+            this.lbl_custodian.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_custodian.Location = new System.Drawing.Point(167, 86);
+            this.lbl_custodian.Name = "lbl_custodian";
+            this.lbl_custodian.Size = new System.Drawing.Size(109, 28);
+            this.lbl_custodian.TabIndex = 30;
+            this.lbl_custodian.Text = "Custodian :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.Gray;
+            this.label13.Location = new System.Drawing.Point(433, 123);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 28);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Time :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(52, 123);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(62, 28);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Date :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(433, 86);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 28);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Laboratory :";
+            // 
+            // comboBox_Status
+            // 
+            this.comboBox_Status.FormattingEnabled = true;
+            this.comboBox_Status.Location = new System.Drawing.Point(296, 690);
+            this.comboBox_Status.Name = "comboBox_Status";
+            this.comboBox_Status.Size = new System.Drawing.Size(342, 36);
+            this.comboBox_Status.TabIndex = 26;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(52, 693);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 28);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "MAINTENANCE STATUS :";
+            // 
+            // comboBox_Technician
+            // 
+            this.comboBox_Technician.FormattingEnabled = true;
+            this.comboBox_Technician.Location = new System.Drawing.Point(296, 610);
+            this.comboBox_Technician.Name = "comboBox_Technician";
+            this.comboBox_Technician.Size = new System.Drawing.Size(342, 36);
+            this.comboBox_Technician.TabIndex = 24;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Gray;
+            this.label8.Location = new System.Drawing.Point(52, 613);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(132, 28);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "TECHNICIAN :";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label6.Location = new System.Drawing.Point(32, 556);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(275, 28);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "MAINTENANCE ASSIGNMENT";
             // 
             // label5
             // 
@@ -225,7 +364,7 @@
             this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton2.Location = new System.Drawing.Point(592, 915);
+            this.xuiButton2.Location = new System.Drawing.Point(592, 999);
             this.xuiButton2.Name = "xuiButton2";
             this.xuiButton2.Size = new System.Drawing.Size(151, 52);
             this.xuiButton2.TabIndex = 18;
@@ -246,7 +385,7 @@
             this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton1.Location = new System.Drawing.Point(416, 915);
+            this.xuiButton1.Location = new System.Drawing.Point(416, 999);
             this.xuiButton1.Name = "xuiButton1";
             this.xuiButton1.Size = new System.Drawing.Size(151, 52);
             this.xuiButton1.TabIndex = 17;
@@ -254,140 +393,23 @@
             this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton1.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
-            // label6
+            // textBox_description
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Location = new System.Drawing.Point(32, 556);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(275, 28);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "MAINTENANCE ASSIGNMENT";
+            this.textBox_description.Location = new System.Drawing.Point(298, 823);
+            this.textBox_description.Multiline = true;
+            this.textBox_description.Name = "textBox_description";
+            this.textBox_description.Size = new System.Drawing.Size(340, 125);
+            this.textBox_description.TabIndex = 36;
             // 
-            // label8
+            // label15
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(52, 613);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 28);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "TECHNICIAN :";
-            // 
-            // comboBox_Technician
-            // 
-            this.comboBox_Technician.FormattingEnabled = true;
-            this.comboBox_Technician.Location = new System.Drawing.Point(296, 610);
-            this.comboBox_Technician.Name = "comboBox_Technician";
-            this.comboBox_Technician.Size = new System.Drawing.Size(342, 36);
-            this.comboBox_Technician.TabIndex = 24;
-            // 
-            // comboBox_Status
-            // 
-            this.comboBox_Status.FormattingEnabled = true;
-            this.comboBox_Status.Location = new System.Drawing.Point(296, 690);
-            this.comboBox_Status.Name = "comboBox_Status";
-            this.comboBox_Status.Size = new System.Drawing.Size(342, 36);
-            this.comboBox_Status.TabIndex = 26;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(52, 693);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 28);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "MAINTENANCE STATUS :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Gray;
-            this.label11.Location = new System.Drawing.Point(433, 86);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 28);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Laboratory :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(52, 123);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 28);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Date :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(433, 123);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 28);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Time :";
-            // 
-            // lbl_custodian
-            // 
-            this.lbl_custodian.AutoSize = true;
-            this.lbl_custodian.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_custodian.Location = new System.Drawing.Point(167, 86);
-            this.lbl_custodian.Name = "lbl_custodian";
-            this.lbl_custodian.Size = new System.Drawing.Size(109, 28);
-            this.lbl_custodian.TabIndex = 30;
-            this.lbl_custodian.Text = "Custodian :";
-            // 
-            // lbl_date
-            // 
-            this.lbl_date.AutoSize = true;
-            this.lbl_date.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_date.Location = new System.Drawing.Point(167, 123);
-            this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(62, 28);
-            this.lbl_date.TabIndex = 31;
-            this.lbl_date.Text = "Date :";
-            // 
-            // lbl_lab
-            // 
-            this.lbl_lab.AutoSize = true;
-            this.lbl_lab.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_lab.Location = new System.Drawing.Point(570, 86);
-            this.lbl_lab.Name = "lbl_lab";
-            this.lbl_lab.Size = new System.Drawing.Size(117, 28);
-            this.lbl_lab.TabIndex = 32;
-            this.lbl_lab.Text = "Laboratory :";
-            // 
-            // lbl_time
-            // 
-            this.lbl_time.AutoSize = true;
-            this.lbl_time.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_time.Location = new System.Drawing.Point(570, 123);
-            this.lbl_time.Name = "lbl_time";
-            this.lbl_time.Size = new System.Drawing.Size(63, 28);
-            this.lbl_time.TabIndex = 33;
-            this.lbl_time.Text = "Time :";
-            // 
-            // comboBox_Level
-            // 
-            this.comboBox_Level.FormattingEnabled = true;
-            this.comboBox_Level.Location = new System.Drawing.Point(298, 765);
-            this.comboBox_Level.Name = "comboBox_Level";
-            this.comboBox_Level.Size = new System.Drawing.Size(342, 36);
-            this.comboBox_Level.TabIndex = 35;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.Gray;
-            this.label14.Location = new System.Drawing.Point(54, 768);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(212, 28);
-            this.label14.TabIndex = 34;
-            this.label14.Text = "MAINTENANCE LEVEL :";
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.Gray;
+            this.label15.Location = new System.Drawing.Point(52, 834);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(70, 28);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "NOTE :";
             // 
             // UserControl_EmergencyMaintenanceAssignment
             // 
@@ -402,7 +424,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserControl_EmergencyMaintenanceAssignment";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Size = new System.Drawing.Size(812, 676);
+            this.Size = new System.Drawing.Size(791, 676);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -442,5 +464,7 @@
         private System.Windows.Forms.Label lbl_custodian;
         private System.Windows.Forms.ComboBox comboBox_Level;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox_description;
     }
 }

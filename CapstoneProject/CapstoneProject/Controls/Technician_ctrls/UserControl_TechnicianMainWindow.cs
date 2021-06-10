@@ -121,6 +121,7 @@ namespace CapstoneProject.Controls.Technician_ctrls
             var instance = UserInterface.GetInstance();
             panel_main.Controls.Add(instance.userControl_TechnicianComputer);
             panel_main.Controls.Add(instance.userControl_TechnicianMaintenance);
+            panel_main.Controls.Add(instance.userControl_TechnicianViewAssignment);
             instance.userControl_TechnicianComputer.Login(current_technician);
         }
 

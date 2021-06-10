@@ -12,5 +12,7 @@ namespace CapstoneProject.Class
         public DateTime date { get; set; }
         public Maintenance maintenance { get; set; }
         public MaintenanceStatus status { get; set; }
+
+        public string description { get; set; }
     }
 }

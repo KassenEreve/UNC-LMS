@@ -138,6 +138,7 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
             MaintenanceStatusHistory history = new MaintenanceStatusHistory();
             history.status = new MaintenanceStatus() { id = selectedStatus };
             history.date = DateTime.Now;
+            history.description = textBox_description.Text;
             List<MaintenanceStatusHistory> listHistory = new List<MaintenanceStatusHistory>();
             listHistory.Add(history);
             var maintenance = new Maintenance()

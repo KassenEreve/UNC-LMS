@@ -399,6 +399,12 @@
     <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.Designer.cs">
       <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianViewAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Technician_ctrls\UserControl_TechnicianViewAssignment.Designer.cs">
+      <DependentUpon>UserControl_TechnicianViewAssignment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserControl_LoginPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -604,6 +610,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianMainWindow.resx">
       <DependentUpon>UserControl_TechnicianMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Technician_ctrls\UserControl_TechnicianViewAssignment.resx">
+      <DependentUpon>UserControl_TechnicianViewAssignment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\UserControl_LoginPage.resx">
       <DependentUpon>UserControl_LoginPage.cs</DependentUpon>

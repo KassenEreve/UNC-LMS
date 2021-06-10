@@ -59,7 +59,8 @@ namespace CapstoneProject.Class
 
                 SqlParameter[] param = { new  SqlParameter("@maintenance_id",maintenance.id),
                                        new  SqlParameter("@maintenanceStatus_id",maintenance.statusHistory[0].status.id),
-                                       new  SqlParameter("@date",maintenance.statusHistory[0].date)
+                                       new  SqlParameter("@date",maintenance.statusHistory[0].date),
+                                        new  SqlParameter("@description",maintenance.statusHistory[0].description)
 
 
 

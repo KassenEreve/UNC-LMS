@@ -53,5 +53,17 @@ namespace CapstoneProject.Controls.Technician_ctrls
            
           
         }
+
+        private void xuiButton1_MouseClick(object sender, MouseEventArgs e)
+        {
+            xuiButton1.ContextMenuStrip.Show(xuiButton1, new Point(e.X, e.Y));
+        }
+
+        private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ui = UserInterface.GetInstance();
+            ui.userControl_TechnicianViewAssignment.LoadAssignment(assignment);
+            ui.userControl_TechnicianViewAssignment.BringToFront();
+        }
     }
 }
