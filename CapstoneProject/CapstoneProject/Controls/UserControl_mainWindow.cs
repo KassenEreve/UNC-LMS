@@ -49,6 +49,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_AddCustodian);
             panel_main.Controls.Add(instance.userControl_EmergencyMaintenanceAssignment);
             panel_main.Controls.Add(instance.userControl_MaintenanceHistory);
+            panel_main.Controls.Add(instance.userControl_ViewMaintenanceHistory);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)

@@ -104,9 +104,13 @@ namespace CapstoneProject.Class
                     assignment = new EmergenceMaintenanceAssignment()
                     {
                         id = dr.Field<int>("id"),
-                        custodianReport = new CustodianReport() { id = dr.Field<int>("custodianReport_id") },
+                        custodianReport = new CustodianReport() { 
+                            id = dr.Field<int>("custodianReport_id"),
+                            custodian = CustodianHelper.GetCustodian(dr.Field<int>("custodian_id")),
+                            laboratory = new Laboratory() {id = dr.Field<int>("lab_id"),roomNum = dr.Field<string>("room_num") } 
+                        },
                         //computer_id = dr.Field<int>("comp_id"),
-
+                        
                         maintenance =maintenance
                         // equipmentHistory = 
 

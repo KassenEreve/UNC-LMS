@@ -225,6 +225,18 @@
     <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceStatusItem.Designer.cs">
       <DependentUpon>UserControl_MaintenanceStatusItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistory.Designer.cs">
+      <DependentUpon>UserControl_ViewMaintenanceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistoryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistoryItem.Designer.cs">
+      <DependentUpon>UserControl_ViewMaintenanceHistoryItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -535,6 +547,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceStatusItem.resx">
       <DependentUpon>UserControl_MaintenanceStatusItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistory.resx">
+      <DependentUpon>UserControl_ViewMaintenanceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_ViewMaintenanceHistoryItem.resx">
+      <DependentUpon>UserControl_ViewMaintenanceHistoryItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_AddEquipmentType.resx">
       <DependentUpon>UserControl_AddEquipmentType.cs</DependentUpon>

@@ -25,6 +25,14 @@ namespace CapstoneProject.Controls.Technician_ctrls
             this.assignment = assignment;
             lbl_status.Text = assignment.maintenance.statusHistory[0].status.name;
             lbl_status.ForeColor = Color.FromArgb(assignment.maintenance.statusHistory[0].status.color_argb);
+            lbl_custodian.Text = assignment.custodianReport.custodian.fullName;
+
+            lbl_lab.Text = assignment.custodianReport.laboratory.roomNum;
+            lbl_date.Text = assignment.maintenance.statusHistory[0].date.ToShortDateString();
+            lbl_time.Text = assignment.maintenance.statusHistory[0].date.ToShortTimeString();
+
+
+
             LoadCombobox();
             LoadTable();
             

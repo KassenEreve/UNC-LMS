@@ -56,10 +56,10 @@ namespace CapstoneProject.Controls.Laboratory_ctrls.AdminMaintenance_ctrls
 
         private void vIEWToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*
+            
             var ui = UserInterface.GetInstance();
-            ui.userControl_TechnicianViewAssignment.LoadAssignment(assignment);
-            ui.userControl_TechnicianViewAssignment.BringToFront(); */
+            ui.userControl_ViewMaintenanceHistory.LoadAssignment(assignment);
+            ui.userControl_ViewMaintenanceHistory.BringToFront();
         }
     }
 }

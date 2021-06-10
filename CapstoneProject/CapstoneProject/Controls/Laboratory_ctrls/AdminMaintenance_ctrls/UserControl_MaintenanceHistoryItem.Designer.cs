@@ -132,13 +132,13 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vIEWToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(314, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
             // 
             // vIEWToolStripMenuItem
             // 
             this.vIEWToolStripMenuItem.Name = "vIEWToolStripMenuItem";
-            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(313, 24);
-            this.vIEWToolStripMenuItem.Text = "VIEW MAINTENANCE LOG HISTORY";
+            this.vIEWToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.vIEWToolStripMenuItem.Text = "VIEW LOG HISTORY";
             this.vIEWToolStripMenuItem.Click += new System.EventHandler(this.vIEWToolStripMenuItem_Click);
             // 
             // lbl_level

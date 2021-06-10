@@ -32,7 +32,8 @@ namespace CapstoneProject.Class
                         maintenance = new Maintenance() { id = maintenance_id },
                         //computer_id = dr.Field<int>("comp_id"),
                         status = new MaintenanceStatus() { id = dr.Field<int>("status_id"),name = dr.Field<string>("name"),description = dr.Field<string>("description"),color_argb = dr.Field<int>("color_argb") },
-                        date = dr.Field<DateTime>("date")
+                        date = dr.Field<DateTime>("date"),
+                        description = dr.Field<string>("description")
 
                         // equipmentHistory = 
 
