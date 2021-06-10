@@ -303,6 +303,12 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_LabList.Designer.cs">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabRecords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabRecords.Designer.cs">
+      <DependentUpon>UserControl_LabRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -587,6 +593,9 @@
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabList.resx">
       <DependentUpon>UserControl_LabList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabRecords.resx">
+      <DependentUpon>UserControl_LabRecords.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.resx">
       <DependentUpon>UserControl_PcSpecsItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -720,6 +729,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\90635670_814557849056726_693252045636894720_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90635670_814557849056726_693252045636894720_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

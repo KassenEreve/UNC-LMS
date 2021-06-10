@@ -50,6 +50,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_EmergencyMaintenanceAssignment);
             panel_main.Controls.Add(instance.userControl_MaintenanceHistory);
             panel_main.Controls.Add(instance.userControl_ViewMaintenanceHistory);
+            panel_main.Controls.Add(instance.userControl_LabRecords);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -71,6 +72,7 @@ namespace CapstoneProject.Controls
             btn_mainteStatus.Tag = 13;
             btn_Custodian.Tag = 14;
             btn_maintenanceList.Tag = 15;
+            btn_records.Tag = 16;
 
 
             btn_logOut.Tag = 0;
@@ -93,6 +95,7 @@ namespace CapstoneProject.Controls
             btn_mainteStatus.Click += Button_Click;
             btn_Custodian.Click += Button_Click;
             btn_maintenanceList.Click += Button_Click;
+            btn_records.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -156,6 +159,9 @@ namespace CapstoneProject.Controls
                     break;
                 case 15: ui.userControl_MaintenanceHistory.BringToFront();
                     ui.userControl_MaintenanceHistory.LoadList();
+                    break;
+                case 16: ui.userControl_LabRecords.BringToFront();
+                    ui.userControl_LabRecords.LoadList();
                     break;
 
 

@@ -52,6 +52,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_logOut = new XanderUI.XUIButton();
+            this.btn_records = new XanderUI.XUIButton();
             this.dropDownPanel_maintenance.SuspendLayout();
             this.dropDownPanel_report.SuspendLayout();
             this.dropDownPanel_lab.SuspendLayout();
@@ -294,15 +295,16 @@
             // dropDownPanel_lab
             // 
             this.dropDownPanel_lab.BackColor = System.Drawing.Color.Gainsboro;
-            this.dropDownPanel_lab.Controls.Add(this.btn_softwareGroup);
             this.dropDownPanel_lab.Controls.Add(this.btn_specsList);
+            this.dropDownPanel_lab.Controls.Add(this.btn_softwareGroup);
             this.dropDownPanel_lab.Controls.Add(this.btn_softwares);
             this.dropDownPanel_lab.Controls.Add(this.btn_equipmentType);
             this.dropDownPanel_lab.Controls.Add(this.btn_labList);
+            this.dropDownPanel_lab.Controls.Add(this.btn_records);
             this.dropDownPanel_lab.Controls.Add(this.btn_lab);
             this.dropDownPanel_lab.Dock = System.Windows.Forms.DockStyle.Top;
             this.dropDownPanel_lab.Location = new System.Drawing.Point(0, 97);
-            this.dropDownPanel_lab.MaximumSize = new System.Drawing.Size(246, 570);
+            this.dropDownPanel_lab.MaximumSize = new System.Drawing.Size(246, 670);
             this.dropDownPanel_lab.MinimumSize = new System.Drawing.Size(246, 97);
             this.dropDownPanel_lab.Name = "dropDownPanel_lab";
             this.dropDownPanel_lab.Size = new System.Drawing.Size(246, 97);
@@ -345,7 +347,7 @@
             this.btn_specsList.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_specsList.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_specsList.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_specsList.Location = new System.Drawing.Point(0, 379);
+            this.btn_specsList.Location = new System.Drawing.Point(0, 567);
             this.btn_specsList.Name = "btn_specsList";
             this.btn_specsList.Size = new System.Drawing.Size(246, 94);
             this.btn_specsList.TabIndex = 5;
@@ -367,7 +369,7 @@
             this.btn_softwares.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_softwares.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_softwares.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_softwares.Location = new System.Drawing.Point(0, 285);
+            this.btn_softwares.Location = new System.Drawing.Point(0, 379);
             this.btn_softwares.Name = "btn_softwares";
             this.btn_softwares.Size = new System.Drawing.Size(246, 94);
             this.btn_softwares.TabIndex = 4;
@@ -389,7 +391,7 @@
             this.btn_equipmentType.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_equipmentType.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_equipmentType.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_equipmentType.Location = new System.Drawing.Point(0, 191);
+            this.btn_equipmentType.Location = new System.Drawing.Point(0, 285);
             this.btn_equipmentType.Name = "btn_equipmentType";
             this.btn_equipmentType.Size = new System.Drawing.Size(246, 94);
             this.btn_equipmentType.TabIndex = 3;
@@ -411,7 +413,7 @@
             this.btn_labList.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_labList.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_labList.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_labList.Location = new System.Drawing.Point(0, 97);
+            this.btn_labList.Location = new System.Drawing.Point(0, 191);
             this.btn_labList.Name = "btn_labList";
             this.btn_labList.Size = new System.Drawing.Size(246, 94);
             this.btn_labList.TabIndex = 2;
@@ -533,6 +535,28 @@
             this.btn_logOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btn_logOut.Click += new System.EventHandler(this.xuiButton1_Click);
             // 
+            // btn_records
+            // 
+            this.btn_records.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_records.ButtonImage = null;
+            this.btn_records.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_records.ButtonText = "Records";
+            this.btn_records.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_records.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_records.CornerRadius = 5;
+            this.btn_records.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_records.Font = new System.Drawing.Font("Segoe UI Semibold", 11.8F, System.Drawing.FontStyle.Bold);
+            this.btn_records.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_records.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_records.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_records.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
+            this.btn_records.Location = new System.Drawing.Point(0, 97);
+            this.btn_records.Name = "btn_records";
+            this.btn_records.Size = new System.Drawing.Size(246, 94);
+            this.btn_records.TabIndex = 7;
+            this.btn_records.TextColor = System.Drawing.Color.Gray;
+            this.btn_records.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // UserControl_mainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -578,5 +602,6 @@
         private XanderUI.XUIButton btn_emergencyMainte;
         private XanderUI.XUIButton btn_maintenanceList;
         private XanderUI.XUIButton btn_mainteStatus;
+        private XanderUI.XUIButton btn_records;
     }
 }

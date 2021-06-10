@@ -37,6 +37,7 @@ namespace CapstoneProject.Class
         public UserControl_SoftwareGroupList userControl_SoftwareGroupList;
         public UserControl_AddSoftwareGroup userControl_AddSoftwareGroup;
         public UserControl_SetSoftwareGroup userControl_SetSoftwareGroup;
+        public UserControl_LabRecords userControl_LabRecords;
         //maintenance
         public UserControl_MaintenanceLevel userControl_MaintenanceLevel;
         public UserControl_AddMaintenanceLevel userControl_AddMaintenanceLevel;
@@ -197,6 +198,9 @@ namespace CapstoneProject.Class
 
             userControl_ViewMaintenanceHistory = new UserControl_ViewMaintenanceHistory();
             userControl_ViewMaintenanceHistory.Dock = DockStyle.Fill;
+
+            userControl_LabRecords = new UserControl_LabRecords();
+            userControl_LabRecords.Dock = DockStyle.Fill;
 
             #region CUSTODIAN CONTROLS
 

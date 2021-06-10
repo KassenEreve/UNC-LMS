@@ -83,6 +83,16 @@ namespace CapstoneProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _90635670_814557849056726_693252045636894720_n2 {
+            get {
+                object obj = ResourceManager.GetObject("90635670_814557849056726_693252045636894720_n2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Collapse_Arrow_20px {
             get {
                 object obj = ResourceManager.GetObject("Collapse Arrow_20px", resourceCulture);
@@ -106,6 +116,16 @@ namespace CapstoneProject.Properties {
         internal static System.Drawing.Bitmap Expand_Arrow_20px {
             get {
                 object obj = ResourceManager.GetObject("Expand Arrow_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loupe {
+            get {
+                object obj = ResourceManager.GetObject("loupe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
