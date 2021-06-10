@@ -13,20 +13,44 @@ namespace CapstoneProject.Controls.Technician_ctrls
 {
     public partial class UserControl_TechnicianMaintenanceItem : UserControl
     {
-        Maintenance maintenance;
+        EmergenceMaintenanceAssignment assignment =new EmergenceMaintenanceAssignment();
+       
         int ctr;
         public UserControl_TechnicianMaintenanceItem(Maintenance maintenance,int ctr)
         {
             InitializeComponent();
-            this.maintenance = maintenance;
+            assignment.maintenance = maintenance;
+         
             this.ctr = ctr;
         }
 
         private void UserControl_TechnicianMaintenanceItem_Load(object sender, EventArgs e)
         {
+            assignment = EmergenceMaintenanceAssignmentHelper.GetEmergencyMaintenanceAssignmentID(assignment.maintenance);
             lbl_ctr.Text = ctr.ToString();
-            lbl_date.Text = maintenance.date.ToString();
-            lbl_level.Text = maintenance.maintenanceLevel.name;
+            lbl_date.Text = assignment.maintenance.date.ToString();
+           
+            lbl_items.Text = string.Empty;
+         
+
+            if (assignment.maintenance == null)
+                return;
+            assignment.maintenance.statusHistory = MaintenanceStatusHistoryHelper.GetAllMaintenanceStatusHistory(assignment.maintenance.id);
+            lbl_level.Text = assignment.maintenance.statusHistory[0].status.name;
+            btn_indicator.BackgroundColor = Color.FromArgb(assignment.maintenance.statusHistory[0].status.color_argb);
+            assignment.custodianReport.custodianReportedItems = CustodianReportedItemHelper.GetReportedItems(assignment.custodianReport.id);
+           
+            if (assignment.custodianReport.custodianReportedItems == null)
+                return;
+            lbl_lab.Text = assignment.custodianReport.custodianReportedItems[0].equipment.laboratory.roomNum;
+            foreach (CustodianReportedItem item in assignment.custodianReport.custodianReportedItems)
+            {
+                if (item.equipment.computer_id > 0)
+                    lbl_items.Text += ComputerHelper.getComputer(item.equipment.computer_id).pc_num+", ";
+                else
+                    lbl_items.Text += item.equipment.equipmentType.name + ", ";
+            }
+           
           
         }
     }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_date = new System.Windows.Forms.Label();
+            this.xuiButton1 = new XanderUI.XUIButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.vIEWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eDITToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,8 @@
             this.lbl_level = new System.Windows.Forms.Label();
             this.lbl_items = new System.Windows.Forms.Label();
             this.lbl_ctr = new System.Windows.Forms.Label();
-            this.xuiButton1 = new XanderUI.XUIButton();
+            this.lbl_lab = new System.Windows.Forms.Label();
+            this.btn_indicator = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +48,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btn_indicator);
+            this.panel1.Controls.Add(this.lbl_lab);
             this.panel1.Controls.Add(this.lbl_date);
             this.panel1.Controls.Add(this.xuiButton1);
             this.panel1.Controls.Add(this.lbl_level);
@@ -62,12 +66,33 @@
             this.lbl_date.AutoEllipsis = true;
             this.lbl_date.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_date.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_date.Location = new System.Drawing.Point(438, 12);
+            this.lbl_date.Location = new System.Drawing.Point(442, 12);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(140, 46);
+            this.lbl_date.Size = new System.Drawing.Size(136, 46);
             this.lbl_date.TabIndex = 5;
             this.lbl_date.Text = "label3";
             this.lbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // xuiButton1
+            // 
+            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton1.ButtonImage = global::CapstoneProject.Properties.Resources.Untitled_1;
+            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton1.ButtonText = "";
+            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.ContextMenuStrip = this.contextMenuStrip1;
+            this.xuiButton1.CornerRadius = 5;
+            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
+            this.xuiButton1.Location = new System.Drawing.Point(596, 26);
+            this.xuiButton1.Name = "xuiButton1";
+            this.xuiButton1.Size = new System.Drawing.Size(20, 20);
+            this.xuiButton1.TabIndex = 4;
+            this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // contextMenuStrip1
             // 
@@ -102,12 +127,12 @@
             this.lbl_level.AutoEllipsis = true;
             this.lbl_level.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_level.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_level.Location = new System.Drawing.Point(264, 12);
+            this.lbl_level.Location = new System.Drawing.Point(345, 12);
             this.lbl_level.Name = "lbl_level";
-            this.lbl_level.Size = new System.Drawing.Size(148, 46);
+            this.lbl_level.Size = new System.Drawing.Size(114, 46);
             this.lbl_level.TabIndex = 2;
             this.lbl_level.Text = "label4";
-            this.lbl_level.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_level.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_items
             // 
@@ -133,26 +158,38 @@
             this.lbl_ctr.Text = "label1";
             this.lbl_ctr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // xuiButton1
+            // lbl_lab
             // 
-            this.xuiButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.xuiButton1.ButtonImage = global::CapstoneProject.Properties.Resources.Untitled_1;
-            this.xuiButton1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton1.ButtonText = "";
-            this.xuiButton1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton1.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.ContextMenuStrip = this.contextMenuStrip1;
-            this.xuiButton1.CornerRadius = 5;
-            this.xuiButton1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Center;
-            this.xuiButton1.Location = new System.Drawing.Point(596, 26);
-            this.xuiButton1.Name = "xuiButton1";
-            this.xuiButton1.Size = new System.Drawing.Size(20, 20);
-            this.xuiButton1.TabIndex = 4;
-            this.xuiButton1.TextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.lbl_lab.AutoEllipsis = true;
+            this.lbl_lab.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lab.ForeColor = System.Drawing.Color.Gray;
+            this.lbl_lab.Location = new System.Drawing.Point(220, 12);
+            this.lbl_lab.Name = "lbl_lab";
+            this.lbl_lab.Size = new System.Drawing.Size(73, 46);
+            this.lbl_lab.TabIndex = 6;
+            this.lbl_lab.Text = "label2";
+            this.lbl_lab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btn_indicator
+            // 
+            this.btn_indicator.BackgroundColor = System.Drawing.Color.Yellow;
+            this.btn_indicator.ButtonImage = null;
+            this.btn_indicator.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btn_indicator.ButtonText = "";
+            this.btn_indicator.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btn_indicator.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_indicator.CornerRadius = 8;
+            this.btn_indicator.Enabled = false;
+            this.btn_indicator.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btn_indicator.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btn_indicator.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_indicator.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btn_indicator.Location = new System.Drawing.Point(320, 30);
+            this.btn_indicator.Name = "btn_indicator";
+            this.btn_indicator.Size = new System.Drawing.Size(17, 14);
+            this.btn_indicator.TabIndex = 8;
+            this.btn_indicator.TextColor = System.Drawing.Color.DodgerBlue;
+            this.btn_indicator.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
             // UserControl_TechnicianMaintenanceItem
             // 
@@ -183,5 +220,7 @@
         private System.Windows.Forms.Label lbl_level;
         private System.Windows.Forms.Label lbl_items;
         private System.Windows.Forms.Label lbl_ctr;
+        private System.Windows.Forms.Label lbl_lab;
+        private XanderUI.XUIButton btn_indicator;
     }
 }

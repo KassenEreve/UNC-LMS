@@ -29,7 +29,7 @@ namespace CapstoneProject.Class
                     assignment = new EmergenceMaintenanceAssignment()
                     {
                         id = dr.Field<int>("id"),
-                        custodianReport = new CustodianReport() { id = dr.Field<int>("custodianReport_id") },
+                        custodianReport = new CustodianReport() { id = dr.Field<int>("custodianReport_id")},
                         //computer_id = dr.Field<int>("comp_id"),
 
                         maintenance = MaintenanceHelper.GetMaintenance(dr.Field<int>("maintenance_id"))
@@ -39,6 +39,41 @@ namespace CapstoneProject.Class
 
                     };
                     
+                }
+            }
+
+            return assignment;
+
+        }
+        public static EmergenceMaintenanceAssignment GetEmergencyMaintenanceAssignmentID(Maintenance maintenance)
+        {
+            EmergenceMaintenanceAssignment assignment = null;
+
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+                SqlParameter[] param = { new SqlParameter("@maintenance_id", maintenance.id) };
+                var table = dal.ExecuteQuery("GetEmergencyMaintenanceAssignmentID", param).Tables[0];
+
+
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+
+                    assignment = new EmergenceMaintenanceAssignment()
+                    {
+                        id = dr.Field<int>("id"),
+                        custodianReport = new CustodianReport() { id = dr.Field<int>("custodianReport_id") },
+                        //computer_id = dr.Field<int>("comp_id"),
+
+                        maintenance =maintenance
+                        // equipmentHistory = 
+
+
+
+                    };
+
                 }
             }
 
