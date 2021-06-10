@@ -63,6 +63,26 @@ namespace CapstoneProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _90635670_814557849056726_693252045636894720_n {
+            get {
+                object obj = ResourceManager.GetObject("90635670_814557849056726_693252045636894720_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _90635670_814557849056726_693252045636894720_n1 {
+            get {
+                object obj = ResourceManager.GetObject("90635670_814557849056726_693252045636894720_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Collapse_Arrow_20px {
             get {
                 object obj = ResourceManager.GetObject("Collapse Arrow_20px", resourceCulture);

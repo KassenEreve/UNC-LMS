@@ -44,16 +44,16 @@ namespace CapstoneProject.Class
             int y = 50;
             //print logo
 
-          //  e.Graphics.DrawImage((employee.photo != string.Empty) ? UserInterface.Base64StringToImage(employee.photo) : DB2_StaffRotationManager.Properties.Resources.profile, 25, 35, 190, 190); // profile pic
+           e.Graphics.DrawImage( CapstoneProject.Properties.Resources._90635670_814557849056726_693252045636894720_n1, 50, 35, 150, 150); // profile pic
           //  if (employee.digitalSign != string.Empty) e.Graphics.DrawImage(UserInterface.Base64StringToImage(employee.digitalSign), 25, 235, 190, 80);//sign
-            x += 230;
+            x += 260;
 
 
-            e.Graphics.DrawString("UNIVERSITY OF NUEVA CACERES", boldFont, Brushes.Black, x-30, y);
+            e.Graphics.DrawString("UNIVERSITY OF NUEVA CACERES", boldFont, Brushes.Black, x-10, y);
             y += 25;
-            e.Graphics.DrawString("CITY OF NAGA", boldFont, Brushes.Black, x+50, y);
+            e.Graphics.DrawString("CITY OF NAGA", boldFont, Brushes.Black, x+70, y);
             y += 60;
-            e.Graphics.DrawString("STUDENT ATTENDANCE LIST", boldFont, Brushes.Black, x, y);
+            e.Graphics.DrawString("STUDENT ATTENDANCE LIST", boldFont, Brushes.Black, x+15, y);
           //  y += 80;
            // e.Graphics.DrawString((employee.gender.Equals("Male") ? "MR. " + employee.fname + " " + employee.lname : "MS. " + employee.fname + " " + employee.lname), new Font("Arial", 32, FontStyle.Bold), Brushes.Black, x + 10, y);
             y += 65;

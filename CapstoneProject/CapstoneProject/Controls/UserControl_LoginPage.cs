@@ -161,5 +161,15 @@ namespace CapstoneProject.Controls
         {
 
         }
+
+        private void xuiCustomPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_studentLog_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -670,6 +670,11 @@
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\90635670_814557849056726_693252045636894720_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90635670_814557849056726_693252045636894720_n.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

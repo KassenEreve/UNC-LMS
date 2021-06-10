@@ -39,6 +39,7 @@
             this.fromPicker = new System.Windows.Forms.DateTimePicker();
             this.toPicker = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
+            this.xuiButton3 = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,11 +183,32 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "-";
             // 
+            // xuiButton3
+            // 
+            this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.xuiButton3.ButtonImage = null;
+            this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.xuiButton3.ButtonText = "SEND TO EMAIL";
+            this.xuiButton3.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.xuiButton3.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.CornerRadius = 5;
+            this.xuiButton3.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.xuiButton3.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.xuiButton3.Location = new System.Drawing.Point(470, 400);
+            this.xuiButton3.Name = "xuiButton3";
+            this.xuiButton3.Size = new System.Drawing.Size(179, 46);
+            this.xuiButton3.TabIndex = 32;
+            this.xuiButton3.TextColor = System.Drawing.Color.DodgerBlue;
+            this.xuiButton3.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            // 
             // UserControl_TeacherAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.xuiButton3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.toPicker);
             this.Controls.Add(this.fromPicker);
@@ -221,5 +243,6 @@
         private System.Windows.Forms.DateTimePicker fromPicker;
         private System.Windows.Forms.DateTimePicker toPicker;
         private System.Windows.Forms.Label label2;
+        private XanderUI.XUIButton xuiButton3;
     }
 }

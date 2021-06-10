@@ -70,7 +70,7 @@
             this.btn_logOut.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.btn_logOut.Location = new System.Drawing.Point(0, 0);
             this.btn_logOut.Name = "btn_logOut";
-            this.btn_logOut.Size = new System.Drawing.Size(246, 94);
+            this.btn_logOut.Size = new System.Drawing.Size(246, 97);
             this.btn_logOut.TabIndex = 4;
             this.btn_logOut.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_logOut.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -141,7 +141,7 @@
             this.btn_Tools.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.btn_Tools.Location = new System.Drawing.Point(0, 0);
             this.btn_Tools.Name = "btn_Tools";
-            this.btn_Tools.Size = new System.Drawing.Size(246, 94);
+            this.btn_Tools.Size = new System.Drawing.Size(246, 97);
             this.btn_Tools.TabIndex = 2;
             this.btn_Tools.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_Tools.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -175,7 +175,7 @@
             this.btn_StudentAssistant.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_StudentAssistant.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_StudentAssistant.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_StudentAssistant.Location = new System.Drawing.Point(0, 188);
+            this.btn_StudentAssistant.Location = new System.Drawing.Point(0, 191);
             this.btn_StudentAssistant.Name = "btn_StudentAssistant";
             this.btn_StudentAssistant.Size = new System.Drawing.Size(246, 94);
             this.btn_StudentAssistant.TabIndex = 4;
@@ -197,7 +197,7 @@
             this.btn_Technician.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_Technician.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_Technician.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_Technician.Location = new System.Drawing.Point(0, 94);
+            this.btn_Technician.Location = new System.Drawing.Point(0, 97);
             this.btn_Technician.Name = "btn_Technician";
             this.btn_Technician.Size = new System.Drawing.Size(246, 94);
             this.btn_Technician.TabIndex = 3;
@@ -221,7 +221,7 @@
             this.btn_User.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.btn_User.Location = new System.Drawing.Point(0, 0);
             this.btn_User.Name = "btn_User";
-            this.btn_User.Size = new System.Drawing.Size(246, 94);
+            this.btn_User.Size = new System.Drawing.Size(246, 97);
             this.btn_User.TabIndex = 2;
             this.btn_User.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_User.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -254,7 +254,7 @@
             this.btn_mainteList.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_mainteList.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_mainteList.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_mainteList.Location = new System.Drawing.Point(0, 94);
+            this.btn_mainteList.Location = new System.Drawing.Point(0, 97);
             this.btn_mainteList.Name = "btn_mainteList";
             this.btn_mainteList.Size = new System.Drawing.Size(246, 94);
             this.btn_mainteList.TabIndex = 2;
@@ -278,7 +278,7 @@
             this.btn_maintenance.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
             this.btn_maintenance.Location = new System.Drawing.Point(0, 0);
             this.btn_maintenance.Name = "btn_maintenance";
-            this.btn_maintenance.Size = new System.Drawing.Size(246, 94);
+            this.btn_maintenance.Size = new System.Drawing.Size(246, 97);
             this.btn_maintenance.TabIndex = 1;
             this.btn_maintenance.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_maintenance.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -312,7 +312,7 @@
             this.btn_otherEquipment.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_otherEquipment.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_otherEquipment.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_otherEquipment.Location = new System.Drawing.Point(0, 188);
+            this.btn_otherEquipment.Location = new System.Drawing.Point(0, 191);
             this.btn_otherEquipment.Name = "btn_otherEquipment";
             this.btn_otherEquipment.Size = new System.Drawing.Size(246, 94);
             this.btn_otherEquipment.TabIndex = 5;
@@ -334,7 +334,7 @@
             this.btn_computer.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btn_computer.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btn_computer.ImagePosition = XanderUI.XUIButton.imgPosition.Right;
-            this.btn_computer.Location = new System.Drawing.Point(0, 94);
+            this.btn_computer.Location = new System.Drawing.Point(0, 97);
             this.btn_computer.Name = "btn_computer";
             this.btn_computer.Size = new System.Drawing.Size(246, 94);
             this.btn_computer.TabIndex = 3;
@@ -358,7 +358,7 @@
             this.btn_Main.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.btn_Main.Location = new System.Drawing.Point(0, 0);
             this.btn_Main.Name = "btn_Main";
-            this.btn_Main.Size = new System.Drawing.Size(246, 94);
+            this.btn_Main.Size = new System.Drawing.Size(246, 97);
             this.btn_Main.TabIndex = 0;
             this.btn_Main.TextColor = System.Drawing.Color.DodgerBlue;
             this.btn_Main.Vertical_Alignment = System.Drawing.StringAlignment.Center;

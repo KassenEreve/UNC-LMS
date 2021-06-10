@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.xuiCustomPictureBox1 = new XanderUI.XUICustomPictureBox();
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.textBox_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,8 +44,10 @@
             this.lbl_studentNum = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.xuiButton2 = new XanderUI.XUIButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel_studentLog.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,22 +59,6 @@
             this.label1.Size = new System.Drawing.Size(108, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username :";
-            // 
-            // xuiCustomPictureBox1
-            // 
-            this.xuiCustomPictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.xuiCustomPictureBox1.Color1 = System.Drawing.Color.DodgerBlue;
-            this.xuiCustomPictureBox1.Color2 = System.Drawing.Color.DodgerBlue;
-            this.xuiCustomPictureBox1.FilterAlpha = 200;
-            this.xuiCustomPictureBox1.FilterEnabled = true;
-            this.xuiCustomPictureBox1.Image = null;
-            this.xuiCustomPictureBox1.IsElipse = false;
-            this.xuiCustomPictureBox1.IsParallax = false;
-            this.xuiCustomPictureBox1.Location = new System.Drawing.Point(407, 34);
-            this.xuiCustomPictureBox1.Name = "xuiCustomPictureBox1";
-            this.xuiCustomPictureBox1.Size = new System.Drawing.Size(222, 150);
-            this.xuiCustomPictureBox1.TabIndex = 1;
-            this.xuiCustomPictureBox1.Text = "xuiCustomPictureBox1";
             // 
             // textBox_username
             // 
@@ -145,7 +130,7 @@
             // 
             // textBox_studentNum
             // 
-            this.textBox_studentNum.Location = new System.Drawing.Point(182, 48);
+            this.textBox_studentNum.Location = new System.Drawing.Point(197, 48);
             this.textBox_studentNum.Name = "textBox_studentNum";
             this.textBox_studentNum.Size = new System.Drawing.Size(242, 34);
             this.textBox_studentNum.TabIndex = 9;
@@ -153,7 +138,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 51);
+            this.label3.Location = new System.Drawing.Point(23, 51);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 28);
@@ -168,11 +153,12 @@
             this.panel_studentLog.Controls.Add(this.lbl_studentNum);
             this.panel_studentLog.Controls.Add(this.label4);
             this.panel_studentLog.Controls.Add(this.xuiButton2);
-            this.panel_studentLog.Location = new System.Drawing.Point(172, 193);
+            this.panel_studentLog.Location = new System.Drawing.Point(172, 176);
             this.panel_studentLog.Name = "panel_studentLog";
             this.panel_studentLog.Size = new System.Drawing.Size(716, 269);
             this.panel_studentLog.TabIndex = 8;
             this.panel_studentLog.Visible = false;
+            this.panel_studentLog.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_studentLog_Paint);
             // 
             // lbl_dateTime
             // 
@@ -245,11 +231,22 @@
             this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton2.Click += new System.EventHandler(this.xuiButton2_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CapstoneProject.Properties.Resources._90635670_814557849056726_693252045636894720_n1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(424, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(201, 150);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserControl_LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel_studentLog);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox1);
@@ -257,7 +254,6 @@
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_username);
-            this.Controls.Add(this.xuiCustomPictureBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -268,6 +264,7 @@
             this.panel1.PerformLayout();
             this.panel_studentLog.ResumeLayout(false);
             this.panel_studentLog.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +273,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private XanderUI.XUICustomPictureBox xuiCustomPictureBox1;
         private System.Windows.Forms.TextBox textBox_username;
         private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Label label2;
@@ -292,5 +288,6 @@
         private System.Windows.Forms.Label lbl_dateTime;
         private System.Windows.Forms.Label lbl_comp;
         private System.Windows.Forms.Label lbl_lab;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
