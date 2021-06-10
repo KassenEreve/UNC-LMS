@@ -44,6 +44,7 @@ namespace CapstoneProject.Class
         public UserControl_MaintenanceStatus userControl_MaintenanceStatus;
         public UserControl_AddMaintenanceStatus userControl_AddMaintenanceStatus;
         public UserControl_EmergencyMaintenanceAssignment userControl_EmergencyMaintenanceAssignment;
+        public UserControl_MaintenanceHistory userControl_MaintenanceHistory;
 
         //users
         public UserControl_TechnicianList userControl_TechnicianList;
@@ -189,6 +190,9 @@ namespace CapstoneProject.Class
 
             userControl_EmergencyMaintenanceAssignment = new UserControl_EmergencyMaintenanceAssignment();
             userControl_EmergencyMaintenanceAssignment.Dock = DockStyle.Fill;
+
+            userControl_MaintenanceHistory = new UserControl_MaintenanceHistory();
+            userControl_MaintenanceHistory.Dock = DockStyle.Fill;
 
             #region CUSTODIAN CONTROLS
 

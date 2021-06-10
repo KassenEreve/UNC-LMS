@@ -48,6 +48,7 @@ namespace CapstoneProject.Controls
             panel_main.Controls.Add(instance.userControl_CustodianList);
             panel_main.Controls.Add(instance.userControl_AddCustodian);
             panel_main.Controls.Add(instance.userControl_EmergencyMaintenanceAssignment);
+            panel_main.Controls.Add(instance.userControl_MaintenanceHistory);
         }
 
         private void UserControl_mainWindow_Load(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace CapstoneProject.Controls
             btn_emergencyMainte.Tag = 12;
             btn_mainteStatus.Tag = 13;
             btn_Custodian.Tag = 14;
+            btn_maintenanceList.Tag = 15;
 
 
             btn_logOut.Tag = 0;
@@ -89,6 +91,7 @@ namespace CapstoneProject.Controls
             btn_emergencyMainte.Click += Button_Click;
             btn_mainteStatus.Click += Button_Click;
             btn_Custodian.Click += Button_Click;
+            btn_maintenanceList.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -149,6 +152,9 @@ namespace CapstoneProject.Controls
                     break;
                 case 14: ui.userControl_CustodianList.BringToFront();
                     ui.userControl_CustodianList.LoadList();
+                    break;
+                case 15: ui.userControl_MaintenanceHistory.BringToFront();
+                    ui.userControl_MaintenanceHistory.LoadList();
                     break;
 
 

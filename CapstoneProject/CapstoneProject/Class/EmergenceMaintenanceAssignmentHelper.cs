@@ -45,6 +45,46 @@ namespace CapstoneProject.Class
             return assignment;
 
         }
+
+        internal static List<EmergenceMaintenanceAssignment> GetAllAssignmentHistory()
+        {
+            List<EmergenceMaintenanceAssignment> list = null;
+
+            using (DAL dal = new DAL())
+            {
+                if (!dal.IsConnected) return null;
+
+                var table = dal.ExecuteQuery("GetMaintenanceHistory").Tables[0];
+
+                list = new List<EmergenceMaintenanceAssignment>();
+
+                foreach (DataRow dr in table.AsEnumerable())
+                {
+
+                   
+                    var save = new EmergenceMaintenanceAssignment()
+                    {
+                        id = dr.Field<int>("id"),
+                        custodianReport = new CustodianReport() {
+                            id =  dr.Field<int>("custodianReport_id"),
+                            custodian = CustodianHelper.GetCustodian( dr.Field<int>("custodian_id")),
+                            date = dr.Field<DateTime>("date"),
+                            custodianReportedItems = CustodianReportedItemHelper.GetReportedItems(dr.Field<int>("custodianReport_id")),
+                            laboratory=new Laboratory() { id = dr.Field<int>("lab_id"),roomNum = dr.Field<string>("room_num"), }
+                            },
+                      maintenance = MaintenanceHelper.GetMaintenance(dr.Field<int>("maintenance_id") )
+                      
+
+
+
+                    };
+                    list.Add(save);
+                }
+            }
+
+            return (list.Count() > 0) ? list : null;
+        }
+
         public static EmergenceMaintenanceAssignment GetEmergencyMaintenanceAssignmentID(Maintenance maintenance)
         {
             EmergenceMaintenanceAssignment assignment = null;

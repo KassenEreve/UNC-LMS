@@ -189,6 +189,18 @@
     <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceItem.Designer.cs">
       <DependentUpon>UserControl_EmergencyMaintenanceItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistory.Designer.cs">
+      <DependentUpon>UserControl_MaintenanceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistoryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistoryItem.Designer.cs">
+      <DependentUpon>UserControl_MaintenanceHistoryItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -505,6 +517,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_EmergencyMaintenanceItem.resx">
       <DependentUpon>UserControl_EmergencyMaintenanceItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistory.resx">
+      <DependentUpon>UserControl_MaintenanceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceHistoryItem.resx">
+      <DependentUpon>UserControl_MaintenanceHistoryItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\AdminMaintenance_ctrls\UserControl_MaintenanceLevel.resx">
       <DependentUpon>UserControl_MaintenanceLevel.cs</DependentUpon>

@@ -28,7 +28,7 @@ namespace CapstoneProject.Controls.Technician_ctrls
         {
             assignment = EmergenceMaintenanceAssignmentHelper.GetEmergencyMaintenanceAssignmentID(assignment.maintenance);
             lbl_ctr.Text = ctr.ToString();
-            lbl_date.Text = assignment.maintenance.date.ToString();
+            
            
             lbl_items.Text = string.Empty;
          
@@ -37,6 +37,7 @@ namespace CapstoneProject.Controls.Technician_ctrls
                 return;
             assignment.maintenance.statusHistory = MaintenanceStatusHistoryHelper.GetAllMaintenanceStatusHistory(assignment.maintenance.id);
             lbl_level.Text = assignment.maintenance.statusHistory[0].status.name;
+            lbl_date.Text = assignment.maintenance.statusHistory[0].date.ToString();
             btn_indicator.BackgroundColor = Color.FromArgb(assignment.maintenance.statusHistory[0].status.color_argb);
             assignment.custodianReport.custodianReportedItems = CustodianReportedItemHelper.GetReportedItems(assignment.custodianReport.id);
            
