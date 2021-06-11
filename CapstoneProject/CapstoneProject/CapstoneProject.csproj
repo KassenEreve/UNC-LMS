@@ -309,6 +309,12 @@
     <Compile Include="Controls\Laboratory_ctrls\UserControl_LabRecords.Designer.cs">
       <DependentUpon>UserControl_LabRecords.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabRecordsItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Laboratory_ctrls\UserControl_LabRecordsItem.Designer.cs">
+      <DependentUpon>UserControl_LabRecordsItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -595,6 +601,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabRecords.resx">
       <DependentUpon>UserControl_LabRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_LabRecordsItem.resx">
+      <DependentUpon>UserControl_LabRecordsItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Laboratory_ctrls\UserControl_PcSpecsItem.resx">
       <DependentUpon>UserControl_PcSpecsItem.cs</DependentUpon>

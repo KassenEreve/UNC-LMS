@@ -76,14 +76,14 @@ namespace CapstoneProject.Class
                     {
                         id = dr.Field<int>("id"),
                         student = new Student() { studentNum= dr.Field<string>("student_num") },
-                        //computer_id = dr.Field<int>("comp_id"),
+                        computer = new Computer() { id = dr.Field<int>("comp_id") , pc_num = dr.Field<string>("pc_num") },
                        
                         date = dr.Field<DateTime>("date_log")
                         // equipmentHistory = 
 
+                        
 
-
-                    };
+                   };
                     list.Add(saveLog);
                 }
             }
